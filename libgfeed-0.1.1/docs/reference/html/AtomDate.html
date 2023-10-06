@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomDate</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomContent.html" title="AtomContent">
+<link rel="next" href="AtomEntry.html" title="AtomEntry">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomContent.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomEntry.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2564693" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2602555" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2602495" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2602525" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomDate"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2564693"></a><span class="refentrytitle">AtomDate</span>
+</h2>
+<p>AtomDate &#8212; </p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomDate.html#AtomDate-struct">AtomDate</a>;
+<a href="AtomDate.html" title="AtomDate">AtomDate</a>*   <a href="AtomDate.html#atom-date-new">atom_date_new</a>                   (struct tm dateTime);
+<a href="AtomDate.html" title="AtomDate">AtomDate</a>*   <a href="AtomDate.html#atom-date-new-from-xml">atom_date_new_from_xml</a>          (xmlNode *xnode);
+void        <a href="AtomDate.html#atom-date-get-xml">atom_date_get_xml</a>               (<a href="AtomDate.html" title="AtomDate">AtomDate</a> *atom_date,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2602495"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomDate
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2602525"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomDate.html#AtomDate--date">date</a>"                 gpointer              : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2602555"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2602571"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2602582"></a><h3>
+<a name="AtomDate-struct"></a>AtomDate</h3>
+<a class="indexterm" name="id2602594"></a><pre class="programlisting">typedef struct _AtomDate AtomDate;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2604393"></a><h3>
+<a name="atom-date-new"></a>atom_date_new ()</h3>
+<a class="indexterm" name="id2604406"></a><pre class="programlisting"><a href="AtomDate.html" title="AtomDate">AtomDate</a>*   atom_date_new                   (struct tm dateTime);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>dateTime</code></em>&#160;:</span></td>
+<td> a tm struct.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomDate.html" title="AtomDate"><span class="type">AtomDate</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2604473"></a><h3>
+<a name="atom-date-new-from-xml"></a>atom_date_new_from_xml ()</h3>
+<a class="indexterm" name="id2604484"></a><pre class="programlisting"><a href="AtomDate.html" title="AtomDate">AtomDate</a>*   atom_date_new_from_xml          (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomDate.html" title="AtomDate"><span class="type">AtomDate</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607374"></a><h3>
+<a name="atom-date-get-xml"></a>atom_date_get_xml ()</h3>
+<a class="indexterm" name="id2607386"></a><pre class="programlisting">void        atom_date_get_xml               (<a href="AtomDate.html" title="AtomDate">AtomDate</a> *atom_date,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_date</code></em>&#160;:</span></td>
+<td> an <a href="AtomDate.html" title="AtomDate"><span class="type">AtomDate</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> to fill.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2607471"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2607482"></a><h3>
+<a name="AtomDate--date"></a>The "<code class="literal">date</code>" property</h3>
+<a class="indexterm" name="id2607497"></a><pre class="programlisting">  "date"                 gpointer              : Read / Write / Construct</pre>
+<p>Date.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

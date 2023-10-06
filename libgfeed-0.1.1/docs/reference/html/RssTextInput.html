@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssTextInput</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="RssGuid.html" title="RssGuid">
+<link rel="next" href="RssCloud.html" title="RssCloud">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="RssGuid.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssCloud.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2589953" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2591611" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2588363" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2588387" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssTextInput"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2589953"></a><span class="refentrytitle">RssTextInput</span>
+</h2>
+<p>RssTextInput &#8212; Specifies a text input box that can be displayed with the channel.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="RssTextInput.html#RssTextInput-struct">RssTextInput</a>;
+<a href="RssTextInput.html" title="RssTextInput">RssTextInput</a>* <a href="RssTextInput.html#rss-text-input-new">rss_text_input_new</a>            (const gchar *title,
+                                             const gchar *description,
+                                             const gchar *name,
+                                             const gchar *link);
+<a href="RssTextInput.html" title="RssTextInput">RssTextInput</a>* <a href="RssTextInput.html#rss-text-input-new-from-xml">rss_text_input_new_from_xml</a>   (xmlNode *xnode);
+xmlNode*    <a href="RssTextInput.html#rss-text-input-get-xml">rss_text_input_get_xml</a>          (<a href="RssTextInput.html" title="RssTextInput">RssTextInput</a> *rss_text_input);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2588363"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssTextInput
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2588387"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssTextInput.html#RssTextInput--description">description</a>"          gchararray            : Read / Write / Construct
+  "<a href="RssTextInput.html#RssTextInput--link">link</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssTextInput.html#RssTextInput--name">name</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssTextInput.html#RssTextInput--title">title</a>"                gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2591611"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2591627"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2591637"></a><h3>
+<a name="RssTextInput-struct"></a>RssTextInput</h3>
+<a class="indexterm" name="id2591650"></a><pre class="programlisting">typedef struct _RssTextInput RssTextInput;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2591665"></a><h3>
+<a name="rss-text-input-new"></a>rss_text_input_new ()</h3>
+<a class="indexterm" name="id2591678"></a><pre class="programlisting"><a href="RssTextInput.html" title="RssTextInput">RssTextInput</a>* rss_text_input_new            (const gchar *title,
+                                             const gchar *description,
+                                             const gchar *name,
+                                             const gchar *link);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>title</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>description</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>name</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>link</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssTextInput.html" title="RssTextInput"><span class="type">RssTextInput</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2560478"></a><h3>
+<a name="rss-text-input-new-from-xml"></a>rss_text_input_new_from_xml ()</h3>
+<a class="indexterm" name="id2560489"></a><pre class="programlisting"><a href="RssTextInput.html" title="RssTextInput">RssTextInput</a>* rss_text_input_new_from_xml   (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2559134"></a><h3>
+<a name="rss-text-input-get-xml"></a>rss_text_input_get_xml ()</h3>
+<a class="indexterm" name="id2559145"></a><pre class="programlisting">xmlNode*    rss_text_input_get_xml          (<a href="RssTextInput.html" title="RssTextInput">RssTextInput</a> *rss_text_input);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_text_input</code></em>&#160;:</span></td>
+<td> a <a href="RssTextInput.html" title="RssTextInput"><span class="type">RssTextInput</span></a> object
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the item.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2559220"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2559231"></a><h3>
+<a name="RssTextInput--description"></a>The "<code class="literal">description</code>" property</h3>
+<a class="indexterm" name="id2559245"></a><pre class="programlisting">  "description"          gchararray            : Read / Write / Construct</pre>
+<p>Explains the text input area.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2559270"></a><h3>
+<a name="RssTextInput--link"></a>The "<code class="literal">link</code>" property</h3>
+<a class="indexterm" name="id2559285"></a><pre class="programlisting">  "link"                 gchararray            : Read / Write / Construct</pre>
+<p>The URL of the CGI script that processes text input requests.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2559311"></a><h3>
+<a name="RssTextInput--name"></a>The "<code class="literal">name</code>" property</h3>
+<a class="indexterm" name="id2559326"></a><pre class="programlisting">  "name"                 gchararray            : Read / Write / Construct</pre>
+<p>The name of the text object in the text input area.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2559352"></a><h3>
+<a name="RssTextInput--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2592199"></a><pre class="programlisting">  "title"                gchararray            : Read / Write / Construct</pre>
+<p>The label of the Submit button in the text input area.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!-- ##### SECTION Title ##### -->
+AtomGenerator
+
+<!-- ##### SECTION Short_Description ##### -->
+Identifies the agent used to generate a feed, for debugging and other purposes.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomGenerator ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomGenerator:text ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomGenerator:uri ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomGenerator:version ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_generator_new ##### -->
+<para>
+
+</para>
+
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_generator_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_generator_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_generator: 
+@xnode: 
+
+

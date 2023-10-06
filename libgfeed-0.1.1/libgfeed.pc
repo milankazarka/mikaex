@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libgfeed
+Description: Library to create RSS and Atom feed
+Version: 0.1.1
+Requires: glib-2.0 gobject-2.0 libxml-2.0
+Libs: -L${libdir} -lgfeed
+Cflags: -I${includedir}/libgfeed

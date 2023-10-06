@@ -1,0 +1,189 @@
+
+*** These modified files were found in JOE when it aborted on Wed Dec 28 16:21:01 2011
+*** JOE was aborted by UNIX signal 15
+
+*** File 'mikaGlTest.c'
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "mikaGlWindow.h"
+
+int main( )
+{
+  return 0;
+}
+
+*** File '(Unnamed)'
+mikaGlWindow.h
+mikaGlWindow.h
+mikaGlWindow.c
+build.sh
+mikaGlWindow.h
+mikaGlWindow.h
+mikaGlWindow.h
+build.sh
+build.sh
+mikaTest.c
+mikaGlTest.c
+
+*** These modified files were found in JOE when it aborted on Wed Dec 28 16:43:27 2011
+*** JOE was aborted by UNIX signal 1
+
+*** File 'mikaGlWindow.c'
+#include "mikaGlWindow.h"
+#include "mikaGlConfig.h"
+
+struct lowWindow *lowWindowInit( int w, int h )
+{
+  #ifdef _GLDEBUG
+    printf("lowWindowInit\n");
+  #endif
+  struct lowWindow *window = NULL;
+  window = (struct lowWindow*)malloc(sizeof(struct lowWindow));
+  
+  XInitThreads();
+  window->dpy = XOpenDisplay(NULL);
+  window->screen = DefaultScreen(window->dpy);
+  Window root;
+  unsigned long valuemask;
+  XWindowAttributes attr1;
+  XSetWindowAttributes attr;
+  attr.event_mask = ExposureMask | ButtonPressMask | ButtonReleaseMask |
+      ButtonMotionMask | EnterWindowMask | LeaveWindowMask;
+  root = RootWindow(window->dpy,window->screen);
+  XGetWindowAttributes(window->dpy,root,&attr1);
+  valuemask = CWEventMask;
+  
+  #ifdef _OVERRIDE_REDIRECT
+    valuemask += CWOverrideRedirect;
+    attr.override_redirect = True;
+  #endif
+  
+  window->id = XCreateWindow(
+      window->dpy,
+      root,
+      0,0,
+      w, h,
+      1, DefaultDepth(window->dpy,window->screen),
+      CopyFromParent,
+      DefaultVisual(window->dpy,window->screen),
+      valuemask, &attr
+    );
+    
+  XSetWindowBackground(window->dpy,window->id,
+      BlackPixel(window->dpy,window->screen));
+  XSelectInput(window->dpy,window->id,
+      ExposureMask|ButtonPressMask|ButtonReleaseMask|ButtonMotionMask);
+  XMapWindow(window->dpy,window->id);
+  
+  return window;
+}
+
+mikaGlWindow::mikaGlWindow( int w, int h )
+{
+  #ifdef _GLDEBUG
+    printf("mikaGlWindow::mikaGlWindow\n");
+  #endif
+  mw = w;
+  mh = h;
+  surface = new mikaGlSurface(mw,mh);
+  window = lowWindowInit(mw,mh);
+}
+
+int mikaGlWindow::eventLoopThreaded( )
+{
+  XEvent ev;
+  while(1)
+  {
+    XNextEvent(window->dpy,&ev);
+  
+    switch(ev.type)
+    {
+      case ButtonPress:
+        #ifdef _GLDEBUG
+          printf("mikaGlWindow::eventLoopThreaded ButtonPress\n");
+        #endif
+        break;
+      case ButtonRelease:
+        #ifdef _GLDEBUG
+          printf("mikaGlWindow::eventLoopThreaded ButtonRelease\n");
+        #endif
+        break;
+      case Expose:
+        #ifdef _GLDEBUG
+          printf("mikaGlWindow::eventLoopThreaded Expose\n");
+        #endif
+        eventExpose( );        break;
+      default:
+        break;
+    }
+  }
+  return 0;
+}
+
+void *eventLoopThread(void*data)
+{
+  if (!data)
+  {
+    #ifdef _GLDEBUG
+      printf("eventLoopThread error, invalid arguments\n");
+    #endif
+    return NULL;
+  }
+  #ifdef _GLDEBUG
+    printf("eventLoopThread\n");
+  #endif
+  mikaGlWindow *glw = (mikaGlWindow*)data;
+  glw->eventLoopThreaded();
+  return NULL;
+}
+
+int mikaGlWindow::eventLoop( )
+{
+  pthread_t t;
+  pthread_create(&t,NULL,eventLoopThread,this);
+  return 0;
+}
+
+int mikaGlWindow::wait( )
+{
+  while(1)
+  {
+    sleep(1);
+  }
+  return 0;
+}
+
+mikaGlWindow::~mikaGlWindow( )
+{
+}
+
+*** File '(Unnamed)'
+mikaGlTest.c
+mikaGlTest.c
+mikaGlTest.c
+mikaGlTest.c
+mikaGlWindow.h
+build.sh
+mikaGlWindow.c
+mikaGlWindow.c
+mikaGlWindow.c
+mikaGlWindow.c
+mikaGlWindow.c
+
+*** These modified files were found in JOE when it aborted on Thu Dec 29 02:30:58 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+mikaGlImage.c
+mikaGlImage.h
+mikaGlImage.c
+mikaGlImage.c
+mikaGlImage.c
+mikaGlImage.c
+mikaGlImage.c
+mikaGlImage.c
+mikaGlImage.c
+mikaGlImage.c
+../../system.h

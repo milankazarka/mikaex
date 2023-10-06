@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+RssSource
+
+<!-- ##### SECTION Short_Description ##### -->
+The RSS channel that the item came from.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssSource ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssSource:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssSource:url ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_source_new ##### -->
+<para>
+
+</para>
+
+@title: 
+@url: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_source_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_source_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_source: 
+@Returns: 
+
+

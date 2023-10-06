@@ -1,0 +1,32 @@
+
+*** These modified files were found in JOE when it aborted on Fri Nov 20 13:19:57 2009
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+system.c
+ftstring.c
+ftcommon.h
+ftstring.c
+ftcommon.h
+ftcommon.c
+common.c
+grdevices.c
+grdevice.c
+grinit.c
+grx11.c
+
+*** These modified files were found in JOE when it aborted on Sun Jan 10 04:13:59 2010
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+system.c
+system.c
+system.c
+system.c
+system.c
+system.c
+system.h
+grx11.c
+grx11.c
+grx11.c
+grx11.c

@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="RssChannelItem">
+<refmeta>
+<refentrytitle role="top_of_page">RssChannelItem</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>RssChannelItem</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="RssChannelItem-struct">RssChannelItem</link>;
+<link linkend="RssChannelItem">RssChannelItem</link>* <link linkend="rss-channel-item-new">rss_channel_item_new</link>        (const <link linkend="gchar">gchar</link> *title,
+                                             const <link linkend="gchar">gchar</link> *description);
+<link linkend="RssChannelItem">RssChannelItem</link>* <link linkend="rss-channel-item-new-from-xml">rss_channel_item_new_from_xml</link>
+                                            (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="gboolean">gboolean</link>    <link linkend="rss-channel-item-add-category">rss_channel_item_add_category</link>   (<link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item,
+                                             <link linkend="RssCategory">RssCategory</link> *rss_category);
+<link linkend="GList">GList</link>*      <link linkend="rss-channel-item-get-categories">rss_channel_item_get_categories</link> (<link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);
+<link linkend="xmlNode">xmlNode</link>*    <link linkend="rss-channel-item-get-xml">rss_channel_item_get_xml</link>        (<link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----RssChannelItem
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="RssChannelItem--author">author</link>&quot;               <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--comments">comments</link>&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--description">description</link>&quot;          <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--enclosure">enclosure</link>&quot;            <link linkend="RssEnclosure">RssEnclosure</link>          : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--guid">guid</link>&quot;                 <link linkend="RssCloud">RssCloud</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--link">link</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--pub-date">pub-date</link>&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--source">source</link>&quot;               <link linkend="RssCloud">RssCloud</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannelItem--title">title</link>&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="RssChannelItem-struct" role="struct"/>RssChannelItem</title>
+<indexterm><primary>RssChannelItem</primary></indexterm><programlisting>typedef struct _RssChannelItem RssChannelItem;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-item-new" role="function"/>rss_channel_item_new ()</title>
+<indexterm><primary>rss_channel_item_new</primary></indexterm><programlisting><link linkend="RssChannelItem">RssChannelItem</link>* rss_channel_item_new        (const <link linkend="gchar">gchar</link> *title,
+                                             const <link linkend="gchar">gchar</link> *description);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>title</parameter>&nbsp;:</term>
+<listitem><simpara> the title of the item.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>description</parameter>&nbsp;:</term>
+<listitem><simpara> the item synopsis.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="RssChannelItem"><type>RssChannelItem</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-item-new-from-xml" role="function"/>rss_channel_item_new_from_xml ()</title>
+<indexterm><primary>rss_channel_item_new_from_xml</primary></indexterm><programlisting><link linkend="RssChannelItem">RssChannelItem</link>* rss_channel_item_new_from_xml
+                                            (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-item-add-category" role="function"/>rss_channel_item_add_category ()</title>
+<indexterm><primary>rss_channel_item_add_category</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>    rss_channel_item_add_category   (<link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item,
+                                             <link linkend="RssCategory">RssCategory</link> *rss_category);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel_item</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>rss_category</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-item-get-categories" role="function"/>rss_channel_item_get_categories ()</title>
+<indexterm><primary>rss_channel_item_get_categories</primary></indexterm><programlisting><link linkend="GList">GList</link>*      rss_channel_item_get_categories (<link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel_item</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-item-get-xml" role="function"/>rss_channel_item_get_xml ()</title>
+<indexterm><primary>rss_channel_item_get_xml</primary></indexterm><programlisting><link linkend="xmlNode">xmlNode</link>*    rss_channel_item_get_xml        (<link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel_item</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannelItem"><type>RssChannelItem</type></link> object
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the <link linkend="xmlNode"><type>xmlNode</type></link> correspondent to the item.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="RssChannelItem--author"/>The &quot;<literal>author</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:author</primary></indexterm><programlisting>  &quot;author&quot;               <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Email address of the author of the item.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannelItem--comments"/>The &quot;<literal>comments</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:comments</primary></indexterm><programlisting>  &quot;comments&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>URL of a page for comments relating to the item.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannelItem--description"/>The &quot;<literal>description</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:description</primary></indexterm><programlisting>  &quot;description&quot;          <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The item synopsis.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannelItem--enclosure"/>The &quot;<literal>enclosure</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:enclosure</primary></indexterm><programlisting>  &quot;enclosure&quot;            <link linkend="RssEnclosure">RssEnclosure</link>          : Read / Write / Construct</programlisting>
+<para>Describes a media object that is attached to the item.</para></refsect2>
+<refsect2><title><anchor id="RssChannelItem--guid"/>The &quot;<literal>guid</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:guid</primary></indexterm><programlisting>  &quot;guid&quot;                 <link linkend="RssCloud">RssCloud</link>              : Read / Write / Construct</programlisting>
+<para>A string that uniquely identifies the item.</para></refsect2>
+<refsect2><title><anchor id="RssChannelItem--link"/>The &quot;<literal>link</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:link</primary></indexterm><programlisting>  &quot;link&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The URL of the item.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannelItem--pub-date"/>The &quot;<literal>pub-date</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:pub-date</primary></indexterm><programlisting>  &quot;pub-date&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write / Construct</programlisting>
+<para>Indicates when the item was published.</para></refsect2>
+<refsect2><title><anchor id="RssChannelItem--source"/>The &quot;<literal>source</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:source</primary></indexterm><programlisting>  &quot;source&quot;               <link linkend="RssCloud">RssCloud</link>              : Read / Write / Construct</programlisting>
+<para>The RSS channel that the item came from.</para></refsect2>
+<refsect2><title><anchor id="RssChannelItem--title"/>The &quot;<literal>title</literal>&quot; property</title>
+<indexterm><primary>RssChannelItem:title</primary></indexterm><programlisting>  &quot;title&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The title of the item.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

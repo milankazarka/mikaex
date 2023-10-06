@@ -1,0 +1,111 @@
+<!-- ##### SECTION Title ##### -->
+AtomSource
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomSource ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomSource:author ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:category ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:contributor ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:generator ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:icon ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:id ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:logo ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:rights ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:subtitle ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomSource:updated ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_source_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_source_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_source_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_source: 
+@xnode: 
+
+

@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="AtomEntry">
+<refmeta>
+<refentrytitle role="top_of_page">AtomEntry</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>AtomEntry</refname>
+<refpurpose>An individual entry, acting as a container for metadata and data associated with the entry.</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="AtomEntry-struct">AtomEntry</link>;
+<link linkend="AtomEntry">AtomEntry</link>*  <link linkend="atom-entry-new">atom_entry_new</link>                  (<link linkend="AtomID">AtomID</link> *id,
+                                             <link linkend="AtomText">AtomText</link> *title,
+                                             <link linkend="AtomDate">AtomDate</link> *updated);
+<link linkend="AtomEntry">AtomEntry</link>*  <link linkend="atom-entry-new-from-xml">atom_entry_new_from_xml</link>         (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="void">void</link>        <link linkend="atom-entry-get-xml">atom_entry_get_xml</link>              (<link linkend="AtomEntry">AtomEntry</link> *atom_entry,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----AtomEntry
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="AtomEntry--author">author</link>&quot;               <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--category">category</link>&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--content">content</link>&quot;              <link linkend="AtomContent">AtomContent</link>           : Read / Write
+  &quot;<link linkend="AtomEntry--contributor">contributor</link>&quot;          <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--id">id</link>&quot;                   <link linkend="AtomID">AtomID</link>                : Read / Write
+  &quot;<link linkend="AtomEntry--link">link</link>&quot;                 <link linkend="AtomLink">AtomLink</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--published">published</link>&quot;            <link linkend="AtomDate">AtomDate</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--rights">rights</link>&quot;               <link linkend="AtomText">AtomText</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--source">source</link>&quot;               <link linkend="AtomSource">AtomSource</link>            : Read / Write
+  &quot;<link linkend="AtomEntry--summary">summary</link>&quot;              <link linkend="AtomText">AtomText</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--title">title</link>&quot;                <link linkend="AtomText">AtomText</link>              : Read / Write
+  &quot;<link linkend="AtomEntry--updated">updated</link>&quot;              <link linkend="AtomDate">AtomDate</link>              : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="AtomEntry-struct" role="struct"/>AtomEntry</title>
+<indexterm><primary>AtomEntry</primary></indexterm><programlisting>typedef struct _AtomEntry AtomEntry;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-entry-new" role="function"/>atom_entry_new ()</title>
+<indexterm><primary>atom_entry_new</primary></indexterm><programlisting><link linkend="AtomEntry">AtomEntry</link>*  atom_entry_new                  (<link linkend="AtomID">AtomID</link> *id,
+                                             <link linkend="AtomText">AtomText</link> *title,
+                                             <link linkend="AtomDate">AtomDate</link> *updated);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>id</parameter>&nbsp;:</term>
+<listitem><simpara> a permanent, universally unique identifier for an entry or feed.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>title</parameter>&nbsp;:</term>
+<listitem><simpara> a human-readable title for an entry or feed.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>updated</parameter>&nbsp;:</term>
+<listitem><simpara> the most recent instant in time when an entry or feed was modified in a way the publisher considers significant.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomEntry"><type>AtomEntry</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-entry-new-from-xml" role="function"/>atom_entry_new_from_xml ()</title>
+<indexterm><primary>atom_entry_new_from_xml</primary></indexterm><programlisting><link linkend="AtomEntry">AtomEntry</link>*  atom_entry_new_from_xml         (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomEntry"><type>AtomEntry</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-entry-get-xml" role="function"/>atom_entry_get_xml ()</title>
+<indexterm><primary>atom_entry_get_xml</primary></indexterm><programlisting><link linkend="void">void</link>        atom_entry_get_xml              (<link linkend="AtomEntry">AtomEntry</link> *atom_entry,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom_entry</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="AtomEntry--author"/>The &quot;<literal>author</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:author</primary></indexterm><programlisting>  &quot;author&quot;               <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>An #AtomPerson object that indicates the author of the entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--category"/>The &quot;<literal>category</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:category</primary></indexterm><programlisting>  &quot;category&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>Information about a category associated with an entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--content"/>The &quot;<literal>content</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:content</primary></indexterm><programlisting>  &quot;content&quot;              <link linkend="AtomContent">AtomContent</link>           : Read / Write</programlisting>
+<para>Either contains or links to the content of the entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--contributor"/>The &quot;<literal>contributor</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:contributor</primary></indexterm><programlisting>  &quot;contributor&quot;          <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>Indicates a person or other entity who contributed to the entry or feed.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--id"/>The &quot;<literal>id</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:id</primary></indexterm><programlisting>  &quot;id&quot;                   <link linkend="AtomID">AtomID</link>                : Read / Write</programlisting>
+<para>A permanent, universally unique identifier for an entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--link"/>The &quot;<literal>link</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:link</primary></indexterm><programlisting>  &quot;link&quot;                 <link linkend="AtomLink">AtomLink</link>              : Read / Write</programlisting>
+<para>An #AtomLink defines a reference from an entry or feed to a Web resource.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--published"/>The &quot;<literal>published</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:published</primary></indexterm><programlisting>  &quot;published&quot;            <link linkend="AtomDate">AtomDate</link>              : Read / Write</programlisting>
+<para>An #AtomDate object indicating an instant in time associated with an event early in the life cycle of the entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--rights"/>The &quot;<literal>rights</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:rights</primary></indexterm><programlisting>  &quot;rights&quot;               <link linkend="AtomText">AtomText</link>              : Read / Write</programlisting>
+<para>Conveys information about rights held in and over an entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--source"/>The &quot;<literal>source</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:source</primary></indexterm><programlisting>  &quot;source&quot;               <link linkend="AtomSource">AtomSource</link>            : Read / Write</programlisting>
+<para>Source.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--summary"/>The &quot;<literal>summary</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:summary</primary></indexterm><programlisting>  &quot;summary&quot;              <link linkend="AtomText">AtomText</link>              : Read / Write</programlisting>
+<para>Conveys a short summary, abstract, or excerpt of an entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--title"/>The &quot;<literal>title</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:title</primary></indexterm><programlisting>  &quot;title&quot;                <link linkend="AtomText">AtomText</link>              : Read / Write</programlisting>
+<para>A human-readable title for the entry.</para></refsect2>
+<refsect2><title><anchor id="AtomEntry--updated"/>The &quot;<literal>updated</literal>&quot; property</title>
+<indexterm><primary>AtomEntry:updated</primary></indexterm><programlisting>  &quot;updated&quot;              <link linkend="AtomDate">AtomDate</link>              : Read / Write</programlisting>
+<para>The most recent instant in time when the entry was modified in a way the publisher considers significant.</para></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

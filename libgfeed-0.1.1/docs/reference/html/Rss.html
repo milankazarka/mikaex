@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Rss</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="ch01.html" title="RSS API reference">
+<link rel="next" href="RssChannel.html" title="RssChannel">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssChannel.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2571322" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2515054" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2514999" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2515023" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="Rss"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2571322"></a><span class="refentrytitle">Rss</span>
+</h2>
+<p>Rss &#8212; </p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="Rss.html#Rss-struct">Rss</a>;
+<a href="Rss.html" title="Rss">Rss</a>*        <a href="Rss.html#rss-new">rss_new</a>                         (void);
+<a href="Rss.html" title="Rss">Rss</a>*        <a href="Rss.html#rss-new-from-file">rss_new_from_file</a>               (const gchar *filename);
+<a href="Rss.html" title="Rss">Rss</a>*        <a href="Rss.html#rss-new-from-buffer">rss_new_from_buffer</a>             (const gchar *buffer);
+xmlDoc*     <a href="Rss.html#rss-get-xml-doc">rss_get_xml_doc</a>                 (<a href="Rss.html" title="Rss">Rss</a> *rss);
+gboolean    <a href="Rss.html#rss-save-file">rss_save_file</a>                   (<a href="Rss.html" title="Rss">Rss</a> *rss,
+                                             const gchar *filename);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2514999"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----Rss
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2515023"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="Rss.html#Rss--channel">channel</a>"              <a href="RssChannel.html" title="RssChannel">RssChannel</a>            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2515054"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2532702"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2532712"></a><h3>
+<a name="Rss-struct"></a>Rss</h3>
+<a class="indexterm" name="id2532724"></a><pre class="programlisting">typedef struct _Rss Rss;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2532739"></a><h3>
+<a name="rss-new"></a>rss_new ()</h3>
+<a class="indexterm" name="id2532751"></a><pre class="programlisting"><a href="Rss.html" title="Rss">Rss</a>*        rss_new                         (void);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="Rss.html" title="Rss"><span class="type">Rss</span></a> object.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2532798"></a><h3>
+<a name="rss-new-from-file"></a>rss_new_from_file ()</h3>
+<a class="indexterm" name="id2532811"></a><pre class="programlisting"><a href="Rss.html" title="Rss">Rss</a>*        rss_new_from_file               (const gchar *filename);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>filename</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="Rss.html" title="Rss"><span class="type">Rss</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2509539"></a><h3>
+<a name="rss-new-from-buffer"></a>rss_new_from_buffer ()</h3>
+<a class="indexterm" name="id2509551"></a><pre class="programlisting"><a href="Rss.html" title="Rss">Rss</a>*        rss_new_from_buffer             (const gchar *buffer);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>buffer</code></em>&#160;:</span></td>
+<td> a pointer to an array of <span class="type">gchar</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="Rss.html" title="Rss"><span class="type">Rss</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2509625"></a><h3>
+<a name="rss-get-xml-doc"></a>rss_get_xml_doc ()</h3>
+<a class="indexterm" name="id2509638"></a><pre class="programlisting">xmlDoc*     rss_get_xml_doc                 (<a href="Rss.html" title="Rss">Rss</a> *rss);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss</code></em>&#160;:</span></td>
+<td> a <a href="Rss.html" title="Rss"><span class="type">Rss</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlDoc</span> correspondent to the entire rss file.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2574882"></a><h3>
+<a name="rss-save-file"></a>rss_save_file ()</h3>
+<a class="indexterm" name="id2574894"></a><pre class="programlisting">gboolean    rss_save_file                   (<a href="Rss.html" title="Rss">Rss</a> *rss,
+                                             const gchar *filename);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss</code></em>&#160;:</span></td>
+<td> a <a href="Rss.html" title="Rss"><span class="type">Rss</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>filename</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2574983"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2574994"></a><h3>
+<a name="Rss--channel"></a>The "<code class="literal">channel</code>" property</h3>
+<a class="indexterm" name="id2575009"></a><pre class="programlisting">  "channel"              <a href="RssChannel.html" title="RssChannel">RssChannel</a>            : Read / Write / Construct</pre>
+<p>The channel node.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

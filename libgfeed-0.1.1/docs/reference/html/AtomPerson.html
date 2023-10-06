@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomPerson</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomLink.html" title="AtomLink">
+<link rel="next" href="AtomSource.html" title="AtomSource">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomLink.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomSource.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2576163" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2609280" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2609196" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2609225" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomPerson"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2576163"></a><span class="refentrytitle">AtomPerson</span>
+</h2>
+<p>AtomPerson &#8212; Describes a person, corporation, or similar entity (hereafter, 'person').</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomPerson.html#AtomPerson-struct">AtomPerson</a>;
+<a href="AtomPerson.html" title="AtomPerson">AtomPerson</a>* <a href="AtomPerson.html#atom-person-new">atom_person_new</a>                 (const gchar *name);
+<a href="AtomPerson.html" title="AtomPerson">AtomPerson</a>* <a href="AtomPerson.html#atom-person-new-from-xml">atom_person_new_from_xml</a>        (xmlNode *xnode);
+void        <a href="AtomPerson.html#atom-person-get-xml">atom_person_get_xml</a>             (<a href="AtomPerson.html" title="AtomPerson">AtomPerson</a> *atom_person,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609196"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomPerson
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609225"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomPerson.html#AtomPerson--email">email</a>"                gchararray            : Read / Write / Construct
+  "<a href="AtomPerson.html#AtomPerson--name">name</a>"                 gchararray            : Read / Write
+  "<a href="AtomPerson.html#AtomPerson--uri">uri</a>"                  gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609280"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609295"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2610839"></a><h3>
+<a name="AtomPerson-struct"></a>AtomPerson</h3>
+<a class="indexterm" name="id2610852"></a><pre class="programlisting">typedef struct _AtomPerson AtomPerson;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2610867"></a><h3>
+<a name="atom-person-new"></a>atom_person_new ()</h3>
+<a class="indexterm" name="id2610879"></a><pre class="programlisting"><a href="AtomPerson.html" title="AtomPerson">AtomPerson</a>* atom_person_new                 (const gchar *name);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>name</code></em>&#160;:</span></td>
+<td> a string with a human-readable name for the person.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomPerson.html" title="AtomPerson"><span class="type">AtomPerson</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2610947"></a><h3>
+<a name="atom-person-new-from-xml"></a>atom_person_new_from_xml ()</h3>
+<a class="indexterm" name="id2610958"></a><pre class="programlisting"><a href="AtomPerson.html" title="AtomPerson">AtomPerson</a>* atom_person_new_from_xml        (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomPerson.html" title="AtomPerson"><span class="type">AtomPerson</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2573264"></a><h3>
+<a name="atom-person-get-xml"></a>atom_person_get_xml ()</h3>
+<a class="indexterm" name="id2573277"></a><pre class="programlisting">void        atom_person_get_xml             (<a href="AtomPerson.html" title="AtomPerson">AtomPerson</a> *atom_person,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_person</code></em>&#160;:</span></td>
+<td> an <a href="AtomPerson.html" title="AtomPerson"><span class="type">AtomPerson</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2573363"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2573373"></a><h3>
+<a name="AtomPerson--email"></a>The "<code class="literal">email</code>" property</h3>
+<a class="indexterm" name="id2573388"></a><pre class="programlisting">  "email"                gchararray            : Read / Write / Construct</pre>
+<p>Conveys an e-mail address associated with the person.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2573415"></a><h3>
+<a name="AtomPerson--name"></a>The "<code class="literal">name</code>" property</h3>
+<a class="indexterm" name="id2573430"></a><pre class="programlisting">  "name"                 gchararray            : Read / Write</pre>
+<p>Conveys a human-readable name for the person.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2613729"></a><h3>
+<a name="AtomPerson--uri"></a>The "<code class="literal">uri</code>" property</h3>
+<a class="indexterm" name="id2613744"></a><pre class="programlisting">  "uri"                  gchararray            : Read / Write / Construct</pre>
+<p>Conveys an IRI associated with the person.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

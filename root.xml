@@ -1,0 +1,6 @@
+<rootSetup>
+	<attributes>
+		<attribute name="resolution" value="980x700"/>
+		<attribute name="background" value="img/pozadie02.png">
+	</attributes>
+</rootSetup>

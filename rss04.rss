@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+  <channel>
+    <title>smh.com.au Business News.</title>
+    <link>http://www.smh.com.au/business</link>
+    <description>The latest business news from smh.com.au. For all the business news, visit http://business.smh.com.au/</description>
+    <language>en-AU</language>
+    <item>
+      <title>Ignore the doomsayers</title>
+      <link>http://www.smh.com.au/world/ignore-the-doomsayers-20111112-1nctx.html</link>
+      <description>Poor Rick Perry, in trouble after he could only remember two of the three federal agencies that he wants to scrap.</description>
+      <pubDate>Sat, 12 Nov 2011 20:19:51 GMT</pubDate>
+      <guid>http://www.smh.com.au/world/ignore-the-doomsayers-20111112-1nctx.html</guid>
+    </item>
+    <item>
+      <title>Will Italy tip Europe over the edge?</title>
+      <link>http://www.smh.com.au/business/world-business/will-italy-tip-europe-over-the-edge-20111112-1nctz.html</link>
+      <description>The euro zone crisis could take Australia along for the ride, writes Richard Webb.</description>
+      <pubDate>Sat, 12 Nov 2011 20:19:51 GMT</pubDate>
+      <guid>http://www.smh.com.au/business/world-business/will-italy-tip-europe-over-the-edge-20111112-1nctz.html</guid>
+    </item>
+    <item>
+      <title>A King's ransom slashed by $11m</title>
+      <link>http://www.smh.com.au/business/a-kings-ransom-slashed-by-11m-20111111-1nbvj.html</link>
+      <description>The board of Leighton Holdings will deny former boss Wal King a $5 million transition bonus.</description>
+      <pubDate>Fri, 11 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/business/a-kings-ransom-slashed-by-11m-20111111-1nbvj.html</guid>
+    </item>
+    <item>
+      <title>ANZ boss up for $3.15m incentive deal</title>
+      <link>http://www.smh.com.au/business/anz-boss-up-for-315m-incentive-deal-20111111-1nbso.html</link>
+      <description>ANZ will seek its shareholders' approval to top up chief executive Mike Smith's incentive deal.</description>
+      <pubDate>Fri, 11 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/business/anz-boss-up-for-315m-incentive-deal-20111111-1nbso.html</guid>
+    </item>
+    <item>
+      <title>Bright ideas need nurturing</title>
+      <link>http://www.smh.com.au/business/bright-ideas-need-nurturing-20111111-1nbsq.html</link>
+      <description>Paddy Miller has been tracking corporate leaders for 20 years, watching their every move.</description>
+      <pubDate>Fri, 11 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/business/bright-ideas-need-nurturing-20111111-1nbsq.html</guid>
+    </item>
+  </channel>
+</rss>
+

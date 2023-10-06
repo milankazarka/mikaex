@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="LibGFeed Reference Manual" link="index.html" author="" name="libgfeed">
+  <chapters>
+    <sub name="RSS API reference" link="ch01.html">
+      <sub name="Rss" link="Rss.html"/>
+      <sub name="RssChannel" link="RssChannel.html"/>
+      <sub name="RssChannelItem" link="RssChannelItem.html"/>
+      <sub name="RssImage" link="RssImage.html"/>
+      <sub name="RssGuid" link="RssGuid.html"/>
+      <sub name="RssTextInput" link="RssTextInput.html"/>
+      <sub name="RssCloud" link="RssCloud.html"/>
+      <sub name="RssCategory" link="RssCategory.html"/>
+      <sub name="RssSource" link="RssSource.html"/>
+      <sub name="RssEnclosure" link="RssEnclosure.html"/>
+    </sub>
+    <sub name="ATOM API reference" link="ch02.html">
+      <sub name="Atom" link="Atom.html"/>
+      <sub name="AtomCategory" link="AtomCategory.html"/>
+      <sub name="AtomCommon" link="AtomCommon.html"/>
+      <sub name="AtomContent" link="AtomContent.html"/>
+      <sub name="AtomDate" link="AtomDate.html"/>
+      <sub name="AtomEntry" link="AtomEntry.html"/>
+      <sub name="AtomGenerator" link="AtomGenerator.html"/>
+      <sub name="AtomID" link="AtomID.html"/>
+      <sub name="AtomLink" link="AtomLink.html"/>
+      <sub name="AtomPerson" link="AtomPerson.html"/>
+      <sub name="AtomSource" link="AtomSource.html"/>
+      <sub name="AtomText" link="AtomText.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="Rss" link="Rss.html#Rss-struct"/>
+    <function name="rss_new ()" link="Rss.html#rss-new"/>
+    <function name="rss_new_from_file ()" link="Rss.html#rss-new-from-file"/>
+    <function name="rss_new_from_buffer ()" link="Rss.html#rss-new-from-buffer"/>
+    <function name="rss_get_xml_doc ()" link="Rss.html#rss-get-xml-doc"/>
+    <function name="rss_save_file ()" link="Rss.html#rss-save-file"/>
+    <function name="The &quot;channel&quot; property" link="Rss.html#Rss--channel"/>
+    <function name="RSSCHANNEL_DAY_MONDAY" link="RssChannel.html#RSSCHANNEL-DAY-MONDAY:CAPS"/>
+    <function name="RSSCHANNEL_DAY_TUESDAY" link="RssChannel.html#RSSCHANNEL-DAY-TUESDAY:CAPS"/>
+    <function name="RSSCHANNEL_DAY_WEDNESDAY" link="RssChannel.html#RSSCHANNEL-DAY-WEDNESDAY:CAPS"/>
+    <function name="RSSCHANNEL_DAY_THURSDAY" link="RssChannel.html#RSSCHANNEL-DAY-THURSDAY:CAPS"/>
+    <function name="RSSCHANNEL_DAY_FRIDAY" link="RssChannel.html#RSSCHANNEL-DAY-FRIDAY:CAPS"/>
+    <function name="RSSCHANNEL_DAY_SATURDAY" link="RssChannel.html#RSSCHANNEL-DAY-SATURDAY:CAPS"/>
+    <function name="RSSCHANNEL_DAY_SUNDAY" link="RssChannel.html#RSSCHANNEL-DAY-SUNDAY:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_0" link="RssChannel.html#RSSCHANNEL-HOUR-0:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_1" link="RssChannel.html#RSSCHANNEL-HOUR-1:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_2" link="RssChannel.html#RSSCHANNEL-HOUR-2:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_3" link="RssChannel.html#RSSCHANNEL-HOUR-3:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_4" link="RssChannel.html#RSSCHANNEL-HOUR-4:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_5" link="RssChannel.html#RSSCHANNEL-HOUR-5:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_6" link="RssChannel.html#RSSCHANNEL-HOUR-6:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_7" link="RssChannel.html#RSSCHANNEL-HOUR-7:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_8" link="RssChannel.html#RSSCHANNEL-HOUR-8:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_9" link="RssChannel.html#RSSCHANNEL-HOUR-9:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_10" link="RssChannel.html#RSSCHANNEL-HOUR-10:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_11" link="RssChannel.html#RSSCHANNEL-HOUR-11:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_12" link="RssChannel.html#RSSCHANNEL-HOUR-12:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_13" link="RssChannel.html#RSSCHANNEL-HOUR-13:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_14" link="RssChannel.html#RSSCHANNEL-HOUR-14:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_15" link="RssChannel.html#RSSCHANNEL-HOUR-15:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_16" link="RssChannel.html#RSSCHANNEL-HOUR-16:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_17" link="RssChannel.html#RSSCHANNEL-HOUR-17:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_18" link="RssChannel.html#RSSCHANNEL-HOUR-18:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_19" link="RssChannel.html#RSSCHANNEL-HOUR-19:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_20" link="RssChannel.html#RSSCHANNEL-HOUR-20:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_21" link="RssChannel.html#RSSCHANNEL-HOUR-21:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_22" link="RssChannel.html#RSSCHANNEL-HOUR-22:CAPS"/>
+    <function name="RSSCHANNEL_HOUR_23" link="RssChannel.html#RSSCHANNEL-HOUR-23:CAPS"/>
+    <function name="RssChannel" link="RssChannel.html#RssChannel-struct"/>
+    <function name="rss_channel_new ()" link="RssChannel.html#rss-channel-new"/>
+    <function name="rss_channel_new_from_xml ()" link="RssChannel.html#rss-channel-new-from-xml"/>
+    <function name="rss_channel_add_category ()" link="RssChannel.html#rss-channel-add-category"/>
+    <function name="rss_channel_get_categories ()" link="RssChannel.html#rss-channel-get-categories"/>
+    <function name="rss_channel_add_item ()" link="RssChannel.html#rss-channel-add-item"/>
+    <function name="rss_channel_remove_item ()" link="RssChannel.html#rss-channel-remove-item"/>
+    <function name="rss_channel_get_xml ()" link="RssChannel.html#rss-channel-get-xml"/>
+    <function name="The &quot;cloud&quot; property" link="RssChannel.html#RssChannel--cloud"/>
+    <function name="The &quot;copyright&quot; property" link="RssChannel.html#RssChannel--copyright"/>
+    <function name="The &quot;description&quot; property" link="RssChannel.html#RssChannel--description"/>
+    <function name="The &quot;docs&quot; property" link="RssChannel.html#RssChannel--docs"/>
+    <function name="The &quot;generator&quot; property" link="RssChannel.html#RssChannel--generator"/>
+    <function name="The &quot;image&quot; property" link="RssChannel.html#RssChannel--image"/>
+    <function name="The &quot;language&quot; property" link="RssChannel.html#RssChannel--language"/>
+    <function name="The &quot;last-build-date&quot; property" link="RssChannel.html#RssChannel--last-build-date"/>
+    <function name="The &quot;link&quot; property" link="RssChannel.html#RssChannel--link"/>
+    <function name="The &quot;managing-editor&quot; property" link="RssChannel.html#RssChannel--managing-editor"/>
+    <function name="The &quot;pub-date&quot; property" link="RssChannel.html#RssChannel--pub-date"/>
+    <function name="The &quot;skip-days&quot; property" link="RssChannel.html#RssChannel--skip-days"/>
+    <function name="The &quot;skip-hours&quot; property" link="RssChannel.html#RssChannel--skip-hours"/>
+    <function name="The &quot;text-input&quot; property" link="RssChannel.html#RssChannel--text-input"/>
+    <function name="The &quot;title&quot; property" link="RssChannel.html#RssChannel--title"/>
+    <function name="The &quot;ttl&quot; property" link="RssChannel.html#RssChannel--ttl"/>
+    <function name="The &quot;webmaster&quot; property" link="RssChannel.html#RssChannel--webmaster"/>
+    <function name="RssChannelItem" link="RssChannelItem.html#RssChannelItem-struct"/>
+    <function name="rss_channel_item_new ()" link="RssChannelItem.html#rss-channel-item-new"/>
+    <function name="rss_channel_item_new_from_xml ()" link="RssChannelItem.html#rss-channel-item-new-from-xml"/>
+    <function name="rss_channel_item_add_category ()" link="RssChannelItem.html#rss-channel-item-add-category"/>
+    <function name="rss_channel_item_get_categories ()" link="RssChannelItem.html#rss-channel-item-get-categories"/>
+    <function name="rss_channel_item_get_xml ()" link="RssChannelItem.html#rss-channel-item-get-xml"/>
+    <function name="The &quot;author&quot; property" link="RssChannelItem.html#RssChannelItem--author"/>
+    <function name="The &quot;comments&quot; property" link="RssChannelItem.html#RssChannelItem--comments"/>
+    <function name="The &quot;description&quot; property" link="RssChannelItem.html#RssChannelItem--description"/>
+    <function name="The &quot;enclosure&quot; property" link="RssChannelItem.html#RssChannelItem--enclosure"/>
+    <function name="The &quot;guid&quot; property" link="RssChannelItem.html#RssChannelItem--guid"/>
+    <function name="The &quot;link&quot; property" link="RssChannelItem.html#RssChannelItem--link"/>
+    <function name="The &quot;pub-date&quot; property" link="RssChannelItem.html#RssChannelItem--pub-date"/>
+    <function name="The &quot;source&quot; property" link="RssChannelItem.html#RssChannelItem--source"/>
+    <function name="The &quot;title&quot; property" link="RssChannelItem.html#RssChannelItem--title"/>
+    <function name="RssImage" link="RssImage.html#RssImage-struct"/>
+    <function name="rss_image_new ()" link="RssImage.html#rss-image-new"/>
+    <function name="rss_image_new_from_xml ()" link="RssImage.html#rss-image-new-from-xml"/>
+    <function name="rss_image_get_xml ()" link="RssImage.html#rss-image-get-xml"/>
+    <function name="The &quot;description&quot; property" link="RssImage.html#RssImage--description"/>
+    <function name="The &quot;height&quot; property" link="RssImage.html#RssImage--height"/>
+    <function name="The &quot;link&quot; property" link="RssImage.html#RssImage--link"/>
+    <function name="The &quot;title&quot; property" link="RssImage.html#RssImage--title"/>
+    <function name="The &quot;url&quot; property" link="RssImage.html#RssImage--url"/>
+    <function name="The &quot;width&quot; property" link="RssImage.html#RssImage--width"/>
+    <function name="RssGuid" link="RssGuid.html#RssGuid-struct"/>
+    <function name="rss_guid_new ()" link="RssGuid.html#rss-guid-new"/>
+    <function name="rss_guid_new_from_xml ()" link="RssGuid.html#rss-guid-new-from-xml"/>
+    <function name="rss_guid_get_xml ()" link="RssGuid.html#rss-guid-get-xml"/>
+    <function name="The &quot;guid&quot; property" link="RssGuid.html#RssGuid--guid"/>
+    <function name="The &quot;is-permalink&quot; property" link="RssGuid.html#RssGuid--is-permalink"/>
+    <function name="RssTextInput" link="RssTextInput.html#RssTextInput-struct"/>
+    <function name="rss_text_input_new ()" link="RssTextInput.html#rss-text-input-new"/>
+    <function name="rss_text_input_new_from_xml ()" link="RssTextInput.html#rss-text-input-new-from-xml"/>
+    <function name="rss_text_input_get_xml ()" link="RssTextInput.html#rss-text-input-get-xml"/>
+    <function name="The &quot;description&quot; property" link="RssTextInput.html#RssTextInput--description"/>
+    <function name="The &quot;link&quot; property" link="RssTextInput.html#RssTextInput--link"/>
+    <function name="The &quot;name&quot; property" link="RssTextInput.html#RssTextInput--name"/>
+    <function name="The &quot;title&quot; property" link="RssTextInput.html#RssTextInput--title"/>
+    <function name="RssCloud" link="RssCloud.html#RssCloud-struct"/>
+    <function name="rss_cloud_new ()" link="RssCloud.html#rss-cloud-new"/>
+    <function name="rss_cloud_new_from_xml ()" link="RssCloud.html#rss-cloud-new-from-xml"/>
+    <function name="rss_cloud_get_xml ()" link="RssCloud.html#rss-cloud-get-xml"/>
+    <function name="The &quot;domain&quot; property" link="RssCloud.html#RssCloud--domain"/>
+    <function name="The &quot;path&quot; property" link="RssCloud.html#RssCloud--path"/>
+    <function name="The &quot;port&quot; property" link="RssCloud.html#RssCloud--port"/>
+    <function name="The &quot;protocol&quot; property" link="RssCloud.html#RssCloud--protocol"/>
+    <function name="The &quot;register-procedure&quot; property" link="RssCloud.html#RssCloud--register-procedure"/>
+    <function name="RssCategory" link="RssCategory.html#RssCategory-struct"/>
+    <function name="rss_category_new ()" link="RssCategory.html#rss-category-new"/>
+    <function name="rss_category_new_from_xml ()" link="RssCategory.html#rss-category-new-from-xml"/>
+    <function name="rss_category_get_xml ()" link="RssCategory.html#rss-category-get-xml"/>
+    <function name="The &quot;domain&quot; property" link="RssCategory.html#RssCategory--domain"/>
+    <function name="The &quot;location&quot; property" link="RssCategory.html#RssCategory--location"/>
+    <function name="RssSource" link="RssSource.html#RssSource-struct"/>
+    <function name="rss_source_new ()" link="RssSource.html#rss-source-new"/>
+    <function name="rss_source_new_from_xml ()" link="RssSource.html#rss-source-new-from-xml"/>
+    <function name="rss_source_get_xml ()" link="RssSource.html#rss-source-get-xml"/>
+    <function name="The &quot;title&quot; property" link="RssSource.html#RssSource--title"/>
+    <function name="The &quot;url&quot; property" link="RssSource.html#RssSource--url"/>
+    <function name="RssEnclosure" link="RssEnclosure.html#RssEnclosure-struct"/>
+    <function name="rss_enclosure_new ()" link="RssEnclosure.html#rss-enclosure-new"/>
+    <function name="rss_enclosure_new_from_xml ()" link="RssEnclosure.html#rss-enclosure-new-from-xml"/>
+    <function name="rss_enclosure_get_xml ()" link="RssEnclosure.html#rss-enclosure-get-xml"/>
+    <function name="The &quot;length&quot; property" link="RssEnclosure.html#RssEnclosure--length"/>
+    <function name="The &quot;type&quot; property" link="RssEnclosure.html#RssEnclosure--type"/>
+    <function name="The &quot;url&quot; property" link="RssEnclosure.html#RssEnclosure--url"/>
+    <function name="Atom" link="Atom.html#Atom-struct"/>
+    <function name="atom_new ()" link="Atom.html#atom-new"/>
+    <function name="atom_new_from_file ()" link="Atom.html#atom-new-from-file"/>
+    <function name="atom_new_from_buffer ()" link="Atom.html#atom-new-from-buffer"/>
+    <function name="atom_get_xml_doc ()" link="Atom.html#atom-get-xml-doc"/>
+    <function name="atom_save_file ()" link="Atom.html#atom-save-file"/>
+    <function name="The &quot;author&quot; property" link="Atom.html#Atom--author"/>
+    <function name="The &quot;category&quot; property" link="Atom.html#Atom--category"/>
+    <function name="The &quot;contributor&quot; property" link="Atom.html#Atom--contributor"/>
+    <function name="The &quot;entry&quot; property" link="Atom.html#Atom--entry"/>
+    <function name="The &quot;generator&quot; property" link="Atom.html#Atom--generator"/>
+    <function name="The &quot;icon&quot; property" link="Atom.html#Atom--icon"/>
+    <function name="The &quot;id&quot; property" link="Atom.html#Atom--id"/>
+    <function name="The &quot;link&quot; property" link="Atom.html#Atom--link"/>
+    <function name="The &quot;logo&quot; property" link="Atom.html#Atom--logo"/>
+    <function name="The &quot;rights&quot; property" link="Atom.html#Atom--rights"/>
+    <function name="The &quot;subtitle&quot; property" link="Atom.html#Atom--subtitle"/>
+    <function name="The &quot;title&quot; property" link="Atom.html#Atom--title"/>
+    <function name="The &quot;updated&quot; property" link="Atom.html#Atom--updated"/>
+    <function name="AtomCategory" link="AtomCategory.html#AtomCategory-struct"/>
+    <function name="atom_category_new ()" link="AtomCategory.html#atom-category-new"/>
+    <function name="atom_category_new_from_xml ()" link="AtomCategory.html#atom-category-new-from-xml"/>
+    <function name="atom_category_get_xml ()" link="AtomCategory.html#atom-category-get-xml"/>
+    <function name="The &quot;label&quot; property" link="AtomCategory.html#AtomCategory--label"/>
+    <function name="The &quot;scheme&quot; property" link="AtomCategory.html#AtomCategory--scheme"/>
+    <function name="The &quot;term&quot; property" link="AtomCategory.html#AtomCategory--term"/>
+    <function name="AtomCommon" link="AtomCommon.html#AtomCommon-struct"/>
+    <function name="atom_common_new ()" link="AtomCommon.html#atom-common-new"/>
+    <function name="atom_common_set_properties_from_xml ()" link="AtomCommon.html#atom-common-set-properties-from-xml"/>
+    <function name="atom_common_get_xml ()" link="AtomCommon.html#atom-common-get-xml"/>
+    <function name="The &quot;base&quot; property" link="AtomCommon.html#AtomCommon--base"/>
+    <function name="The &quot;lang&quot; property" link="AtomCommon.html#AtomCommon--lang"/>
+    <function name="AtomContent" link="AtomContent.html#AtomContent-struct"/>
+    <function name="enum AtomContentType" link="AtomContent.html#AtomContentType"/>
+    <function name="atom_content_new ()" link="AtomContent.html#atom-content-new"/>
+    <function name="atom_content_new_from_xml ()" link="AtomContent.html#atom-content-new-from-xml"/>
+    <function name="atom_content_get_xml ()" link="AtomContent.html#atom-content-get-xml"/>
+    <function name="The &quot;media-type&quot; property" link="AtomContent.html#AtomContent--media-type"/>
+    <function name="The &quot;src&quot; property" link="AtomContent.html#AtomContent--src"/>
+    <function name="The &quot;text&quot; property" link="AtomContent.html#AtomContent--text"/>
+    <function name="The &quot;type&quot; property" link="AtomContent.html#AtomContent--type"/>
+    <function name="AtomDate" link="AtomDate.html#AtomDate-struct"/>
+    <function name="atom_date_new ()" link="AtomDate.html#atom-date-new"/>
+    <function name="atom_date_new_from_xml ()" link="AtomDate.html#atom-date-new-from-xml"/>
+    <function name="atom_date_get_xml ()" link="AtomDate.html#atom-date-get-xml"/>
+    <function name="The &quot;date&quot; property" link="AtomDate.html#AtomDate--date"/>
+    <function name="AtomEntry" link="AtomEntry.html#AtomEntry-struct"/>
+    <function name="atom_entry_new ()" link="AtomEntry.html#atom-entry-new"/>
+    <function name="atom_entry_new_from_xml ()" link="AtomEntry.html#atom-entry-new-from-xml"/>
+    <function name="atom_entry_get_xml ()" link="AtomEntry.html#atom-entry-get-xml"/>
+    <function name="The &quot;author&quot; property" link="AtomEntry.html#AtomEntry--author"/>
+    <function name="The &quot;category&quot; property" link="AtomEntry.html#AtomEntry--category"/>
+    <function name="The &quot;content&quot; property" link="AtomEntry.html#AtomEntry--content"/>
+    <function name="The &quot;contributor&quot; property" link="AtomEntry.html#AtomEntry--contributor"/>
+    <function name="The &quot;id&quot; property" link="AtomEntry.html#AtomEntry--id"/>
+    <function name="The &quot;link&quot; property" link="AtomEntry.html#AtomEntry--link"/>
+    <function name="The &quot;published&quot; property" link="AtomEntry.html#AtomEntry--published"/>
+    <function name="The &quot;rights&quot; property" link="AtomEntry.html#AtomEntry--rights"/>
+    <function name="The &quot;source&quot; property" link="AtomEntry.html#AtomEntry--source"/>
+    <function name="The &quot;summary&quot; property" link="AtomEntry.html#AtomEntry--summary"/>
+    <function name="The &quot;title&quot; property" link="AtomEntry.html#AtomEntry--title"/>
+    <function name="The &quot;updated&quot; property" link="AtomEntry.html#AtomEntry--updated"/>
+    <function name="AtomGenerator" link="AtomGenerator.html#AtomGenerator-struct"/>
+    <function name="atom_generator_new ()" link="AtomGenerator.html#atom-generator-new"/>
+    <function name="atom_generator_new_from_xml ()" link="AtomGenerator.html#atom-generator-new-from-xml"/>
+    <function name="atom_generator_get_xml ()" link="AtomGenerator.html#atom-generator-get-xml"/>
+    <function name="The &quot;text&quot; property" link="AtomGenerator.html#AtomGenerator--text"/>
+    <function name="The &quot;uri&quot; property" link="AtomGenerator.html#AtomGenerator--uri"/>
+    <function name="The &quot;version&quot; property" link="AtomGenerator.html#AtomGenerator--version"/>
+    <function name="AtomID" link="AtomID.html#AtomID-struct"/>
+    <function name="atom_id_new ()" link="AtomID.html#atom-id-new"/>
+    <function name="atom_id_new_from_xml ()" link="AtomID.html#atom-id-new-from-xml"/>
+    <function name="atom_id_get_xml ()" link="AtomID.html#atom-id-get-xml"/>
+    <function name="The &quot;uri&quot; property" link="AtomID.html#AtomID--uri"/>
+    <function name="AtomLink" link="AtomLink.html#AtomLink-struct"/>
+    <function name="atom_link_new ()" link="AtomLink.html#atom-link-new"/>
+    <function name="atom_link_new_from_xml ()" link="AtomLink.html#atom-link-new-from-xml"/>
+    <function name="atom_link_get_xml ()" link="AtomLink.html#atom-link-get-xml"/>
+    <function name="The &quot;href&quot; property" link="AtomLink.html#AtomLink--href"/>
+    <function name="The &quot;hreflang&quot; property" link="AtomLink.html#AtomLink--hreflang"/>
+    <function name="The &quot;length&quot; property" link="AtomLink.html#AtomLink--length"/>
+    <function name="The &quot;rel&quot; property" link="AtomLink.html#AtomLink--rel"/>
+    <function name="The &quot;title&quot; property" link="AtomLink.html#AtomLink--title"/>
+    <function name="The &quot;type&quot; property" link="AtomLink.html#AtomLink--type"/>
+    <function name="AtomPerson" link="AtomPerson.html#AtomPerson-struct"/>
+    <function name="atom_person_new ()" link="AtomPerson.html#atom-person-new"/>
+    <function name="atom_person_new_from_xml ()" link="AtomPerson.html#atom-person-new-from-xml"/>
+    <function name="atom_person_get_xml ()" link="AtomPerson.html#atom-person-get-xml"/>
+    <function name="The &quot;email&quot; property" link="AtomPerson.html#AtomPerson--email"/>
+    <function name="The &quot;name&quot; property" link="AtomPerson.html#AtomPerson--name"/>
+    <function name="The &quot;uri&quot; property" link="AtomPerson.html#AtomPerson--uri"/>
+    <function name="AtomSource" link="AtomSource.html#AtomSource-struct"/>
+    <function name="atom_source_new ()" link="AtomSource.html#atom-source-new"/>
+    <function name="atom_source_new_from_xml ()" link="AtomSource.html#atom-source-new-from-xml"/>
+    <function name="atom_source_get_xml ()" link="AtomSource.html#atom-source-get-xml"/>
+    <function name="The &quot;author&quot; property" link="AtomSource.html#AtomSource--author"/>
+    <function name="The &quot;category&quot; property" link="AtomSource.html#AtomSource--category"/>
+    <function name="The &quot;contributor&quot; property" link="AtomSource.html#AtomSource--contributor"/>
+    <function name="The &quot;generator&quot; property" link="AtomSource.html#AtomSource--generator"/>
+    <function name="The &quot;icon&quot; property" link="AtomSource.html#AtomSource--icon"/>
+    <function name="The &quot;id&quot; property" link="AtomSource.html#AtomSource--id"/>
+    <function name="The &quot;link&quot; property" link="AtomSource.html#AtomSource--link"/>
+    <function name="The &quot;logo&quot; property" link="AtomSource.html#AtomSource--logo"/>
+    <function name="The &quot;rights&quot; property" link="AtomSource.html#AtomSource--rights"/>
+    <function name="The &quot;subtitle&quot; property" link="AtomSource.html#AtomSource--subtitle"/>
+    <function name="The &quot;title&quot; property" link="AtomSource.html#AtomSource--title"/>
+    <function name="The &quot;updated&quot; property" link="AtomSource.html#AtomSource--updated"/>
+    <function name="AtomText" link="AtomText.html#AtomText-struct"/>
+    <function name="enum AtomTextType" link="AtomText.html#AtomTextType"/>
+    <function name="atom_text_new ()" link="AtomText.html#atom-text-new"/>
+    <function name="atom_text_new_from_xml ()" link="AtomText.html#atom-text-new-from-xml"/>
+    <function name="atom_text_get_xml ()" link="AtomText.html#atom-text-get-xml"/>
+    <function name="The &quot;text&quot; property" link="AtomText.html#AtomText--text"/>
+    <function name="The &quot;type&quot; property" link="AtomText.html#AtomText--type"/>
+  </functions>
+</book>

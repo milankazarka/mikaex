@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomID</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomGenerator.html" title="AtomGenerator">
+<link rel="next" href="AtomLink.html" title="AtomLink">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomGenerator.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomLink.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2595993" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2609862" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2609802" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2609832" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomID"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2595993"></a><span class="refentrytitle">AtomID</span>
+</h2>
+<p>AtomID &#8212; A permanent, universally unique identifier for an entry or feed.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomID.html#AtomID-struct">AtomID</a>;
+<a href="AtomID.html" title="AtomID">AtomID</a>*     <a href="AtomID.html#atom-id-new">atom_id_new</a>                     (const gchar *uri);
+<a href="AtomID.html" title="AtomID">AtomID</a>*     <a href="AtomID.html#atom-id-new-from-xml">atom_id_new_from_xml</a>            (xmlNode *xnode);
+void        <a href="AtomID.html#atom-id-get-xml">atom_id_get_xml</a>                 (<a href="AtomID.html" title="AtomID">AtomID</a> *atom_id,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609802"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomID
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609832"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomID.html#AtomID--uri">uri</a>"                  gchararray            : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609862"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609878"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2609889"></a><h3>
+<a name="AtomID-struct"></a>AtomID</h3>
+<a class="indexterm" name="id2609901"></a><pre class="programlisting">typedef struct _AtomID AtomID;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611782"></a><h3>
+<a name="atom-id-new"></a>atom_id_new ()</h3>
+<a class="indexterm" name="id2611795"></a><pre class="programlisting"><a href="AtomID.html" title="AtomID">AtomID</a>*     atom_id_new                     (const gchar *uri);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>uri</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomID.html" title="AtomID"><span class="type">AtomID</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611862"></a><h3>
+<a name="atom-id-new-from-xml"></a>atom_id_new_from_xml ()</h3>
+<a class="indexterm" name="id2611873"></a><pre class="programlisting"><a href="AtomID.html" title="AtomID">AtomID</a>*     atom_id_new_from_xml            (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomID.html" title="AtomID"><span class="type">AtomID</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2556444"></a><h3>
+<a name="atom-id-get-xml"></a>atom_id_get_xml ()</h3>
+<a class="indexterm" name="id2556456"></a><pre class="programlisting">void        atom_id_get_xml                 (<a href="AtomID.html" title="AtomID">AtomID</a> *atom_id,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_id</code></em>&#160;:</span></td>
+<td> <a href="AtomID.html" title="AtomID"><span class="type">AtomID</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2556542"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2556552"></a><h3>
+<a name="AtomID--uri"></a>The "<code class="literal">uri</code>" property</h3>
+<a class="indexterm" name="id2556567"></a><pre class="programlisting">  "uri"                  gchararray            : Read / Write</pre>
+<p>URI.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

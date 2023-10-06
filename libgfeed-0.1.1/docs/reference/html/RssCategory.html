@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssCategory</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="RssCloud.html" title="RssCloud">
+<link rel="next" href="RssSource.html" title="RssSource">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="RssCloud.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssSource.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2588094" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2557576" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2557511" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2557535" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssCategory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2588094"></a><span class="refentrytitle">RssCategory</span>
+</h2>
+<p>RssCategory &#8212; Specify one or more categories that the channel belongs to.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="RssCategory.html#RssCategory-struct">RssCategory</a>;
+<a href="RssCategory.html" title="RssCategory">RssCategory</a>* <a href="RssCategory.html#rss-category-new">rss_category_new</a>               (const gchar *location);
+<a href="RssCategory.html" title="RssCategory">RssCategory</a>* <a href="RssCategory.html#rss-category-new-from-xml">rss_category_new_from_xml</a>      (xmlNode *xnode);
+xmlNode*    <a href="RssCategory.html#rss-category-get-xml">rss_category_get_xml</a>            (<a href="RssCategory.html" title="RssCategory">RssCategory</a> *rss_category);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2557511"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssCategory
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2557535"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssCategory.html#RssCategory--domain">domain</a>"               gchararray            : Read / Write / Construct
+  "<a href="RssCategory.html#RssCategory--location">location</a>"             gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2557576"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2557592"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2557603"></a><h3>
+<a name="RssCategory-struct"></a>RssCategory</h3>
+<a class="indexterm" name="id2557616"></a><pre class="programlisting">typedef struct _RssCategory RssCategory;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2557631"></a><h3>
+<a name="rss-category-new"></a>rss_category_new ()</h3>
+<a class="indexterm" name="id2557643"></a><pre class="programlisting"><a href="RssCategory.html" title="RssCategory">RssCategory</a>* rss_category_new               (const gchar *location);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>location</code></em>&#160;:</span></td>
+<td> A forward-slash-separated string that identifies a hierarchic location in the indicated taxonomy.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssCategory.html" title="RssCategory"><span class="type">RssCategory</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2587806"></a><h3>
+<a name="rss-category-new-from-xml"></a>rss_category_new_from_xml ()</h3>
+<a class="indexterm" name="id2587817"></a><pre class="programlisting"><a href="RssCategory.html" title="RssCategory">RssCategory</a>* rss_category_new_from_xml      (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2587883"></a><h3>
+<a name="rss-category-get-xml"></a>rss_category_get_xml ()</h3>
+<a class="indexterm" name="id2587894"></a><pre class="programlisting">xmlNode*    rss_category_get_xml            (<a href="RssCategory.html" title="RssCategory">RssCategory</a> *rss_category);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_category</code></em>&#160;:</span></td>
+<td> a <a href="RssCategory.html" title="RssCategory"><span class="type">RssCategory</span></a> object
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the item.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2555806"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2555817"></a><h3>
+<a name="RssCategory--domain"></a>The "<code class="literal">domain</code>" property</h3>
+<a class="indexterm" name="id2555832"></a><pre class="programlisting">  "domain"               gchararray            : Read / Write / Construct</pre>
+<p>A string that identifies a categorization taxonomy.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2555858"></a><h3>
+<a name="RssCategory--location"></a>The "<code class="literal">location</code>" property</h3>
+<a class="indexterm" name="id2555872"></a><pre class="programlisting">  "location"             gchararray            : Read / Write / Construct</pre>
+<p>A forward-slash-separated string that identifies a hierarchic location in the indicated taxonomy.</p>
+<p>Default value: "default"</p>
+</div>
+</div>
+</div>
+</body>
+</html>

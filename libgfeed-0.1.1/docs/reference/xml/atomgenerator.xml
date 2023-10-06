@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="AtomGenerator">
+<refmeta>
+<refentrytitle role="top_of_page">AtomGenerator</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>AtomGenerator</refname>
+<refpurpose>Identifies the agent used to generate a feed, for debugging and other purposes.</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="AtomGenerator-struct">AtomGenerator</link>;
+<link linkend="AtomGenerator">AtomGenerator</link>* <link linkend="atom-generator-new">atom_generator_new</link>           (const <link linkend="gchar">gchar</link> *text);
+<link linkend="AtomGenerator">AtomGenerator</link>* <link linkend="atom-generator-new-from-xml">atom_generator_new_from_xml</link>  (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="void">void</link>        <link linkend="atom-generator-get-xml">atom_generator_get_xml</link>          (<link linkend="AtomGenerator">AtomGenerator</link> *atom_generator,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----AtomGenerator
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="AtomGenerator--text">text</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomGenerator--uri">uri</link>&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="AtomGenerator--version">version</link>&quot;              <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="AtomGenerator-struct" role="struct"/>AtomGenerator</title>
+<indexterm><primary>AtomGenerator</primary></indexterm><programlisting>typedef struct _AtomGenerator AtomGenerator;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-generator-new" role="function"/>atom_generator_new ()</title>
+<indexterm><primary>atom_generator_new</primary></indexterm><programlisting><link linkend="AtomGenerator">AtomGenerator</link>* atom_generator_new           (const <link linkend="gchar">gchar</link> *text);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>text</parameter>&nbsp;:</term>
+<listitem><simpara> a string that is a human-readable name for the generating agent.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomGenerator"><type>AtomGenerator</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-generator-new-from-xml" role="function"/>atom_generator_new_from_xml ()</title>
+<indexterm><primary>atom_generator_new_from_xml</primary></indexterm><programlisting><link linkend="AtomGenerator">AtomGenerator</link>* atom_generator_new_from_xml  (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomGenerator"><type>AtomGenerator</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-generator-get-xml" role="function"/>atom_generator_get_xml ()</title>
+<indexterm><primary>atom_generator_get_xml</primary></indexterm><programlisting><link linkend="void">void</link>        atom_generator_get_xml          (<link linkend="AtomGenerator">AtomGenerator</link> *atom_generator,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom_generator</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="AtomGenerator"><type>AtomGenerator</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="AtomGenerator--text"/>The &quot;<literal>text</literal>&quot; property</title>
+<indexterm><primary>AtomGenerator:text</primary></indexterm><programlisting>  &quot;text&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>A string that is a human-readable name for the generating agent.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomGenerator--uri"/>The &quot;<literal>uri</literal>&quot; property</title>
+<indexterm><primary>AtomGenerator:uri</primary></indexterm><programlisting>  &quot;uri&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>URI.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomGenerator--version"/>The &quot;<literal>version</literal>&quot; property</title>
+<indexterm><primary>AtomGenerator:version</primary></indexterm><programlisting>  &quot;version&quot;              <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The version of the generating agent.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

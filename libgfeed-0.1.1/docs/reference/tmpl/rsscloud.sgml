@@ -1,0 +1,81 @@
+<!-- ##### SECTION Title ##### -->
+RssCloud
+
+<!-- ##### SECTION Short_Description ##### -->
+Allows processes to register with a cloud to be notified of updates to the channel, implementing a lightweight publish-subscribe protocol for RSS feeds.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssCloud ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssCloud:domain ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssCloud:path ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssCloud:port ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssCloud:protocol ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssCloud:register-procedure ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_cloud_new ##### -->
+<para>
+
+</para>
+
+@domain: 
+@port: 
+@path: 
+@registerProcedure: 
+@protocol: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_cloud_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_cloud_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_cloud: 
+@Returns: 
+
+

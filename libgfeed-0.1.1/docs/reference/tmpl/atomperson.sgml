@@ -1,0 +1,67 @@
+<!-- ##### SECTION Title ##### -->
+AtomPerson
+
+<!-- ##### SECTION Short_Description ##### -->
+Describes a person, corporation, or similar entity (hereafter, 'person').
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomPerson ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomPerson:email ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomPerson:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomPerson:uri ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_person_new ##### -->
+<para>
+
+</para>
+
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_person_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_person_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_person: 
+@xnode: 
+
+

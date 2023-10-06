@@ -1,0 +1,29 @@
+<list>
+	<nodes>
+		<node name="Alcoholic">
+			<nodes>
+				<node name="Bacardi"></node>
+				<node name="Vodka"></node>
+			</nodes>
+		</node>
+		<node name="Hot Drinks">
+			<nodes>
+				<node name="Espresso"></node>
+				<node name="Hot Chocolate"></node>
+			</nodes>
+		</node>
+		<node name="Soft Drinks">
+			<nodes>
+				<node name="CocaCola"></node>
+				<node name="Sprite"></node>
+			</nodes>
+		</node>
+		<node name="Meals for Today">
+			<nodes>
+				<node name="Fish & Chips"></node>
+				<node name="Beef & Onions"></node>
+				<node name="Pizza Margarita"></node>
+			</nodes>
+		</node>
+	</nodes>
+</list>

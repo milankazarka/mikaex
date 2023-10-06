@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomGenerator</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomEntry.html" title="AtomEntry">
+<link rel="next" href="AtomID.html" title="AtomID">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomEntry.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomID.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2578220" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2610473" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2610389" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2610419" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomGenerator"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2578220"></a><span class="refentrytitle">AtomGenerator</span>
+</h2>
+<p>AtomGenerator &#8212; Identifies the agent used to generate a feed, for debugging and other purposes.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomGenerator.html#AtomGenerator-struct">AtomGenerator</a>;
+<a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>* <a href="AtomGenerator.html#atom-generator-new">atom_generator_new</a>           (const gchar *text);
+<a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>* <a href="AtomGenerator.html#atom-generator-new-from-xml">atom_generator_new_from_xml</a>  (xmlNode *xnode);
+void        <a href="AtomGenerator.html#atom-generator-get-xml">atom_generator_get_xml</a>          (<a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a> *atom_generator,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2610389"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomGenerator
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2610419"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomGenerator.html#AtomGenerator--text">text</a>"                 gchararray            : Read / Write
+  "<a href="AtomGenerator.html#AtomGenerator--uri">uri</a>"                  gchararray            : Read / Write / Construct
+  "<a href="AtomGenerator.html#AtomGenerator--version">version</a>"              gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2610473"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2610488"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2611040"></a><h3>
+<a name="AtomGenerator-struct"></a>AtomGenerator</h3>
+<a class="indexterm" name="id2611051"></a><pre class="programlisting">typedef struct _AtomGenerator AtomGenerator;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611068"></a><h3>
+<a name="atom-generator-new"></a>atom_generator_new ()</h3>
+<a class="indexterm" name="id2611080"></a><pre class="programlisting"><a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>* atom_generator_new           (const gchar *text);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>text</code></em>&#160;:</span></td>
+<td> a string that is a human-readable name for the generating agent.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomGenerator.html" title="AtomGenerator"><span class="type">AtomGenerator</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611148"></a><h3>
+<a name="atom-generator-new-from-xml"></a>atom_generator_new_from_xml ()</h3>
+<a class="indexterm" name="id2611159"></a><pre class="programlisting"><a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>* atom_generator_new_from_xml  (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomGenerator.html" title="AtomGenerator"><span class="type">AtomGenerator</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607899"></a><h3>
+<a name="atom-generator-get-xml"></a>atom_generator_get_xml ()</h3>
+<a class="indexterm" name="id2607910"></a><pre class="programlisting">void        atom_generator_get_xml          (<a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a> *atom_generator,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_generator</code></em>&#160;:</span></td>
+<td> an <a href="AtomGenerator.html" title="AtomGenerator"><span class="type">AtomGenerator</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2607996"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2608007"></a><h3>
+<a name="AtomGenerator--text"></a>The "<code class="literal">text</code>" property</h3>
+<a class="indexterm" name="id2608022"></a><pre class="programlisting">  "text"                 gchararray            : Read / Write</pre>
+<p>A string that is a human-readable name for the generating agent.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2608047"></a><h3>
+<a name="AtomGenerator--uri"></a>The "<code class="literal">uri</code>" property</h3>
+<a class="indexterm" name="id2607527"></a><pre class="programlisting">  "uri"                  gchararray            : Read / Write / Construct</pre>
+<p>URI.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607552"></a><h3>
+<a name="AtomGenerator--version"></a>The "<code class="literal">version</code>" property</h3>
+<a class="indexterm" name="id2607566"></a><pre class="programlisting">  "version"              gchararray            : Read / Write / Construct</pre>
+<p>The version of the generating agent.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

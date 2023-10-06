@@ -1,0 +1,273 @@
+<setup>
+	<pos server="10.8.12.13" port="46000">
+	</pos>
+	<lang>
+		<items>
+			<item key="somekey" value="somevalue"></item>
+			<item key="Do you want to order:" value="Prajete si objednať:"></item>
+			<item key="Order" value="Objednať"></item>
+			<item key="Cancel" value="Zrušiť"></item>
+		</items>
+	</lang>
+	<filenames>
+		<filename>2095.jpg
+		</filename>
+		<filename>hot.jpg
+		</filename>
+		<filename>logo.gif
+		</filename>
+		<filename>logo.jpg
+		</filename>
+		<filename>martini2.jpg
+		</filename>
+		<filename>pistacie2.jpg
+		</filename>
+		<filename>peanuts2.jpg
+		</filename>
+		<filename>soletky2.jpg
+		</filename>
+		<filename>zuvacky2.jpg
+		</filename>
+		<filename>cokolada2.jpg
+		</filename>
+		<filename>alcoholicDrinks2.jpg
+		</filename>
+		<filename>cocktails2.jpg
+		</filename>
+		<filename>coldDrinks2.jpg
+		</filename>
+		<filename>nealko2.jpg
+		</filename>
+		<filename>beer2.jpg
+		</filename>
+		<filename>champagne2.jpg
+		</filename>
+		<filename>hotDrinks2.jpg
+		</filename>
+		<filename>softDrinks2.jpg
+		</filename>
+		<filename>softCocktails2.jpg
+		</filename>
+		<filename>whiskey2.jpg
+		</filename>
+		<filename>cigars2.jpg
+		</filename>
+		<filename>appetisers2.jpg
+		</filename>
+		<filename>spirits2.jpg
+		</filename>
+		<filename>brandy2.jpg
+		</filename>
+		<filename>gin2.jpg
+		</filename>
+		<filename>liqueurs2.jpg
+		</filename>
+		<filename>wine2.jpg
+		</filename>
+	</filenames>
+	<screens>
+		<screen name="main">
+			<items>
+				<item name="TEPLÉ NÁPOJE" image="setup/hotDrinks2.jpg">
+					<items>
+						<item name="Presso káva 7 g" price="2,00 €" id="Presso kava 7 g"><ordermenu></ordermenu></item>
+						<item name="Melange 7 g" price="2,00 €"><ordermenu></ordermenu></item>
+						<item name="Cappucino 7 g" price="2,00 €"><ordermenu></ordermenu></item>
+						<item name="Viedenská káva 7 g" price="2,40 €" id="Viedenska kava 7g"><ordermenu></ordermenu></item>
+						<item name="Latte 7 g" price="2,40 €"><ordermenu></ordermenu></item>
+						<item name="Čaj 1 por." price="2,00 €" id="Caj 1 por."><ordermenu></ordermenu></item> 
+						<item name="Čokoláda black 1 por." price="2,40 €" id="Cokolada black 1 por."><ordermenu></ordermenu></item>
+						<item name="Čokoláda white 1 por." price="2,40 €" id="Cokolada white 1 por."><ordermenu></ordermenu></item>
+					</items>
+				</item>
+				<item name="STUDENÉ NÁPOJE" image="setup/coldDrinks2.jpg">
+					<items>
+						<item name="ALKOHOLICKÉ NÁPOJE" image="setup/alcoholicDrinks2.jpg">
+							<items>
+								<item name="APERITIVY" image="setup/martini2.jpg">
+									<items>
+										<item name="Campari 0,08 l" price="4,00 €"><ordermenu></ordermenu></item>
+										<item name="Martini 0,08 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Becherovka 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Fernet Stock, Citrus 0,04 l" price=" 3,00 €"><ordermenu></ordermenu></item>
+										<item name="Jagermeister 0,04 l" price="4,00 €"><ordermenu></ordermenu></item>
+										<item name="Demänovka horká 0,04 l" price="3,00 €" id="Demanovka horka 0,04 l"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="WHISKEY / BOURBON" image="setup/whiskey2.jpg">
+									<items>
+										<item name="Glenfiddich (18 years old) 0,04 l" price="9,30 €"><ordermenu></ordermenu></item>
+										<item name="Glenfiddich (12 year old) 0,04 l" price="7,30 €"><ordermenu></ordermenu></item>
+										<item name="Johnie Wlaker Black Label 0,04 l" price="7,30 €"><ordermenu></ordermenu></item>
+										<item name="Chivas Regal (12 years old 0,04 l" price="7,30 €"><ordermenu></ordermenu></item>
+										<item name="Johnie Walker Red Label 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Ballantine's 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Grant's 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Tullamore Dew 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Jack Daniels Whiskey 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Four Roses Bourbon 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Jim Beam 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Jameson 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Royal Salute (21 years old) 0,04 l" price="24,60 €"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="BRANDY" image="setup/brandy2.jpg">
+									<items>
+										<item name="Metaxa 0,04 l" price="6,00 €"><ordermenu></ordermenu></item>
+										<item name="Karpatské Brandy Špeciál 0,04 l" price="6,00 €" id="Karpatske Brandy Special 0,04 l"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="DESTILÁTY / SPIRITS" image="setup/spirits2.jpg">
+									<items>
+										<item name="Tequila El Jimador Blanco, Reposado 0,04 l" price="4,70 €"><ordermenu></ordermenu></item>
+										<item name="Tequila Olmeca, Silver, Gold 0,04 l" price="4,70 €"><ordermenu></ordermenu></item>
+										<item name="Rum Bacardi Superior, Black, Oro 0,04 l" price="3,70 €"><ordermenu></ordermenu></item>
+										<item name="Rum Capt. Morgan black, Spiced gold 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Finlandia vodka 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Finlandia cranberry 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Finlandia grapefruit 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Finlandia lime 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Grey Goose 0,04 l" price="4,70 €"><ordermenu></ordermenu></item>
+										<item name="Absolut vodka 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Bombay Sapphire gin 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name=" Beefeater gin 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Juniperus borovička 0,04 l" price="3,00 €" id="Juniperus borovicka 0,04l"><ordermenu></ordermenu></item>
+										<item name="Bošácka slivovica 0,04 l" price="3,00 €" id="Bosacka slovovica 0,04 l"><ordermenu></ordermenu></item>
+										<item name="Hruškovica 0,04 l" price="3,00 €" id="Hruskovica 0,04 l"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="LIKÉRY / LIQUEURS" image="setup/liqueurs2.jpg">
+									<items>
+										<item name="Amaretto 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Malibu 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Bailey's Irisch Cream 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+										<item name="Kahlua 0,04 l" price="3,00 €"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="VÍNA / WINE" image="setup/wine2.jpg">
+									<items>
+										<item name="Veltlínske zelené 0,1 l" price="1,65 €" id="Veltinske zelene 0,1 l"><ordermenu></ordermenu></item>
+										<item name="Rizling vlašský 0,1 l" price="1,65 €" id="Rizling vlassky 0,1 l"><ordermenu></ordermenu></item>
+										<item name="Muškát moravský 0,1 l" price="1,65 €" id="Muskat moravsky 0,1 l"><ordermenu></ordermenu></item>
+										<item name="Cabernet Sauvignon 0,1 l" price="1,65 €"><ordermenu></ordermenu></item>
+										<item name="Frankovka modrá 0,1 l" price="1,65 €" id="Frankovka modra 0,1 l"><ordermenu></ordermenu></item>
+										<item name="Rizling rýnsky 0,75 l" price="26,00 €" id="Rizling rynsky 0,75 l"><ordermenu></ordermenu></item>
+										<item name="Tramín červený 0,75 l" price="26,00 €" id="Tramin cerveny 0,75 l"><ordermenu></ordermenu></item>
+										<item name="Rulandské šedé 0,75 l" price="26,00 €" id="Rulandske sede 0,75 l"><ordermenu></ordermenu></item>
+										<item name="Frankovka modrá rose 0,75 l" price="26,00 €" id="Frankovka modra rose 0,75 l"><ordermenu></ordermenu></item>
+										<item name="Alibernet 0,75 l" price="26,00 €"><ordermenu></ordermenu></item>
+										<item name="Rulandské modré 0,75 l" price="26,00 €" id="Rulandske modre 0,75 l"><ordermenu></ordermenu></item>
+										<item name="Cabernet Savignon 0,75 l" price="26,00 €" id="Cabernet Savignon 0,75 l"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="SEKT / CHAMPAGNE" image="setup/champagne2.jpg">
+									<items>
+										<item name="Moet & Chandon Brut Imperial 1 fl." price="83,00 €"><ordermenu></ordermenu></item>
+										<item name="Dom Perignon 1 fl." price="230,00 €"><ordermenu></ordermenu></item>
+										<item name="Hubert de Luxe 1 fl." price="13,00 €"><ordermenu></ordermenu></item>
+										<item name="Hubert Clasic 1 fl." price="12,00 €"><ordermenu></ordermenu></item>
+										<item name="Prosecco 1 fl." price="14,00 €"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+								<item name="PIVO / BEER" image="setup/beer2.jpg">
+									<items>
+										<item name="Budvar čapovaný 10 0,40 l" price="2,40 €" id="Budvar capovany 10 0,40 l"><ordermenu></ordermenu></item>
+										<item name="Zlatý Bažant fl. 0,33 l" price="2,40 €" id="Zlaty Baant fl. 0,33 l"><ordermenu></ordermenu></item>
+										<item name="Zlatý Bažant nealko fl. 0,33 l" price="2,40 €" id="Zlaty Bazant nealko fl. 0,33l"><ordermenu></ordermenu></item>
+										<item name="Heineken 0,33 l" price="3,40 €"><ordermenu></ordermenu></item>
+										<item name="Corona Extra 0,33 l" price="4,00 €"><ordermenu></ordermenu></item>
+										<item name="Plzeň 0,33 l" price="2,40 €" id="Plzen 0,33 l"><ordermenu></ordermenu></item>
+										<item name="Guinness 0,33 l" price="3,40 €"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+							</items>
+						</item>
+						<item name="NEALKO NÁPOJE" image="setup/softDrinks2.jpg">
+							<items>
+								<item name="Coca-Cola 0,33 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Coca-Cola Light 0,33 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Coca Cola Zero 0,33 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Fanta 0,33 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Sprite 0,33 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Kinley Tonik 0,25 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Džus Happy Day 0,10 l" price="0,67 €" id="Dzus Happy Day 0.10 l"><ordermenu></ordermenu></item>
+								<item name="Rauch 0,20 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Red Bull 0,25 l" price=" 4,00 €"><ordermenu></ordermenu></item>
+								<item name="Bonaqua 0,25 l" price="1,70 €"><ordermenu></ordermenu></item>
+								<item name="Minerálna voda 0,3 l" price="1,70 €" id="Mineralna voda 0,3 l"><ordermenu></ordermenu></item>
+								<item name="Vinea 0,25 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Ice tea green 0,25 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Ice tea lemon 0,25 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Ice tea peach 0,25 l" price="2,00 €"><ordermenu></ordermenu></item>
+								<item name="Evian 0,33 l" price="2,40 €"><ordermenu></ordermenu></item>
+							</items>
+						</item>
+						<item name="COCKTAILY" image="setup/cocktails2.jpg">
+							<items>
+								<item name="ALKOHOLICKÉ">
+									<items>
+										<item name="COCKTAILS - VODKA FINLANDIA">
+											<items>
+												<item name="SEX ON THE BEACH (vodka, peach sirup, grenadina, pom. a ríb.džús)" price="5,70 €" id="SEX ON THE BEACH"><ordermenu></ordermenu></item>
+												<item name="RULETA (vodka, campari, grenadina, pomaranč, džús)" price="5,70 €" id="RULETA"><ordermenu></ordermenu></item>
+												<item name="HAPPY FIN (vodka, broskyňový sirup, pomaranč.džús)" price="5,70 €" id="HAPPY FIN"><ordermenu></ordermenu></item>
+												<item name="NIKKO (vodka, curacaou blue, citrónová šťava, ananásový džús, pomaranč. džús)" price="5,70 €" id="NIKKO"><ordermenu></ordermenu></item>
+												<item name="SWINGER (vodka, amaretto, limetkový sirup, pomaranč.džús)" price="5,70 €" id="SWINGER"><ordermenu></ordermenu></item>
+												<item name="CAIPIROŠKA (vodka, hnedý cukor, limetka)" price="5,70 €" id="CAIPIROSKA"><ordermenu></ordermenu></item>
+											</items>
+										</item>
+										<item name="COCKTAILS - GIN">
+											<items>
+												<item name="HIGH SOCIETY (gin, campari, peach sirup, grep, džús)" price="5,70 €" id="HIGH SOCIETY"><ordermenu></ordermenu></item>
+												<item name="LONG ISLAND ICED TEA (vodka, gin. tequila, bacardi, triple sec. doda dola, cit. šťava" price="6,70 €" id="LONG ISLAND ICED TEA"><ordermenu></ordermenu></item>
+												<item name="DRY MARTINI (gin, martini)" price="5,70 €" id="DRY MARTINI"><ordermenu></ordermenu></item>
+											</items>
+										</item>
+										<item name="COCKTAILS - TEQUILA OLMECA SILVER">
+											<items>	
+												<item name="MARGARITA (tequila, lime sirup, triple sec)" price="5,70 €"><ordermenu></ordermenu></item>
+												<item name="TEQUILA SUNRISE (tequila, pomarancovy džús, grenadina)" price="5,70 €"><ordermenu></ordermenu></item>
+											</items>
+										</item>
+									</items>
+								</item>
+								<item name="NEALKOHOLICKÉ">
+									<items>
+										<item name="MELON BALL (grep, pomaranč, ananás, džús, citr.šťava melón, sirup)" price="4,00 €"><ordermenu></ordermenu></item>
+										<item name="VIRGIN  COLADA (coco  sirup, ananás, džús, smotana)" price="4,00 €"><ordermenu></ordermenu></item>
+										<item name="VIRGIN MOJITO (limetka, mäta, trstinový cukor, lime sirup, jabkový džús, sóda)" price="4,00 €"><ordermenu></ordermenu></item>
+										<item name="BIGAPPELE III (grenadina, pomaranč, džus, jablkový džus, sóda)" price="4,00 €"><ordermenu></ordermenu></item>
+									</items>
+								</item>
+							</items>
+						</item>
+					</items>
+				</item>
+				<item name="CHUŤOVKY / APPETISERS" image="setup/appetisers2.jpg">
+					<items>
+						<item name="Pistácie 1 bal." price="2,65 €" image="setup/pistacie2.jpg" id="Pistacie"><ordermenu></ordermenu></item>
+						<item name="Arašidy 1 bal." price="1,65 €" image="setup/peanuts2.jpg" id="Arasidy"><ordermenu></ordermenu></item>
+						<item name="Soletky 1 bal." price="1,00 €" image="setup/soletky2.jpg" id="Soletky"><ordermenu></ordermenu></item>
+						<item name="Žuvačky 1 bal." price="1,00 €" image="setup/zuvacky2.jpg" id="Zuvacky"><ordermenu></ordermenu></item>
+						<item name="Čokoládka 1 bal." price="1,00 €" image="setup/cokolada2.jpg" id="Cokoladka"><ordermenu></ordermenu></item>
+						<item name="Čoko piškóty 1 bal." price="1,65 €" id="Coko piskoty"><ordermenu></ordermenu></item>
+					</items>
+				</item>
+				<item name="CIGARETY" image="setup/cigars2.jpg">
+					<items>
+						<item name="Davidoff" price=" "><ordermenu></ordermenu></item>
+						<item name="Marlboro" price=" "><ordermenu></ordermenu></item>
+						<item name="Camel" price=" "><ordermenu></ordermenu></item>
+						<item name="R a J  Nr.2 ks" price="11,60 €"><ordermenu></ordermenu></item>
+						<item name="R a J  De luxe ks" price="14,90 €"><ordermenu></ordermenu></item>
+						<item name="Cohiba siglo 2 c/p 5 ks" price="18,30 €"><ordermenu></ordermenu></item>
+						<item name="Cohiba tuba ks" price="23,20 €"><ordermenu></ordermenu></item>
+						<item name="Montecristo Joytas SBN ks" price="12,70 €"><ordermenu></ordermenu></item>
+						<item name="Ashton Heritage Robusto ks" price="17,20 €"><ordermenu></ordermenu></item>
+						<item name="Cohiba club ks" price="24,00 €"><ordermenu></ordermenu></item>
+					</items>
+				</item>
+			</items>
+		</screen>
+	</screens>
+</setup>

@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssSource</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="RssCategory.html" title="RssCategory">
+<link rel="next" href="RssEnclosure.html" title="RssEnclosure">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="RssCategory.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssEnclosure.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2558642" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2569330" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2569263" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2569287" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssSource"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2558642"></a><span class="refentrytitle">RssSource</span>
+</h2>
+<p>RssSource &#8212; The RSS channel that the item came from.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="RssSource.html#RssSource-struct">RssSource</a>;
+<a href="RssSource.html" title="RssSource">RssSource</a>*  <a href="RssSource.html#rss-source-new">rss_source_new</a>                  (const gchar *title,
+                                             const gchar *url);
+<a href="RssSource.html" title="RssSource">RssSource</a>*  <a href="RssSource.html#rss-source-new-from-xml">rss_source_new_from_xml</a>         (xmlNode *xnode);
+xmlNode*    <a href="RssSource.html#rss-source-get-xml">rss_source_get_xml</a>              (<a href="RssSource.html" title="RssSource">RssSource</a> *rss_source);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569263"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssSource
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569287"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssSource.html#RssSource--title">title</a>"                gchararray            : Read / Write / Construct
+  "<a href="RssSource.html#RssSource--url">url</a>"                  gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569330"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569345"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2569356"></a><h3>
+<a name="RssSource-struct"></a>RssSource</h3>
+<a class="indexterm" name="id2598135"></a><pre class="programlisting">typedef struct _RssSource RssSource;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2598150"></a><h3>
+<a name="rss-source-new"></a>rss_source_new ()</h3>
+<a class="indexterm" name="id2598162"></a><pre class="programlisting"><a href="RssSource.html" title="RssSource">RssSource</a>*  rss_source_new                  (const gchar *title,
+                                             const gchar *url);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>title</code></em>&#160;:</span></td>
+<td> Title of the source which the item came from.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>url</code></em>&#160;:</span></td>
+<td> Links to the XMLization of the source.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssSource.html" title="RssSource"><span class="type">RssSource</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2598252"></a><h3>
+<a name="rss-source-new-from-xml"></a>rss_source_new_from_xml ()</h3>
+<a class="indexterm" name="id2598263"></a><pre class="programlisting"><a href="RssSource.html" title="RssSource">RssSource</a>*  rss_source_new_from_xml         (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2568908"></a><h3>
+<a name="rss-source-get-xml"></a>rss_source_get_xml ()</h3>
+<a class="indexterm" name="id2568920"></a><pre class="programlisting">xmlNode*    rss_source_get_xml              (<a href="RssSource.html" title="RssSource">RssSource</a> *rss_source);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_source</code></em>&#160;:</span></td>
+<td> a <a href="RssSource.html" title="RssSource"><span class="type">RssSource</span></a> object
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the item.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2568996"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2569006"></a><h3>
+<a name="RssSource--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2569021"></a><pre class="programlisting">  "title"                gchararray            : Read / Write / Construct</pre>
+<p>Title of the source which the item came from.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2569048"></a><h3>
+<a name="RssSource--url"></a>The "<code class="literal">url</code>" property</h3>
+<a class="indexterm" name="id2569063"></a><pre class="programlisting">  "url"                  gchararray            : Read / Write / Construct</pre>
+<p>Links to the XMLization of the source.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

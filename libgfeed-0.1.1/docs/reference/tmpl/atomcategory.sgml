@@ -1,0 +1,67 @@
+<!-- ##### SECTION Title ##### -->
+AtomCategory
+
+<!-- ##### SECTION Short_Description ##### -->
+Conveys information about a category associated with an entry or feed.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomCategory ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomCategory:label ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomCategory:scheme ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomCategory:term ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_category_new ##### -->
+<para>
+
+</para>
+
+@term: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_category_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_category_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_category: 
+@xnode: 
+
+

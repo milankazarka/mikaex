@@ -1,0 +1,9 @@
+<mikaSkin>
+	<mikaBackground color="#fafafa" fontcolor="#101010"></mikaBackground>
+	<mikaButton color="#505050" fontcolor="#101010"></mikaButton>
+	<mikaListbox color="#ffffff" fontcolor="#101010" fontsize="18"></mikaListbox>
+	<mikaPanel color="#fafafa">
+		
+	</mikaPanel>
+	<mikaCanvasButtons fontcolor="#101010" fontsize="18"></mikaCanvasButtons>
+</mikaSkin>

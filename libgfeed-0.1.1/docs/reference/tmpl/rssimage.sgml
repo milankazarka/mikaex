@@ -1,0 +1,84 @@
+<!-- ##### SECTION Title ##### -->
+RssImage
+
+<!-- ##### SECTION Short_Description ##### -->
+Specifies a GIF, JPEG or PNG image that can be displayed with the channel.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssImage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssImage:description ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssImage:height ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssImage:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssImage:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssImage:url ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssImage:width ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_image_new ##### -->
+<para>
+
+</para>
+
+@url: 
+@title: 
+@link: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_image_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_image_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_image: 
+@Returns: 
+
+

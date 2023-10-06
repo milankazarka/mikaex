@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="AtomText">
+<refmeta>
+<refentrytitle role="top_of_page">AtomText</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>AtomText</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="AtomText-struct">AtomText</link>;
+enum        <link linkend="AtomTextType">AtomTextType</link>;
+<link linkend="AtomText">AtomText</link>*   <link linkend="atom-text-new">atom_text_new</link>                   (<link linkend="AtomTextType">AtomTextType</link> type,
+                                             const <link linkend="gchar">gchar</link> *text);
+<link linkend="AtomText">AtomText</link>*   <link linkend="atom-text-new-from-xml">atom_text_new_from_xml</link>          (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="void">void</link>        <link linkend="atom-text-get-xml">atom_text_get_xml</link>               (<link linkend="AtomText">AtomText</link> *atom_text,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----AtomText
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="AtomText--text">text</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="AtomText--type">type</link>&quot;                 <link linkend="guint">guint</link>                 : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="AtomText-struct" role="struct"/>AtomText</title>
+<indexterm><primary>AtomText</primary></indexterm><programlisting>typedef struct _AtomText AtomText;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="AtomTextType" role="enum"/>enum AtomTextType</title>
+<indexterm><primary>AtomTextType</primary></indexterm><programlisting>typedef enum
+{
+	ATOM_TEXT_TEXT,
+	ATOM_TEXT_HTML,
+	ATOM_TEXT_XHTML
+} AtomTextType;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-text-new" role="function"/>atom_text_new ()</title>
+<indexterm><primary>atom_text_new</primary></indexterm><programlisting><link linkend="AtomText">AtomText</link>*   atom_text_new                   (<link linkend="AtomTextType">AtomTextType</link> type,
+                                             const <link linkend="gchar">gchar</link> *text);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>type</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>text</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomText"><type>AtomText</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-text-new-from-xml" role="function"/>atom_text_new_from_xml ()</title>
+<indexterm><primary>atom_text_new_from_xml</primary></indexterm><programlisting><link linkend="AtomText">AtomText</link>*   atom_text_new_from_xml          (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomText"><type>AtomText</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-text-get-xml" role="function"/>atom_text_get_xml ()</title>
+<indexterm><primary>atom_text_get_xml</primary></indexterm><programlisting><link linkend="void">void</link>        atom_text_get_xml               (<link linkend="AtomText">AtomText</link> *atom_text,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom_text</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="AtomText"><type>AtomText</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="AtomText--text"/>The &quot;<literal>text</literal>&quot; property</title>
+<indexterm><primary>AtomText:text</primary></indexterm><programlisting>  &quot;text&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Text.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomText--type"/>The &quot;<literal>type</literal>&quot; property</title>
+<indexterm><primary>AtomText:type</primary></indexterm><programlisting>  &quot;type&quot;                 <link linkend="guint">guint</link>                 : Read / Write / Construct</programlisting>
+<para>Type.</para><para>Allowed values: &lt;= 2</para>
+<para>Default value: 0</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

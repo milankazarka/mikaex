@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssGuid</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="RssImage.html" title="RssImage">
+<link rel="next" href="RssTextInput.html" title="RssTextInput">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="RssImage.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssTextInput.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2510741" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2562613" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2562547" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2562572" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssGuid"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2510741"></a><span class="refentrytitle">RssGuid</span>
+</h2>
+<p>RssGuid &#8212; A string that uniquely identifies the item (Globally Unique Identifier).</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="RssGuid.html#RssGuid-struct">RssGuid</a>;
+<a href="RssGuid.html" title="RssGuid">RssGuid</a>*    <a href="RssGuid.html#rss-guid-new">rss_guid_new</a>                    (const gchar *guid);
+<a href="RssGuid.html" title="RssGuid">RssGuid</a>*    <a href="RssGuid.html#rss-guid-new-from-xml">rss_guid_new_from_xml</a>           (xmlNode *xnode);
+xmlNode*    <a href="RssGuid.html#rss-guid-get-xml">rss_guid_get_xml</a>                (<a href="RssGuid.html" title="RssGuid">RssGuid</a> *rss_guid);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2562547"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssGuid
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2562572"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssGuid.html#RssGuid--guid">guid</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssGuid.html#RssGuid--is-permalink">is-permalink</a>"         gboolean              : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2562613"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2562629"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2562640"></a><h3>
+<a name="RssGuid-struct"></a>RssGuid</h3>
+<a class="indexterm" name="id2562653"></a><pre class="programlisting">typedef struct _RssGuid RssGuid;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2562668"></a><h3>
+<a name="rss-guid-new"></a>rss_guid_new ()</h3>
+<a class="indexterm" name="id2585964"></a><pre class="programlisting"><a href="RssGuid.html" title="RssGuid">RssGuid</a>*    rss_guid_new                    (const gchar *guid);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>guid</code></em>&#160;:</span></td>
+<td> A string that uniquely identifies the item (Global Unique Identifier).
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssGuid.html" title="RssGuid"><span class="type">RssGuid</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2586032"></a><h3>
+<a name="rss-guid-new-from-xml"></a>rss_guid_new_from_xml ()</h3>
+<a class="indexterm" name="id2586044"></a><pre class="programlisting"><a href="RssGuid.html" title="RssGuid">RssGuid</a>*    rss_guid_new_from_xml           (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssGuid.html" title="RssGuid"><span class="type">RssGuid</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2587436"></a><h3>
+<a name="rss-guid-get-xml"></a>rss_guid_get_xml ()</h3>
+<a class="indexterm" name="id2587448"></a><pre class="programlisting">xmlNode*    rss_guid_get_xml                (<a href="RssGuid.html" title="RssGuid">RssGuid</a> *rss_guid);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_guid</code></em>&#160;:</span></td>
+<td> a <a href="RssGuid.html" title="RssGuid"><span class="type">RssGuid</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the item.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2587523"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2587534"></a><h3>
+<a name="RssGuid--guid"></a>The "<code class="literal">guid</code>" property</h3>
+<a class="indexterm" name="id2587549"></a><pre class="programlisting">  "guid"                 gchararray            : Read / Write / Construct</pre>
+<p>A string that uniquely identifies the item (Global Unique Identifier).</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2587575"></a><h3>
+<a name="RssGuid--is-permalink"></a>The "<code class="literal">is-permalink</code>" property</h3>
+<a class="indexterm" name="id2587589"></a><pre class="programlisting">  "is-permalink"         gboolean              : Read / Write / Construct</pre>
+<p>True if GUID is a url that can be opened in a Web browser.</p>
+<p>Default value: TRUE</p>
+</div>
+</div>
+</div>
+</body>
+</html>

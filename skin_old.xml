@@ -1,0 +1,5 @@
+<font_global file="fonts/xsuni.ttf" fg="0x00" bg="0xff">
+<color_global bg="black">
+<color_button bg="grey">
+<img_scroll_up file="scroll_up.xpm">
+<img_scroll_down file="scroll_down.xpm">

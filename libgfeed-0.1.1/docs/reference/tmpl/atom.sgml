@@ -1,0 +1,138 @@
+<!-- ##### SECTION Title ##### -->
+Atom
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT Atom ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG Atom:author ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:category ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:contributor ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:entry ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:generator ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:icon ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:id ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:logo ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:rights ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:subtitle ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG Atom:updated ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_new ##### -->
+<para>
+
+</para>
+
+@id: 
+@title: 
+@updated: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_new_from_file ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_new_from_buffer ##### -->
+<para>
+
+</para>
+
+@buffer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_get_xml_doc ##### -->
+<para>
+
+</para>
+
+@atom: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_save_file ##### -->
+<para>
+
+</para>
+
+@atom: 
+@filename: 
+@Returns: 
+
+

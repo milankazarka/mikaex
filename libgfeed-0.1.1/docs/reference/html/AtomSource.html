@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomSource</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomPerson.html" title="AtomPerson">
+<link rel="next" href="AtomText.html" title="AtomText">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomPerson.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomText.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2566216" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2556674" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2612546" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2612576" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomSource"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2566216"></a><span class="refentrytitle">AtomSource</span>
+</h2>
+<p>AtomSource &#8212; </p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomSource.html#AtomSource-struct">AtomSource</a>;
+<a href="AtomSource.html" title="AtomSource">AtomSource</a>* <a href="AtomSource.html#atom-source-new">atom_source_new</a>                 (void);
+<a href="AtomSource.html" title="AtomSource">AtomSource</a>* <a href="AtomSource.html#atom-source-new-from-xml">atom_source_new_from_xml</a>        (xmlNode *xnode);
+void        <a href="AtomSource.html#atom-source-get-xml">atom_source_get_xml</a>             (<a href="AtomSource.html" title="AtomSource">AtomSource</a> *atom_source,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2612546"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomSource
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2612576"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomSource.html#AtomSource--author">author</a>"               gpointer              : Read / Write
+  "<a href="AtomSource.html#AtomSource--category">category</a>"             gpointer              : Read / Write
+  "<a href="AtomSource.html#AtomSource--contributor">contributor</a>"          gpointer              : Read / Write
+  "<a href="AtomSource.html#AtomSource--generator">generator</a>"            <a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>         : Read / Write
+  "<a href="AtomSource.html#AtomSource--icon">icon</a>"                 <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write
+  "<a href="AtomSource.html#AtomSource--id">id</a>"                   <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write
+  "<a href="AtomSource.html#AtomSource--link">link</a>"                 <a href="AtomLink.html" title="AtomLink">AtomLink</a>              : Read / Write
+  "<a href="AtomSource.html#AtomSource--logo">logo</a>"                 <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write
+  "<a href="AtomSource.html#AtomSource--rights">rights</a>"               <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write
+  "<a href="AtomSource.html#AtomSource--subtitle">subtitle</a>"             <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write
+  "<a href="AtomSource.html#AtomSource--title">title</a>"                <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write
+  "<a href="AtomSource.html#AtomSource--updated">updated</a>"              <a href="AtomDate.html" title="AtomDate">AtomDate</a>              : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2556674"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2556690"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2556700"></a><h3>
+<a name="AtomSource-struct"></a>AtomSource</h3>
+<a class="indexterm" name="id2556713"></a><pre class="programlisting">typedef struct _AtomSource AtomSource;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2556728"></a><h3>
+<a name="atom-source-new"></a>atom_source_new ()</h3>
+<a class="indexterm" name="id2556740"></a><pre class="programlisting"><a href="AtomSource.html" title="AtomSource">AtomSource</a>* atom_source_new                 (void);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomSource.html" title="AtomSource"><span class="type">AtomSource</span></a> object.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2614629"></a><h3>
+<a name="atom-source-new-from-xml"></a>atom_source_new_from_xml ()</h3>
+<a class="indexterm" name="id2614640"></a><pre class="programlisting"><a href="AtomSource.html" title="AtomSource">AtomSource</a>* atom_source_new_from_xml        (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomSource.html" title="AtomSource"><span class="type">AtomSource</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2614713"></a><h3>
+<a name="atom-source-get-xml"></a>atom_source_get_xml ()</h3>
+<a class="indexterm" name="id2614726"></a><pre class="programlisting">void        atom_source_get_xml             (<a href="AtomSource.html" title="AtomSource">AtomSource</a> *atom_source,
+                                             xmlNode *xnode);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_source</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2614793"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2614804"></a><h3>
+<a name="AtomSource--author"></a>The "<code class="literal">author</code>" property</h3>
+<a class="indexterm" name="id2614819"></a><pre class="programlisting">  "author"               gpointer              : Read / Write</pre>
+<p>A #GList of #AtomPerson objects that indicates the author of the entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2614841"></a><h3>
+<a name="AtomSource--category"></a>The "<code class="literal">category</code>" property</h3>
+<a class="indexterm" name="id2611283"></a><pre class="programlisting">  "category"             gpointer              : Read / Write</pre>
+<p>A #GList of #AtomCategory objects convey information about a category associated with an entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611306"></a><h3>
+<a name="AtomSource--contributor"></a>The "<code class="literal">contributor</code>" property</h3>
+<a class="indexterm" name="id2611320"></a><pre class="programlisting">  "contributor"          gpointer              : Read / Write</pre>
+<p>A #GList of #AtomPerson objects that indicate a person or other entity who contributed to the entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611342"></a><h3>
+<a name="AtomSource--generator"></a>The "<code class="literal">generator</code>" property</h3>
+<a class="indexterm" name="id2611356"></a><pre class="programlisting">  "generator"            <a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>         : Read / Write</pre>
+<p>An #AtomGenerator object that identifies the agent used to generate a feed, for debugging and other purposes.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611379"></a><h3>
+<a name="AtomSource--icon"></a>The "<code class="literal">icon</code>" property</h3>
+<a class="indexterm" name="id2611394"></a><pre class="programlisting">  "icon"                 <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write</pre>
+<p>An #AtomID object that contains an IRI reference [RFC3987] that identifies an image that provides iconic visual identification for a feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611417"></a><h3>
+<a name="AtomSource--id"></a>The "<code class="literal">id</code>" property</h3>
+<a class="indexterm" name="id2611432"></a><pre class="programlisting">  "id"                   <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write</pre>
+<p>An #AtomID object that conveys a permanent, universally unique identifier for an entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611454"></a><h3>
+<a name="AtomSource--link"></a>The "<code class="literal">link</code>" property</h3>
+<a class="indexterm" name="id2611469"></a><pre class="programlisting">  "link"                 <a href="AtomLink.html" title="AtomLink">AtomLink</a>              : Read / Write</pre>
+<p>An #AtomLink object that defines a reference from an entry or feed to a Web resource.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611491"></a><h3>
+<a name="AtomSource--logo"></a>The "<code class="literal">logo</code>" property</h3>
+<a class="indexterm" name="id2611506"></a><pre class="programlisting">  "logo"                 <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write</pre>
+<p>An #AtonID object that contains an IRI reference [RFC3987] that identifies an image that provides visual identification for a feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2611529"></a><h3>
+<a name="AtomSource--rights"></a>The "<code class="literal">rights</code>" property</h3>
+<a class="indexterm" name="id2611544"></a><pre class="programlisting">  "rights"               <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write</pre>
+<p>An #AtomText object that conveys information about rights held in and over an entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2615992"></a><h3>
+<a name="AtomSource--subtitle"></a>The "<code class="literal">subtitle</code>" property</h3>
+<a class="indexterm" name="id2616004"></a><pre class="programlisting">  "subtitle"             <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write</pre>
+<p>An #AtomText object that conveys a human-readable description or subtitle for a feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2616025"></a><h3>
+<a name="AtomSource--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2616037"></a><pre class="programlisting">  "title"                <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write</pre>
+<p>An #AtomText object that conveys a human-readable title for an entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2616058"></a><h3>
+<a name="AtomSource--updated"></a>The "<code class="literal">updated</code>" property</h3>
+<a class="indexterm" name="id2616071"></a><pre class="programlisting">  "updated"              <a href="AtomDate.html" title="AtomDate">AtomDate</a>              : Read / Write</pre>
+<p>An #AtomDate object indicating the most recent instant in time when an entry or feed was modified in a way the publisher considers significant.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

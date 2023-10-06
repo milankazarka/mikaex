@@ -1,0 +1,39 @@
+#!/bin/bash
+
+rm rootSetup.o
+rm rootController.o
+rm rootController
+rm rootControllerWatchdog.o
+rm rootSectors.o
+rm rootStress.o
+rm rootModules.o
+rm rootEvents.o
+rm rootScheduller.o
+rm rootPointer.o
+rm rootActivity.o
+rm rootDraw.o
+rm rootWm.o
+rm rootWmInterface.o
+rm activityObject.o
+rm mikaIcon.o
+rm mikaWatchdog.o
+
+make rootSetup.o
+make rootSectors.o
+make rootStress.o
+make rootModules.o
+make rootEvents.o
+make rootController.o
+make rootControllerWatchdog.o
+make rootScheduller.o
+make activityObject.o
+make rootPointer.o
+make rootActivity.o
+make mikaSerial.o
+make rootBitmap.o
+make rootWm.o
+make rootWmInterface.o
+make rootDraw.o
+make mikaWatchdog.o
+make mikaIcon.o
+make rootController

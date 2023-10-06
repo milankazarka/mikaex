@@ -1,0 +1,42 @@
+<list>
+	<nodes>
+		<node name="Maki" image="imgSushi/sushiAvokadoMakiIcon.jpg">
+			<nodes>
+				<node name="Sake Maki 6pc" image="imgSushi/sushiSakeMakiIcon.jpg"
+					price="3.20$"/>
+				<node name="Avokado Maki 6pc" image="imgSushi/sushiAvokadoMakiIcon.jpg"
+					price="3.00$"/>
+				<node name="Palive Maki 6pc" image="imgSushi/sushiPaliveMakiIcon.jpg"
+					price="3.20$"/>
+			</nodes>
+		</node>
+		<node name="Sushi" image="imgSushi/sushiSake002Icon.jpg">
+			<nodes>
+				<node name="Sake Sushi 2pc" image="imgSushi/sushiSake002Icon.jpg"
+					price="2.40$"/>
+				<node name="Kreveta Sushi 2pc" image="imgSushi/sushiKrevetaIcon.jpg"
+					price="2.60$"/>
+				<node name="Tilapia Sushi 2pc" image="imgSushi/sushiTilapiaIcon.jpg"
+					price="2.80$"/>
+			</nodes>
+		</node>
+		<node name="Bento" image="imgSushi/bentoBoxBigIcon.jpg">
+			<nodes>
+				<node name="Bento Box Big" image="imgSushi/bentoBoxBigIcon.jpg"
+					price="8.20$"/>
+				<node name="Bento Box Small" image="imgSushi/bentoBoxSmallIcon.jpg"
+					price="5.20$"/>
+				<node name="Bento Box Veg" image="imgSushi/bentoBoxVegetarianIcon.jpg"
+					price="4.60$"/>
+			</nodes>
+		</node>
+		<node name="Drinks" image="imgSushi/drinkStrawberryIcon.jpg">
+			<nodes>
+				<node name="Apple 330ml" image="imgSushi/drinkAppleIcon.jpg"
+					price="1.90$"/>
+				<node name="Strawberry 330ml" image="imgSushi/drinkStrawberryIcon.jpg"
+					price="1.90$"/>
+			</nodes>
+		</node>
+	</nodes>
+</list>

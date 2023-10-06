@@ -1,0 +1,12 @@
+<mikaListbox>
+	<nodes>
+		<node name="Menu 5"></node>
+		<node name="Menu 4"></node>
+		<node name="Menu 3"></node>
+		<node name="Menu 2"></node>
+		<node name="Menu 1"></node>
+		<node name="Special 3"></node>
+		<node name="Special 2"></node>
+		<node name="Special 1"></node>
+	</nodes>
+</mikaListbox>

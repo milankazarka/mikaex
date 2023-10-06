@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="RssCloud">
+<refmeta>
+<refentrytitle role="top_of_page">RssCloud</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>RssCloud</refname>
+<refpurpose>Allows processes to register with a cloud to be notified of updates to the channel, implementing a lightweight publish-subscribe protocol for RSS feeds.</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="RssCloud-struct">RssCloud</link>;
+<link linkend="RssCloud">RssCloud</link>*   <link linkend="rss-cloud-new">rss_cloud_new</link>                   (const <link linkend="gchar">gchar</link> *domain,
+                                             <link linkend="guint">guint</link> port,
+                                             const <link linkend="gchar">gchar</link> *path,
+                                             const <link linkend="gchar">gchar</link> *registerProcedure,
+                                             const <link linkend="gchar">gchar</link> *protocol);
+<link linkend="RssCloud">RssCloud</link>*   <link linkend="rss-cloud-new-from-xml">rss_cloud_new_from_xml</link>          (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="xmlNode">xmlNode</link>*    <link linkend="rss-cloud-get-xml">rss_cloud_get_xml</link>               (<link linkend="RssCloud">RssCloud</link> *rss_cloud);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----RssCloud
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="RssCloud--domain">domain</link>&quot;               <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssCloud--path">path</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssCloud--port">port</link>&quot;                 <link linkend="guint">guint</link>                 : Read / Write / Construct
+  &quot;<link linkend="RssCloud--protocol">protocol</link>&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssCloud--register-procedure">register-procedure</link>&quot;   <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="RssCloud-struct" role="struct"/>RssCloud</title>
+<indexterm><primary>RssCloud</primary></indexterm><programlisting>typedef struct _RssCloud RssCloud;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="rss-cloud-new" role="function"/>rss_cloud_new ()</title>
+<indexterm><primary>rss_cloud_new</primary></indexterm><programlisting><link linkend="RssCloud">RssCloud</link>*   rss_cloud_new                   (const <link linkend="gchar">gchar</link> *domain,
+                                             <link linkend="guint">guint</link> port,
+                                             const <link linkend="gchar">gchar</link> *path,
+                                             const <link linkend="gchar">gchar</link> *registerProcedure,
+                                             const <link linkend="gchar">gchar</link> *protocol);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>domain</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>port</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>path</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>registerProcedure</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>protocol</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="RssCloud"><type>RssCloud</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-cloud-new-from-xml" role="function"/>rss_cloud_new_from_xml ()</title>
+<indexterm><primary>rss_cloud_new_from_xml</primary></indexterm><programlisting><link linkend="RssCloud">RssCloud</link>*   rss_cloud_new_from_xml          (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-cloud-get-xml" role="function"/>rss_cloud_get_xml ()</title>
+<indexterm><primary>rss_cloud_get_xml</primary></indexterm><programlisting><link linkend="xmlNode">xmlNode</link>*    rss_cloud_get_xml               (<link linkend="RssCloud">RssCloud</link> *rss_cloud);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_cloud</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssCloud"><type>RssCloud</type></link> object
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the <link linkend="xmlNode"><type>xmlNode</type></link> correspondent to the item.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="RssCloud--domain"/>The &quot;<literal>domain</literal>&quot; property</title>
+<indexterm><primary>RssCloud:domain</primary></indexterm><programlisting>  &quot;domain&quot;               <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Domain.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssCloud--path"/>The &quot;<literal>path</literal>&quot; property</title>
+<indexterm><primary>RssCloud:path</primary></indexterm><programlisting>  &quot;path&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Path.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssCloud--port"/>The &quot;<literal>port</literal>&quot; property</title>
+<indexterm><primary>RssCloud:port</primary></indexterm><programlisting>  &quot;port&quot;                 <link linkend="guint">guint</link>                 : Read / Write / Construct</programlisting>
+<para>Port.</para><para>Allowed values: [1,65565]</para>
+<para>Default value: 80</para>
+</refsect2>
+<refsect2><title><anchor id="RssCloud--protocol"/>The &quot;<literal>protocol</literal>&quot; property</title>
+<indexterm><primary>RssCloud:protocol</primary></indexterm><programlisting>  &quot;protocol&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Protocol.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssCloud--register-procedure"/>The &quot;<literal>register-procedure</literal>&quot; property</title>
+<indexterm><primary>RssCloud:register-procedure</primary></indexterm><programlisting>  &quot;register-procedure&quot;   <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Register Procedure.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

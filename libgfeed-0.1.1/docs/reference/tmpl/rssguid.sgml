@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+RssGuid
+
+<!-- ##### SECTION Short_Description ##### -->
+A string that uniquely identifies the item (Globally Unique Identifier).
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssGuid ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssGuid:guid ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssGuid:is-permalink ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_guid_new ##### -->
+<para>
+
+</para>
+
+@guid: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_guid_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_guid_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_guid: 
+@Returns: 
+
+

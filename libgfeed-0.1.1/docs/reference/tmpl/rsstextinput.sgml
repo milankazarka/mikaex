@@ -1,0 +1,75 @@
+<!-- ##### SECTION Title ##### -->
+RssTextInput
+
+<!-- ##### SECTION Short_Description ##### -->
+Specifies a text input box that can be displayed with the channel.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssTextInput ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssTextInput:description ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssTextInput:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssTextInput:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssTextInput:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_text_input_new ##### -->
+<para>
+
+</para>
+
+@title: 
+@description: 
+@name: 
+@link: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_text_input_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_text_input_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_text_input: 
+@Returns: 
+
+

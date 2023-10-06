@@ -1,0 +1,114 @@
+<!-- ##### SECTION Title ##### -->
+AtomEntry
+
+<!-- ##### SECTION Short_Description ##### -->
+An individual entry, acting as a container for metadata and data associated with the entry.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomEntry ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomEntry:author ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:category ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:content ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:contributor ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:id ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:published ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:rights ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:source ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:summary ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomEntry:updated ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_entry_new ##### -->
+<para>
+
+</para>
+
+@id: 
+@title: 
+@updated: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_entry_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_entry_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_entry: 
+@xnode: 
+
+

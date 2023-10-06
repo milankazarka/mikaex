@@ -1,0 +1,395 @@
+<!-- ##### SECTION Title ##### -->
+RssChannel
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_MONDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_TUESDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_WEDNESDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_THURSDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_FRIDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_SATURDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_DAY_SUNDAY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_0 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_1 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_2 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_3 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_4 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_5 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_6 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_7 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_8 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_9 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_10 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_11 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_12 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_13 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_14 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_15 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_16 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_17 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_18 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_19 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_20 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_21 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_22 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO RSSCHANNEL_HOUR_23 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT RssChannel ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssChannel:cloud ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:copyright ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:description ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:docs ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:generator ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:image ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:language ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:last-build-date ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:managing-editor ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:pub-date ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:skip-days ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:skip-hours ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:text-input ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:ttl ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannel:webmaster ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_channel_new ##### -->
+<para>
+
+</para>
+
+@title: 
+@link: 
+@description: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_add_category ##### -->
+<para>
+
+</para>
+
+@rss_channel: 
+@rss_category: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_get_categories ##### -->
+<para>
+
+</para>
+
+@rss_channel: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_add_item ##### -->
+<para>
+
+</para>
+
+@rss_channel: 
+@rss_channel_item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_remove_item ##### -->
+<para>
+
+</para>
+
+@rss_channel: 
+@rss_channel_item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_channel: 
+@Returns: 
+
+

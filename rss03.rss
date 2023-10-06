@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+  <channel>
+    <title>The Sydney Morning Herald News Headlines</title>
+    <link>http://www.smh.com.au/</link>
+    <description>The top News headlines from The Sydney Morning Herald. For all the news, visit http://www.smh.com.au.</description>
+    <language>en-AU</language>
+    <item>
+      <title>Peter, we hardly knew you</title>
+      <link>http://www.smh.com.au/sport/cricket/peter-we-hardly-knew-you-20111113-1ndvn.html</link>
+      <description>&lt;b&gt;Greg Baum:&lt;/b&gt; It is possible to say where he came from, but not where he belonged.</description>
+      <pubDate>Sun, 13 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/sport/cricket/peter-we-hardly-knew-you-20111113-1ndvn.html</guid>
+    </item>
+    <item>
+      <title>Roebuck plunges to death from hotel window after police questioning</title>
+      <link>http://www.smh.com.au/sport/cricket/roebuck-plunges-to-death-from-hotel-window-after-police-questioning-20111113-1ndvq.html</link>
+      <description>PETER ROEBUCK, regarded by many as the finest cricket writer of his generation, fell to his death from a hotel window in Cape Town on Saturday night after being questioned by police about an alleged sexual assault.</description>
+      <pubDate>Sun, 13 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/sport/cricket/roebuck-plunges-to-death-from-hotel-window-after-police-questioning-20111113-1ndvq.html</guid>
+    </item>
+    <item>
+      <title>Gillard fights her way back</title>
+      <link>http://www.smh.com.au/national/gillard-fights-her-way-back-20111113-1ndvh.html</link>
+      <description>Julia Gillard's standing has rebounded strongly while the Coalition continues to hold a commanding lead.</description>
+      <pubDate>Sun, 13 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/national/gillard-fights-her-way-back-20111113-1ndvh.html</guid>
+    </item>
+    <item>
+      <title>A rich Harvest for some</title>
+      <link>http://www.smh.com.au/entertainment/music/a-rich-harvest-for-some-20111113-1ndui.html</link>
+      <description>Despite drawing almost 10,000 visitors, yesterday's Harvest Festival may have been a one-off.</description>
+      <pubDate>Sun, 13 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/entertainment/music/a-rich-harvest-for-some-20111113-1ndui.html</guid>
+    </item>
+    <item>
+      <title>Debt and broken promises</title>
+      <link>http://www.smh.com.au/world/debt-and-broken-promises-20111113-1ndrj.html</link>
+      <description>After being in thrall to Silvio Berlusconi for 17 years, Italy faces life without him, write Rachel Donadio  and Elisabetta Povoledo.</description>
+      <pubDate>Sun, 13 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/world/debt-and-broken-promises-20111113-1ndrj.html</guid>
+    </item>
+    <item>
+      <title>Forget the Gold Coast</title>
+      <link>http://www.smh.com.au/national/education/forget-the-gold-coast-20111113-1nduf.html</link>
+      <description>As their classmates flock to the coast for schoolies, a group of school leavers have a different mission in mind.</description>
+      <pubDate>Sun, 13 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/national/education/forget-the-gold-coast-20111113-1nduf.html</guid>
+    </item>
+    <item>
+      <title>Dentists start Botox turf war</title>
+      <link>http://www.smh.com.au/national/health/dentists-start-botox-turf-war-20111112-1ncuf.html</link>
+      <description>Dentists are giving patients Botox injections and lip enhancements for cosmetic reasons in spite of regulations.</description>
+      <pubDate>Sat, 12 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/national/health/dentists-start-botox-turf-war-20111112-1ncuf.html</guid>
+    </item>
+    <item>
+      <title>The point of no return</title>
+      <link>http://www.smh.com.au/entertainment/music/the-point-of-no-return-20111112-1ncyp.html</link>
+      <description>At gigs across the country, the encore is being dramatically snubbed.</description>
+      <pubDate>Sat, 12 Nov 2011 13:00:32 GMT</pubDate>
+      <guid>http://www.smh.com.au/entertainment/music/the-point-of-no-return-20111112-1ncyp.html</guid>
+    </item>
+    <item>
+      <title>Florence has always got more love</title>
+      <link>http://www.smh.com.au/entertainment/music/florence-has-always-got-more-love-20111112-1ncvn.html</link>
+      <description>BRITISH superstar Florence Welch is emphatic when it comes to encores. ''I don't think you should do two. One is OK, but two, no way.''</description>
+      <pubDate>Sat, 12 Nov 2011 16:00:00 GMT</pubDate>
+      <guid>http://www.smh.com.au/entertainment/music/florence-has-always-got-more-love-20111112-1ncvn.html</guid>
+    </item>
+  </channel>
+</rss>
+

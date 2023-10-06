@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="RssChannel">
+<refmeta>
+<refentrytitle role="top_of_page">RssChannel</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>RssChannel</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+#define     <link linkend="RSSCHANNEL-DAY-MONDAY:CAPS">RSSCHANNEL_DAY_MONDAY</link>
+#define     <link linkend="RSSCHANNEL-DAY-TUESDAY:CAPS">RSSCHANNEL_DAY_TUESDAY</link>
+#define     <link linkend="RSSCHANNEL-DAY-WEDNESDAY:CAPS">RSSCHANNEL_DAY_WEDNESDAY</link>
+#define     <link linkend="RSSCHANNEL-DAY-THURSDAY:CAPS">RSSCHANNEL_DAY_THURSDAY</link>
+#define     <link linkend="RSSCHANNEL-DAY-FRIDAY:CAPS">RSSCHANNEL_DAY_FRIDAY</link>
+#define     <link linkend="RSSCHANNEL-DAY-SATURDAY:CAPS">RSSCHANNEL_DAY_SATURDAY</link>
+#define     <link linkend="RSSCHANNEL-DAY-SUNDAY:CAPS">RSSCHANNEL_DAY_SUNDAY</link>
+#define     <link linkend="RSSCHANNEL-HOUR-0:CAPS">RSSCHANNEL_HOUR_0</link>
+#define     <link linkend="RSSCHANNEL-HOUR-1:CAPS">RSSCHANNEL_HOUR_1</link>
+#define     <link linkend="RSSCHANNEL-HOUR-2:CAPS">RSSCHANNEL_HOUR_2</link>
+#define     <link linkend="RSSCHANNEL-HOUR-3:CAPS">RSSCHANNEL_HOUR_3</link>
+#define     <link linkend="RSSCHANNEL-HOUR-4:CAPS">RSSCHANNEL_HOUR_4</link>
+#define     <link linkend="RSSCHANNEL-HOUR-5:CAPS">RSSCHANNEL_HOUR_5</link>
+#define     <link linkend="RSSCHANNEL-HOUR-6:CAPS">RSSCHANNEL_HOUR_6</link>
+#define     <link linkend="RSSCHANNEL-HOUR-7:CAPS">RSSCHANNEL_HOUR_7</link>
+#define     <link linkend="RSSCHANNEL-HOUR-8:CAPS">RSSCHANNEL_HOUR_8</link>
+#define     <link linkend="RSSCHANNEL-HOUR-9:CAPS">RSSCHANNEL_HOUR_9</link>
+#define     <link linkend="RSSCHANNEL-HOUR-10:CAPS">RSSCHANNEL_HOUR_10</link>
+#define     <link linkend="RSSCHANNEL-HOUR-11:CAPS">RSSCHANNEL_HOUR_11</link>
+#define     <link linkend="RSSCHANNEL-HOUR-12:CAPS">RSSCHANNEL_HOUR_12</link>
+#define     <link linkend="RSSCHANNEL-HOUR-13:CAPS">RSSCHANNEL_HOUR_13</link>
+#define     <link linkend="RSSCHANNEL-HOUR-14:CAPS">RSSCHANNEL_HOUR_14</link>
+#define     <link linkend="RSSCHANNEL-HOUR-15:CAPS">RSSCHANNEL_HOUR_15</link>
+#define     <link linkend="RSSCHANNEL-HOUR-16:CAPS">RSSCHANNEL_HOUR_16</link>
+#define     <link linkend="RSSCHANNEL-HOUR-17:CAPS">RSSCHANNEL_HOUR_17</link>
+#define     <link linkend="RSSCHANNEL-HOUR-18:CAPS">RSSCHANNEL_HOUR_18</link>
+#define     <link linkend="RSSCHANNEL-HOUR-19:CAPS">RSSCHANNEL_HOUR_19</link>
+#define     <link linkend="RSSCHANNEL-HOUR-20:CAPS">RSSCHANNEL_HOUR_20</link>
+#define     <link linkend="RSSCHANNEL-HOUR-21:CAPS">RSSCHANNEL_HOUR_21</link>
+#define     <link linkend="RSSCHANNEL-HOUR-22:CAPS">RSSCHANNEL_HOUR_22</link>
+#define     <link linkend="RSSCHANNEL-HOUR-23:CAPS">RSSCHANNEL_HOUR_23</link>
+            <link linkend="RssChannel-struct">RssChannel</link>;
+<link linkend="RssChannel">RssChannel</link>* <link linkend="rss-channel-new">rss_channel_new</link>                 (const <link linkend="gchar">gchar</link> *title,
+                                             const <link linkend="gchar">gchar</link> *link,
+                                             const <link linkend="gchar">gchar</link> *description);
+<link linkend="RssChannel">RssChannel</link>* <link linkend="rss-channel-new-from-xml">rss_channel_new_from_xml</link>        (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="gboolean">gboolean</link>    <link linkend="rss-channel-add-category">rss_channel_add_category</link>        (<link linkend="RssChannel">RssChannel</link> *rss_channel,
+                                             <link linkend="RssCategory">RssCategory</link> *rss_category);
+<link linkend="GList">GList</link>*      <link linkend="rss-channel-get-categories">rss_channel_get_categories</link>      (<link linkend="RssChannel">RssChannel</link> *rss_channel);
+<link linkend="gboolean">gboolean</link>    <link linkend="rss-channel-add-item">rss_channel_add_item</link>            (<link linkend="RssChannel">RssChannel</link> *rss_channel,
+                                             <link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);
+<link linkend="gboolean">gboolean</link>    <link linkend="rss-channel-remove-item">rss_channel_remove_item</link>         (<link linkend="RssChannel">RssChannel</link> *rss_channel,
+                                             <link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);
+<link linkend="xmlNode">xmlNode</link>*    <link linkend="rss-channel-get-xml">rss_channel_get_xml</link>             (<link linkend="RssChannel">RssChannel</link> *rss_channel);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----RssChannel
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="RssChannel--cloud">cloud</link>&quot;                <link linkend="RssCloud">RssCloud</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannel--copyright">copyright</link>&quot;            <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--description">description</link>&quot;          <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--docs">docs</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--generator">generator</link>&quot;            <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--image">image</link>&quot;                <link linkend="RssImage">RssImage</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannel--language">language</link>&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--last-build-date">last-build-date</link>&quot;      <link linkend="gpointer">gpointer</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannel--link">link</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--managing-editor">managing-editor</link>&quot;      <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--pub-date">pub-date</link>&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write / Construct
+  &quot;<link linkend="RssChannel--skip-days">skip-days</link>&quot;            <link linkend="guint">guint</link>                 : Read / Write / Construct
+  &quot;<link linkend="RssChannel--skip-hours">skip-hours</link>&quot;           <link linkend="guint">guint</link>                 : Read / Write / Construct
+  &quot;<link linkend="RssChannel--text-input">text-input</link>&quot;           <link linkend="RssTextInput">RssTextInput</link>          : Read / Write / Construct
+  &quot;<link linkend="RssChannel--title">title</link>&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssChannel--ttl">ttl</link>&quot;                  <link linkend="guint">guint</link>                 : Read / Write
+  &quot;<link linkend="RssChannel--webmaster">webmaster</link>&quot;            <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-MONDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_MONDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_MONDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_MONDAY     1 &lt;&lt; 0
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-TUESDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_TUESDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_TUESDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_TUESDAY    1 &lt;&lt; 1
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-WEDNESDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_WEDNESDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_WEDNESDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_WEDNESDAY  1 &lt;&lt; 2
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-THURSDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_THURSDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_THURSDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_THURSDAY   1 &lt;&lt; 3
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-FRIDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_FRIDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_FRIDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_FRIDAY     1 &lt;&lt; 4
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-SATURDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_SATURDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_SATURDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_SATURDAY   1 &lt;&lt; 5
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-DAY-SUNDAY:CAPS" role="macro"/>RSSCHANNEL_DAY_SUNDAY</title>
+<indexterm><primary>RSSCHANNEL_DAY_SUNDAY</primary></indexterm><programlisting>#define RSSCHANNEL_DAY_SUNDAY     1 &lt;&lt; 6
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-0:CAPS" role="macro"/>RSSCHANNEL_HOUR_0</title>
+<indexterm><primary>RSSCHANNEL_HOUR_0</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_0   1 &lt;&lt; 0
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-1:CAPS" role="macro"/>RSSCHANNEL_HOUR_1</title>
+<indexterm><primary>RSSCHANNEL_HOUR_1</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_1   1 &lt;&lt; 1
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-2:CAPS" role="macro"/>RSSCHANNEL_HOUR_2</title>
+<indexterm><primary>RSSCHANNEL_HOUR_2</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_2   1 &lt;&lt; 2
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-3:CAPS" role="macro"/>RSSCHANNEL_HOUR_3</title>
+<indexterm><primary>RSSCHANNEL_HOUR_3</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_3   1 &lt;&lt; 3
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-4:CAPS" role="macro"/>RSSCHANNEL_HOUR_4</title>
+<indexterm><primary>RSSCHANNEL_HOUR_4</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_4   1 &lt;&lt; 4
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-5:CAPS" role="macro"/>RSSCHANNEL_HOUR_5</title>
+<indexterm><primary>RSSCHANNEL_HOUR_5</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_5   1 &lt;&lt; 5
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-6:CAPS" role="macro"/>RSSCHANNEL_HOUR_6</title>
+<indexterm><primary>RSSCHANNEL_HOUR_6</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_6   1 &lt;&lt; 6
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-7:CAPS" role="macro"/>RSSCHANNEL_HOUR_7</title>
+<indexterm><primary>RSSCHANNEL_HOUR_7</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_7   1 &lt;&lt; 7
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-8:CAPS" role="macro"/>RSSCHANNEL_HOUR_8</title>
+<indexterm><primary>RSSCHANNEL_HOUR_8</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_8   1 &lt;&lt; 8
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-9:CAPS" role="macro"/>RSSCHANNEL_HOUR_9</title>
+<indexterm><primary>RSSCHANNEL_HOUR_9</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_9   1 &lt;&lt; 9
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-10:CAPS" role="macro"/>RSSCHANNEL_HOUR_10</title>
+<indexterm><primary>RSSCHANNEL_HOUR_10</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_10  1 &lt;&lt; 10
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-11:CAPS" role="macro"/>RSSCHANNEL_HOUR_11</title>
+<indexterm><primary>RSSCHANNEL_HOUR_11</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_11  1 &lt;&lt; 11
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-12:CAPS" role="macro"/>RSSCHANNEL_HOUR_12</title>
+<indexterm><primary>RSSCHANNEL_HOUR_12</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_12  1 &lt;&lt; 12
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-13:CAPS" role="macro"/>RSSCHANNEL_HOUR_13</title>
+<indexterm><primary>RSSCHANNEL_HOUR_13</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_13  1 &lt;&lt; 13
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-14:CAPS" role="macro"/>RSSCHANNEL_HOUR_14</title>
+<indexterm><primary>RSSCHANNEL_HOUR_14</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_14  1 &lt;&lt; 14
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-15:CAPS" role="macro"/>RSSCHANNEL_HOUR_15</title>
+<indexterm><primary>RSSCHANNEL_HOUR_15</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_15  1 &lt;&lt; 15
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-16:CAPS" role="macro"/>RSSCHANNEL_HOUR_16</title>
+<indexterm><primary>RSSCHANNEL_HOUR_16</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_16  1 &lt;&lt; 16
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-17:CAPS" role="macro"/>RSSCHANNEL_HOUR_17</title>
+<indexterm><primary>RSSCHANNEL_HOUR_17</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_17  1 &lt;&lt; 17
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-18:CAPS" role="macro"/>RSSCHANNEL_HOUR_18</title>
+<indexterm><primary>RSSCHANNEL_HOUR_18</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_18  1 &lt;&lt; 18
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-19:CAPS" role="macro"/>RSSCHANNEL_HOUR_19</title>
+<indexterm><primary>RSSCHANNEL_HOUR_19</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_19  1 &lt;&lt; 19
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-20:CAPS" role="macro"/>RSSCHANNEL_HOUR_20</title>
+<indexterm><primary>RSSCHANNEL_HOUR_20</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_20  1 &lt;&lt; 20
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-21:CAPS" role="macro"/>RSSCHANNEL_HOUR_21</title>
+<indexterm><primary>RSSCHANNEL_HOUR_21</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_21  1 &lt;&lt; 21
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-22:CAPS" role="macro"/>RSSCHANNEL_HOUR_22</title>
+<indexterm><primary>RSSCHANNEL_HOUR_22</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_22  1 &lt;&lt; 22
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RSSCHANNEL-HOUR-23:CAPS" role="macro"/>RSSCHANNEL_HOUR_23</title>
+<indexterm><primary>RSSCHANNEL_HOUR_23</primary></indexterm><programlisting>#define RSSCHANNEL_HOUR_23  1 &lt;&lt; 23
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="RssChannel-struct" role="struct"/>RssChannel</title>
+<indexterm><primary>RssChannel</primary></indexterm><programlisting>typedef struct _RssChannel RssChannel;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-new" role="function"/>rss_channel_new ()</title>
+<indexterm><primary>rss_channel_new</primary></indexterm><programlisting><link linkend="RssChannel">RssChannel</link>* rss_channel_new                 (const <link linkend="gchar">gchar</link> *title,
+                                             const <link linkend="gchar">gchar</link> *link,
+                                             const <link linkend="gchar">gchar</link> *description);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>title</parameter>&nbsp;:</term>
+<listitem><simpara> The name of the channel. It's how people refer to your service.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>link</parameter>&nbsp;:</term>
+<listitem><simpara> The URL to the HTML website corresponding to the channel.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>description</parameter>&nbsp;:</term>
+<listitem><simpara> Phrase or sentence describing the channel.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-new-from-xml" role="function"/>rss_channel_new_from_xml ()</title>
+<indexterm><primary>rss_channel_new_from_xml</primary></indexterm><programlisting><link linkend="RssChannel">RssChannel</link>* rss_channel_new_from_xml        (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="xmlNode"><type>xmlNode</type></link> to parse.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-add-category" role="function"/>rss_channel_add_category ()</title>
+<indexterm><primary>rss_channel_add_category</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>    rss_channel_add_category        (<link linkend="RssChannel">RssChannel</link> *rss_channel,
+                                             <link linkend="RssCategory">RssCategory</link> *rss_category);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>rss_category</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssCategory"><type>RssCategory</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-get-categories" role="function"/>rss_channel_get_categories ()</title>
+<indexterm><primary>rss_channel_get_categories</primary></indexterm><programlisting><link linkend="GList">GList</link>*      rss_channel_get_categories      (<link linkend="RssChannel">RssChannel</link> *rss_channel);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-add-item" role="function"/>rss_channel_add_item ()</title>
+<indexterm><primary>rss_channel_add_item</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>    rss_channel_add_item            (<link linkend="RssChannel">RssChannel</link> *rss_channel,
+                                             <link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>rss_channel_item</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannelItem"><type>RssChannelItem</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-remove-item" role="function"/>rss_channel_remove_item ()</title>
+<indexterm><primary>rss_channel_remove_item</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>    rss_channel_remove_item         (<link linkend="RssChannel">RssChannel</link> *rss_channel,
+                                             <link linkend="RssChannelItem">RssChannelItem</link> *rss_channel_item);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>rss_channel_item</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannelItem"><type>RssChannelItem</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-channel-get-xml" role="function"/>rss_channel_get_xml ()</title>
+<indexterm><primary>rss_channel_get_xml</primary></indexterm><programlisting><link linkend="xmlNode">xmlNode</link>*    rss_channel_get_xml             (<link linkend="RssChannel">RssChannel</link> *rss_channel);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_channel</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssChannel"><type>RssChannel</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the <link linkend="xmlNode"><type>xmlNode</type></link> correspondent to the channel and its items.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="RssChannel--cloud"/>The &quot;<literal>cloud</literal>&quot; property</title>
+<indexterm><primary>RssChannel:cloud</primary></indexterm><programlisting>  &quot;cloud&quot;                <link linkend="RssCloud">RssCloud</link>              : Read / Write / Construct</programlisting>
+<para>Allows processes to register with a cloud to be notified of updates to the channel, implementing a lightweight publish-subscribe protocol for RSS feeds.</para></refsect2>
+<refsect2><title><anchor id="RssChannel--copyright"/>The &quot;<literal>copyright</literal>&quot; property</title>
+<indexterm><primary>RssChannel:copyright</primary></indexterm><programlisting>  &quot;copyright&quot;            <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Copyright notice for content in the channel.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--description"/>The &quot;<literal>description</literal>&quot; property</title>
+<indexterm><primary>RssChannel:description</primary></indexterm><programlisting>  &quot;description&quot;          <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Phrase or sentence describing the channel.</para><para>Default value: "default"</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--docs"/>The &quot;<literal>docs</literal>&quot; property</title>
+<indexterm><primary>RssChannel:docs</primary></indexterm><programlisting>  &quot;docs&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>A URL that points to the documentation for the format used in the RSS file.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--generator"/>The &quot;<literal>generator</literal>&quot; property</title>
+<indexterm><primary>RssChannel:generator</primary></indexterm><programlisting>  &quot;generator&quot;            <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>A string indicating the program used to generate the channel.</para><para>Default value: "&lt;a href=\"http://libgfeed.sourceforge.net\"&gt;libgfeed v0.0.1&lt;/a&gt;"</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--image"/>The &quot;<literal>image</literal>&quot; property</title>
+<indexterm><primary>RssChannel:image</primary></indexterm><programlisting>  &quot;image&quot;                <link linkend="RssImage">RssImage</link>              : Read / Write / Construct</programlisting>
+<para>Specifies a GIF, JPEG or PNG image that can be displayed with the channel.</para></refsect2>
+<refsect2><title><anchor id="RssChannel--language"/>The &quot;<literal>language</literal>&quot; property</title>
+<indexterm><primary>RssChannel:language</primary></indexterm><programlisting>  &quot;language&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The language the channel is written in.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--last-build-date"/>The &quot;<literal>last-build-date</literal>&quot; property</title>
+<indexterm><primary>RssChannel:last-build-date</primary></indexterm><programlisting>  &quot;last-build-date&quot;      <link linkend="gpointer">gpointer</link>              : Read / Write / Construct</programlisting>
+<para>The last time the content of the channel changed.</para></refsect2>
+<refsect2><title><anchor id="RssChannel--link"/>The &quot;<literal>link</literal>&quot; property</title>
+<indexterm><primary>RssChannel:link</primary></indexterm><programlisting>  &quot;link&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The URL to the HTML website corresponding to the channel.</para><para>Default value: "default"</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--managing-editor"/>The &quot;<literal>managing-editor</literal>&quot; property</title>
+<indexterm><primary>RssChannel:managing-editor</primary></indexterm><programlisting>  &quot;managing-editor&quot;      <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Email address for person responsible for editorial content.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--pub-date"/>The &quot;<literal>pub-date</literal>&quot; property</title>
+<indexterm><primary>RssChannel:pub-date</primary></indexterm><programlisting>  &quot;pub-date&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write / Construct</programlisting>
+<para>The publication date for the content in the channel.</para></refsect2>
+<refsect2><title><anchor id="RssChannel--skip-days"/>The &quot;<literal>skip-days</literal>&quot; property</title>
+<indexterm><primary>RssChannel:skip-days</primary></indexterm><programlisting>  &quot;skip-days&quot;            <link linkend="guint">guint</link>                 : Read / Write / Construct</programlisting>
+<para>A hint for aggregators telling them which days they can skip.</para><para>Allowed values: &lt;= 127</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--skip-hours"/>The &quot;<literal>skip-hours</literal>&quot; property</title>
+<indexterm><primary>RssChannel:skip-hours</primary></indexterm><programlisting>  &quot;skip-hours&quot;           <link linkend="guint">guint</link>                 : Read / Write / Construct</programlisting>
+<para>A hint for aggregators telling them which hours they can skip.</para><para>Allowed values: &lt;= 16777215</para>
+<para>Default value: 0</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--text-input"/>The &quot;<literal>text-input</literal>&quot; property</title>
+<indexterm><primary>RssChannel:text-input</primary></indexterm><programlisting>  &quot;text-input&quot;           <link linkend="RssTextInput">RssTextInput</link>          : Read / Write / Construct</programlisting>
+<para>Specifies a text input box that can be displayed with the channel.</para></refsect2>
+<refsect2><title><anchor id="RssChannel--title"/>The &quot;<literal>title</literal>&quot; property</title>
+<indexterm><primary>RssChannel:title</primary></indexterm><programlisting>  &quot;title&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>The name of the channel.</para><para>Default value: "default"</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--ttl"/>The &quot;<literal>ttl</literal>&quot; property</title>
+<indexterm><primary>RssChannel:ttl</primary></indexterm><programlisting>  &quot;ttl&quot;                  <link linkend="guint">guint</link>                 : Read / Write</programlisting>
+<para>Time To Live.</para><para>Default value: 0</para>
+</refsect2>
+<refsect2><title><anchor id="RssChannel--webmaster"/>The &quot;<literal>webmaster</literal>&quot; property</title>
+<indexterm><primary>RssChannel:webmaster</primary></indexterm><programlisting>  &quot;webmaster&quot;            <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Email address for person responsible for technical issues relating to channel.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

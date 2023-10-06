@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomCategory</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="Atom.html" title="Atom">
+<link rel="next" href="AtomCommon.html" title="AtomCommon">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="Atom.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomCommon.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2571204" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2605539" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2605455" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2605485" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomCategory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2571204"></a><span class="refentrytitle">AtomCategory</span>
+</h2>
+<p>AtomCategory &#8212; Conveys information about a category associated with an entry or feed.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomCategory.html#AtomCategory-struct">AtomCategory</a>;
+<a href="AtomCategory.html" title="AtomCategory">AtomCategory</a>* <a href="AtomCategory.html#atom-category-new">atom_category_new</a>             (const gchar *term);
+<a href="AtomCategory.html" title="AtomCategory">AtomCategory</a>* <a href="AtomCategory.html#atom-category-new-from-xml">atom_category_new_from_xml</a>    (xmlNode *xnode);
+void        <a href="AtomCategory.html#atom-category-get-xml">atom_category_get_xml</a>           (<a href="AtomCategory.html" title="AtomCategory">AtomCategory</a> *atom_category,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2605455"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomCategory
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2605485"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomCategory.html#AtomCategory--label">label</a>"                gchararray            : Read / Write / Construct
+  "<a href="AtomCategory.html#AtomCategory--scheme">scheme</a>"               gchararray            : Read / Write / Construct
+  "<a href="AtomCategory.html#AtomCategory--term">term</a>"                 gchararray            : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2605539"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2605555"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2606828"></a><h3>
+<a name="AtomCategory-struct"></a>AtomCategory</h3>
+<a class="indexterm" name="id2606840"></a><pre class="programlisting">typedef struct _AtomCategory AtomCategory;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2606856"></a><h3>
+<a name="atom-category-new"></a>atom_category_new ()</h3>
+<a class="indexterm" name="id2606868"></a><pre class="programlisting"><a href="AtomCategory.html" title="AtomCategory">AtomCategory</a>* atom_category_new             (const gchar *term);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>term</code></em>&#160;:</span></td>
+<td> a string that identifies the category to which the entry or feed belongs.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomCategory.html" title="AtomCategory"><span class="type">AtomCategory</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2606936"></a><h3>
+<a name="atom-category-new-from-xml"></a>atom_category_new_from_xml ()</h3>
+<a class="indexterm" name="id2606947"></a><pre class="programlisting"><a href="AtomCategory.html" title="AtomCategory">AtomCategory</a>* atom_category_new_from_xml    (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomCategory.html" title="AtomCategory"><span class="type">AtomCategory</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607098"></a><h3>
+<a name="atom-category-get-xml"></a>atom_category_get_xml ()</h3>
+<a class="indexterm" name="id2607109"></a><pre class="programlisting">void        atom_category_get_xml           (<a href="AtomCategory.html" title="AtomCategory">AtomCategory</a> *atom_category,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_category</code></em>&#160;:</span></td>
+<td> an <a href="AtomCategory.html" title="AtomCategory"><span class="type">AtomCategory</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2607194"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2607205"></a><h3>
+<a name="AtomCategory--label"></a>The "<code class="literal">label</code>" property</h3>
+<a class="indexterm" name="id2607220"></a><pre class="programlisting">  "label"                gchararray            : Read / Write / Construct</pre>
+<p>A human-readable label for display in end-user applications.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607246"></a><h3>
+<a name="AtomCategory--scheme"></a>The "<code class="literal">scheme</code>" property</h3>
+<a class="indexterm" name="id2603237"></a><pre class="programlisting">  "scheme"               gchararray            : Read / Write / Construct</pre>
+<p>An IRI that identifies a categorization scheme.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2603262"></a><h3>
+<a name="AtomCategory--term"></a>The "<code class="literal">term</code>" property</h3>
+<a class="indexterm" name="id2603277"></a><pre class="programlisting">  "term"                 gchararray            : Read / Write</pre>
+<p>A string that identifies the category to which the entry or feed belongs.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

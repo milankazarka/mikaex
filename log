@@ -1,0 +1,1103 @@
+:ssl init
+:size '11'
+:object at 1-9 'mikaSkin'
+:object at 1-9 'mikaSkin'
+:size '71'
+:object at 2-16 'mikaBackground'
+:first bit
+	:bit name'color' (17-22)
+	:bit value '#fafafa'
+:object at 24-16 'mikaBackground'
+	:bit name'fontcolor' (33-42)
+	:bit value '#101010'
+:object at 44-16 'mikaBackground'
+:size '63'
+:object at 2-12 'mikaButton'
+:first bit
+	:bit name'color' (13-18)
+	:bit value '#507050'
+:object at 20-12 'mikaButton'
+	:bit name'fontcolor' (29-38)
+	:bit value '#101010'
+:object at 40-12 'mikaButton'
+:size '79'
+:object at 2-13 'mikaListbox'
+:first bit
+	:bit name'color' (14-19)
+	:bit value '#ffffff'
+:object at 21-13 'mikaListbox'
+	:bit name'fontcolor' (30-39)
+	:bit value '#101010'
+:object at 41-13 'mikaListbox'
+	:bit name'fontsize' (50-58)
+	:bit value '18'
+:object at 60-13 'mikaListbox'
+:size '29'
+:object at 2-11 'mikaPanel'
+:first bit
+	:bit name'color' (12-17)
+	:bit value '#fafafa'
+:object at 19-11 'mikaPanel'
+:object at 19-11 'mikaPanel'
+:size '3'
+:size '14'
+:size '75'
+:object at 2-19 'mikaCanvasButtons'
+:first bit
+	:bit name'fontcolor' (20-29)
+	:bit value '#101010'
+:object at 31-19 'mikaCanvasButtons'
+	:bit name'fontsize' (40-48)
+	:bit value '18'
+:object at 50-19 'mikaCanvasButtons'
+:size '12'
+:reconstruct
+:obj mikaCanvasButtons
+	:bit 'fontsize' '18'
+	:bit 'fontcolor' '#101010'
+:obj mikaPanel
+	:bit 'color' '#fafafa'
+:obj mikaListbox
+	:bit 'fontsize' '18'
+	:bit 'fontcolor' '#101010'
+	:bit 'color' '#ffffff'
+:obj mikaButton
+	:bit 'fontcolor' '#101010'
+	:bit 'color' '#507050'
+:obj mikaBackground
+	:parent mikaSkin
+	:bit 'fontcolor' '#101010'
+	:bit 'color' '#fafafa'
+:obj mikaSkin
+_goid_id_descr_add_id.01
+_goid_id_descr_add_id.02
+_goid_id_descr_add_id :register_goid (2001)
+mikaSkinGlobalNodeGetColor rgba(fafafa)
+mikaSkinGlobalNodeGetColor rgba(507050)
+mikaSkinGlobalNodeGetColor rgba(ffffff)
+mikaSkinGlobalInit node(mikaListbox) color(#ffffff)
+mikaSkinGlobalInit node(mikaButton) color(#507050)
+mikaSkinGlobalInit node(mikaBackground) color(#fafafa)
+gui_WidgetInit parent
+__interface before Init
+mikaSerialClone
+mikaSerialClone -1 36111275
+interfaceBackplaneInit
+:interfaceInit end
+__interface w(480) h(480) in guiMain.c
+interfaceStart
+initActivity (480x480)
+activitySHMCreate surfaceSize(921600)
+os_rshmAlloc activityName(BACKGROUND)
+activitySHMInitAttributes
+activitySHMCreate ptr finish
+activitySHMSetAttributes finish
+activityRegisterOverSocket start shm(36242351) sem(-1)
+sending to uds (NEWACT
+ANAME BACKGROUND
+SHMID 36242351
+SEMID -1
+SHMSZ 921676
+) size(61)
+recieved from uds 
+<msg>
+<rc value="2">
+
+activityRegisterOverSocket finish
+__interface creating pixel buffer size(921600)
+:gui_SurfaceInitEx (480 480)
+:gui_SurfaceInitEx end
+XCreateWindow pre dpy(136825632) screen(0) geom(480x480)
+__interface platform_low->surface creating (480x480)
+__interface platform_low surface created
+interfaceStart end
+could not retrieve HW Window ID
+gui_WidgetInit init cairo
+:gui_SurfaceInitEx (480 480)
+:gui_SurfaceInitEx end
+could not load font 'fonts/tahoma.ttf'
+:init window end
+__interface UEVENT EVENTFLOW refreshGuiLow
+__interface refreshGuiLow dpy(136825632) screen(0) UEVENT
+__interface refreshGuiLow w(480) h(480) UEVENT
+__interface refreshGuiLow geom(480x480)
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb77ed000
+mikaSerialAddEvent 0xb77ed000
+mikaSerialAddEvent added 0xb77ed000
+gui_WidgetMap
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+CANVAS auto size canvas
+:gui_SurfaceInitEx (480 480)
+:gui_SurfaceInitEx end
+CSV line
+	CSV member (CANVAS_DM_LBITEM)
+	CSV member (sprite.jpg)
+	CSV member (Sprite)
+CSV line
+:form_CanvasDataModelInitFromCSV list size(2)
+	:trop_CsvGetListMemberSize at (0)
+	:trop_CsvGetListMemberSize nc
+		:trop_CsvGetListMemberSize member(CANVAS_DM_LBITEM)
+		:trop_CsvGetListMemberSize member(sprite.jpg)
+		:trop_CsvGetListMemberSize member(Sprite)
+:form_CanvasDataModelInitFromCSV list(0) mems(3)
+:trop_DataModelGetDataAtPosition
+	:trop_CsvGetDataAtPosition 00 (0) (0)
+	:trop_CsvGetDataAtPosition 01 (0) (0)
+:trop_CsvGetDataAtPosition found listMember
+:form_CanvasDataModelInitFromCSV DM TYPE (CANVAS_DM_LBITEM)
+:form_CanvasDataModelInitFromCSV check types (CANVAS_DM_LBITEM) (CANVAS_DM_LBITEM)
+:form_CanvasDataModelInitFromCSV found type
+	:trop_CsvGetListMemberSize at (1)
+	:trop_CsvGetListMemberSize nc
+	:trop_CsvGetListMemberSize nc
+:form_CanvasDataModelInitFromCSV list(1) mems(0)
+:trop_DataModelGetDataAtPosition
+	:trop_CsvGetDataAtPosition 00 (1) (0)
+	:trop_CsvGetDataAtPosition 01 (1) (0)
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (img/mplayer.jpg)
+_gui_jpeg_to_image
+:opened 'img/mplayer.jpg'
+jpeg_image_attr output_height(80) comp(3)
+jpeg_image_attr h(100) w(80)
+a00
+a01
+read jpeg file finish
+gui_ImagePosCenter (130-100)/2
+interfaceRecordBackplaneAccess error no activity semaphore
+intrefaceDeinit
+:ssl init
+:size '11'
+:object at 1-9 'mikaSkin'
+:object at 1-9 'mikaSkin'
+:size '71'
+:object at 2-16 'mikaBackground'
+:first bit
+	:bit name'color' (17-22)
+	:bit value '#fafafa'
+:object at 24-16 'mikaBackground'
+	:bit name'fontcolor' (33-42)
+	:bit value '#101010'
+:object at 44-16 'mikaBackground'
+:size '63'
+:object at 2-12 'mikaButton'
+:first bit
+	:bit name'color' (13-18)
+	:bit value '#507050'
+:object at 20-12 'mikaButton'
+	:bit name'fontcolor' (29-38)
+	:bit value '#101010'
+:object at 40-12 'mikaButton'
+:size '79'
+:object at 2-13 'mikaListbox'
+:first bit
+	:bit name'color' (14-19)
+	:bit value '#ffffff'
+:object at 21-13 'mikaListbox'
+	:bit name'fontcolor' (30-39)
+	:bit value '#101010'
+:object at 41-13 'mikaListbox'
+	:bit name'fontsize' (50-58)
+	:bit value '18'
+:object at 60-13 'mikaListbox'
+:size '29'
+:object at 2-11 'mikaPanel'
+:first bit
+	:bit name'color' (12-17)
+	:bit value '#fafafa'
+:object at 19-11 'mikaPanel'
+:object at 19-11 'mikaPanel'
+:size '3'
+:size '14'
+:size '75'
+:object at 2-19 'mikaCanvasButtons'
+:first bit
+	:bit name'fontcolor' (20-29)
+	:bit value '#101010'
+:object at 31-19 'mikaCanvasButtons'
+	:bit name'fontsize' (40-48)
+	:bit value '18'
+:object at 50-19 'mikaCanvasButtons'
+:size '12'
+:reconstruct
+:obj mikaCanvasButtons
+	:bit 'fontsize' '18'
+	:bit 'fontcolor' '#101010'
+:obj mikaPanel
+	:bit 'color' '#fafafa'
+:obj mikaListbox
+	:bit 'fontsize' '18'
+	:bit 'fontcolor' '#101010'
+	:bit 'color' '#ffffff'
+:obj mikaButton
+	:bit 'fontcolor' '#101010'
+	:bit 'color' '#507050'
+:obj mikaBackground
+	:parent mikaSkin
+	:bit 'fontcolor' '#101010'
+	:bit 'color' '#fafafa'
+:obj mikaSkin
+_goid_id_descr_add_id.01
+_goid_id_descr_add_id.02
+_goid_id_descr_add_id :register_goid (2001)
+mikaSkinGlobalNodeGetColor rgba(fafafa)
+mikaSkinGlobalNodeGetColor rgba(507050)
+mikaSkinGlobalNodeGetColor rgba(ffffff)
+mikaSkinGlobalInit node(mikaListbox) color(#ffffff)
+mikaSkinGlobalInit node(mikaButton) color(#507050)
+mikaSkinGlobalInit node(mikaBackground) color(#fafafa)
+sushimenu::sushimenu
+gui_WidgetInit parent
+__interface before Init
+mikaSerialClone
+mikaSerialClone -1 36111275
+interfaceBackplaneInit
+:interfaceInit end
+__interface w(440) h(440) in guiMain.c
+interfaceStart
+initActivity (440x440)
+activitySHMCreate surfaceSize(774400)
+os_rshmAlloc activityName(GENERAL)
+activitySHMInitAttributes
+activitySHMCreate ptr finish
+activitySHMSetAttributes finish
+activityRegisterOverSocket start shm(36307889) sem(-1)
+sending to uds (NEWACT
+ANAME MENU
+SHMID 36307889
+SEMID -1
+SHMSZ 774476
+) size(55)
+recieved from uds 
+<msg>
+<rc value="2">
+
+activityRegisterOverSocket finish
+__interface creating pixel buffer size(774400)
+:gui_SurfaceInitEx (440 440)
+:gui_SurfaceInitEx end
+XCreateWindow pre dpy(136608528) screen(0) geom(440x440)
+__interface platform_low->surface creating (440x440)
+__interface platform_low surface created
+interfaceStart end
+could not retrieve HW Window ID
+gui_WidgetInit init cairo
+:gui_SurfaceInitEx (440 440)
+:gui_SurfaceInitEx end
+could not load font 'fonts/tahoma.ttf'
+:init window end
+__interface UEVENT EVENTFLOW refreshGuiLow
+__interface refreshGuiLow dpy(136608528) screen(0) UEVENT
+__interface refreshGuiLow w(440) h(440) UEVENT
+__interface refreshGuiLow geom(440x440)
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb7808000
+mikaSerialAddEvent 0xb7808000
+mikaSerialAddEvent added 0xb7808000
+gui_WidgetMap
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+CANVAS auto size canvas
+:gui_SurfaceInitEx (440 440)
+:gui_SurfaceInitEx end
+CSV line
+	CSV member (CANVAS_DM_LBITEM)
+	CSV member (sprite.jpg)
+	CSV member (Sprite)
+CSV line
+:form_CanvasDataModelInitFromCSV list size(2)
+	:trop_CsvGetListMemberSize at (0)
+	:trop_CsvGetListMemberSize nc
+		:trop_CsvGetListMemberSize member(CANVAS_DM_LBITEM)
+		:trop_CsvGetListMemberSize member(sprite.jpg)
+		:trop_CsvGetListMemberSize member(Sprite)
+:form_CanvasDataModelInitFromCSV list(0) mems(3)
+:trop_DataModelGetDataAtPosition
+	:trop_CsvGetDataAtPosition 00 (0) (0)
+	:trop_CsvGetDataAtPosition 01 (0) (0)
+:trop_CsvGetDataAtPosition found listMember
+:form_CanvasDataModelInitFromCSV DM TYPE (CANVAS_D_getAttribute name(resolution) searched(resolution)
+_getAttribute value(1024x768)
+resolution 1024x768 1024x768
+mikaSerialInit
+mikaSerialInit semid -1 shmid 36111275
+activityObjectsInit
+os_rshmAlloc activityName(OBJECTS)
+os_rsemLog sem:-1
+activityObjectsInit shmid(36144044) semid(-1)
+mikaSkinGlobalNodeGetColor rgba(fafafa)
+mikaSkinGlobalNodeGetColor rgba(507050)
+mikaSkinGlobalNodeGetColor rgba(ffffff)
+mikaSkinGlobalInit node(mikaListbox) color(#ffffff)
+mikaSkinGlobalInit node(mikaButton) color(#507050)
+mikaSkinGlobalInit node(mikaBackground) color(#fafafa)
+schedullerTime 18000/1000 ms(20)
+activityObjectRegister shmid(36144044) semid(-1)
+activityObjectRegister found free position
+activityObjectRegister at(0)
+activityObjectInit
+os_rshmAlloc activityName(ROOT)
+rdInit register rootsemaphore
+activityObjectRegister shmid(36144044) semid(-1)
+activityObjectRegister found free position
+activityObjectRegister at(72)
+activityObjectInit
+rdInit register rootsemaphore ok
+rdInit register rootsemaphore lock test
+rootControllerLock id(20) count(0)
+rootControllerLock id(21) count(0) finish
+rdInit register rootsemaphore finish
+rdInit open(activity/CTRL_ROOT)
+rdInit shmSurface id(36176813)
+rootModulesRun command(./modules/background &)
+mikaSerialClone
+mikaSerialClone -1 36111275
+rootSchedullerWatchdog count(0)
+rootControllerWatchdog count(0)
+rootModulesRun command(./modules/sushimenu &)
+lowWindowEvent window(48234497) count(1)
+windowEventExpose rdDraw scheduller start(60) EVENTFLOW pending(0)
+rootControllerLock id(1) count(1)
+rdDrawObjectsSurfaceSYNC UEVENT
+_getAttribute name(resolution) searched(background)
+_getAttribute name(background) searched(background)
+_getAttribute value(img/bg001.png)
+_socket_handler connection rootController
+_socket_handler data(NEWACT
+ANAME BACKGROUND
+SHMID 36242351
+SEMID -1
+SHMSZ 921676
+)
+activityInitData data(NEWACT
+ANAME BACKGROUND
+SHMID 36242351
+SEMID -1
+SHMSZ 921676
+)
+activityInitData line(NEWACT)
+activityInitData NEWACT
+activityInitData line(ANAME BACKGROUND)
+activityInitData line(SHMID 36242351)
+activityInitData line(SEMID -1)
+activityInitData line(SHMSZ 921676)
+_socket_handler _ACTIVITY_TYPE_EVENT
+_socket_handler register activity
+activitySHMGetAttributes
+activitySHMGetAttributes (480x480) movable(1) visible(1) toplevel(0) finish
+_socket_handler rdAddObject 0x824dc18
+rdAddObject count 0 OBJECT
+:size '6'
+:size '16'
+:size '14'
+:size '8'
+:size '12'
+:reconstruct
+rootSchedullerExpose serial event
+rootSchedullerExpose 0
+_socket_handler connection rootController
+_socket_handler data(NEWACT
+ANAME MENU
+SHMID 36307889
+SEMID -1
+SHMSZ 774476
+)
+activityInitData data(NEWACT
+ANAME MENU
+SHMID 36307889
+SEMID -1
+SHMSZ 774476
+)
+activityInitData line(NEWACT)
+activityInitData NEWACT
+activityInitData line(ANAME MENU)
+activityInitData line(SHMID 36307889)
+activityInitData line(SEMID -1)
+activityInitData line(SHMSZ 774476)
+_socket_handler _ACTIVITY_TYPE_EVENT
+_socket_handler register activity
+activitySHMGetAttributes
+activitySHMGetAttributes (440x440) movable(1) visible(1) toplevel(0) finish
+_socket_handler rdAddObject 0x824b110
+rdAddObject count 1 OBJECT
+rdAddObject cycle
+:size '6'
+:size '10'
+:size '14'
+:size '8'
+:size '12'
+:reconstruct
+rdDrawObjectsSurfaceSYNC toplevel start
+rdDrawObjectsSurfaceSYNC toplevel finish
+rdDrawObjectsSurfaceSYNC 0x824dc18 n 0 OBJECT
+rdDRawObjectSurfaceESYNC UEVENT
+activitySHMGetAttributes
+activitySHMGetAttributes (480x480) movable(1) visible(1) toplevel(0) finish
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb33be04c) finish
+rootSchedullerExpose serial event
+rootSchedullerExpose 1
+activityGetForceangle
+activityGetForceangle finish
+rootSectorByPosition
+activitySetAngle
+activitySetAngle finish
+rdDrawObjectSurfaceESYNC end
+rdDrawObjectsSurfaceSYNC 0x824b110 n 1 OBJECT
+rdDRawObjectSurfaceESYNC UEVENT
+activitySHMGetAttributes
+activitySHMGetAttributes (440x440) movable(1) visible(1) toplevel(0) finish
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb33e204c) finish
+_schedullerThreadLoop scheduller->eventExpose UEVENT
+_schedullerThreadLoop reference(180) current(230) to(230) UEVENT
+rootScheduller _schM_LBITEM)
+:form_CanvasDataModelInitFromCSV check types (CANVAS_DM_LBITEM) (CANVAS_DM_LBITEM)
+:form_CanvasDataModelInitFromCSV found type
+	:trop_CsvGetListMemberSize at (1)
+	:trop_CsvGetListMemberSize nc
+	:trop_CsvGetListMemberSize nc
+:form_CanvasDataModelInitFromCSV list(1) mems(0)
+:trop_DataModelGetDataAtPosition
+	:trop_CsvGetDataAtPosition 00 (1) (0)
+	:trop_CsvGetDataAtPosition 01 (1) (0)
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (imgSushi/logo.jpg)
+_gui_jpeg_to_image
+:opened 'imgSushi/logo.jpg'
+jpeg_image_attr output_height(47) comp(3)
+jpeg_image_attr h(200) w(47)
+a00
+a01
+read jpeg file finish
+gui_ImagePosCenter (200-200)/2
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (img/home_small_new2.jpg)
+_gui_jpeg_to_image
+:opened 'img/home_small_new2.jpg'
+jpeg_image_attr output_height(50) comp(3)
+jpeg_image_attr h(50) w(50)
+a00
+a01
+read jpeg file finish
+gui_ImagePosCenter (80-50)/2
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (img/uparrow.jpg)
+_gui_jpeg_to_image
+:opened 'img/uparrow.jpg'
+jpeg_image_attr output_height(50) comp(3)
+jpeg_image_attr h(50) w(50)
+a00
+a01
+read jpeg file finish
+gui_ImagePosCenter (80-50)/2
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (img/downarrow.jpg)
+_gui_jpeg_to_image
+:opened 'img/downarrow.jpg'
+jpeg_image_attr output_height(50) comp(3)
+jpeg_image_attr h(50) w(50)
+a00
+a01
+read jpeg file finish
+gui_ImagePosCenter (80-50)/2
+mikaList
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+getSkin
+mikaSkinEx::mikaSkinEx
+mikaSkinEx::setupWidget
+mikaList::mikaList creating item n(0) attr(336x93+2+2)
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+getSkin
+mikaSkinEx::setupWidget
+mikaList::mikaList creating item n(1) attr(336x93+2+97)
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+getSkin
+mikaSkinEx::setupWidget
+mikaList::mikaList creating item n(2) attr(336x93+2+192)
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+getSkin
+mikaSkinEx::setupWidget
+mikaList::mikaList creating item n(3) attr(336x93+2+287)
+could not load font 'fonts/tahoma.ttf'
+:init window end
+gui_WidgetMap
+getSkin
+mikaSkinEx::setupWidget
+mikaListData::mikaListData
+mikaListData::listCurrent
+mikaListData::listCurrent position(0) name(Maki)
+mikaListData::listCurrent position(1) name(Sushi)
+mikaListData::listCurrent position(2) name(Bento)
+mikaListData::listCurrent position(3) name(Drinks)
+mikaListData::listCurrent finish
+mikaListData::delegateNode
+mikaListData::delegateNode error, no delegate
+mikaList::update
+mikaListData::delegateNode
+mikaList - onMikaListNode
+	posapp mikaList onListNodeEx position(0)
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	onListNode mikaList name(Maki)
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (imgSushi/sushiAvokadoMakiIcon.jpg)
+_gui_jpeg_to_image
+:opened 'imgSushi/sushiAvokadoMakiIcon.jpg'
+jpeg_image_attr output_height(100) comp(3)
+jpeg_image_attr h(178) w(100)
+a00
+a01
+read jpeg file finish
+gui_WidgetChangeTextPos
+_gui_widget_add_text_simple_pos 180,50
+:gui_TriggerExpose
+stdTriggerExpose
+triggerExposeLow UEVENT 0 EVENTFLOW
+activityAddEventRepaint UEVENT 0
+activityAddEventRepaint finish UEVENT 0
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb626e000
+mikaSerialAddEvent 0xb626e000
+mikaSerialAddEvent added 0xb626e000
+triggerExposeLow poll cycle UEVENT 0
+triggerExposeLow poll finish UEVENT 0
+mikaList - onMikaListNode finish
+mikaList - onMikaListNode
+	posapp mikaList onListNodeEx position(1)
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	onListNode mikaList name(Sushi)
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (imgSushi/sushiSake002Icon.jpg)
+_gui_jpeg_to_image
+:opened 'imgSushi/sushiSake002Icon.jpg'
+jpeg_image_attr output_height(100) comp(3)
+jpeg_image_attr h(134) w(100)
+a00
+a01
+read jpeg file finish
+gui_WidgetChangeTextPos
+_gui_widget_add_text_simple_pos 180,50
+	posapp mikaList onListNodeEx loop
+:gui_TriggerExpose
+stdTriggerExpose
+triggerExposeLow UEVENT 1 EVENTFLOW
+activityAddEventRepaint UEVENT 1
+activityAddEventRepaint finish UEVENT 1
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb626e000
+mikaSerialAddEvent 0xb626e000
+mikaSerialAddEvent added 0xb626e000
+triggerExposeLow poll cycle UEVENT 1
+triggerExposeLow poll finish UEVENT 1
+mikaList - onMikaListNode finish
+mikaList - onMikaListNode
+	posapp mikaList onListNodeEx position(2)
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	onListNode mikaList name(Bento)
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (imgSushi/bentoBoxBigIcon.jpg)
+_gui_jpeg_to_image
+:opened 'imgSushi/bentoBoxBigIcon.jpg'
+jpeg_image_attr output_height(100) comp(3)
+jpeg_image_attr h(178) w(100)
+a00
+a01
+read jpeg file finish
+gui_WidgetChangeTextPos
+_gui_widget_add_text_simple_pos 180,50
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+:gui_TriggerExpose
+stdTriggerExpose
+triggerExposeLow UEVENT 2 EVENTFLOW
+activityAddEventRepaint UEVENT 2
+activityAddEventRepaint finish UEVENT 2
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb626e000
+mikaSerialAddEvent 0xb626e000
+mikaSerialAddEvent added 0xb626e000
+triggerExposeLow poll cycle UEVENT 2
+triggerExposeLow poll finish UEVENT 2
+mikaList - onMikaListNode finish
+mikaList - onMikaListNode
+	posapp mikaList onListNodeEx position(3)
+	posapp mikaList onListNodeEx loop
+	onListNode mikaList name(Drinks)
+:tr_ImageInitEx alloc tr_Object for image
+:gui_CreateImage
+:opening (imgSushi/drinkStrawberryIcon.jpg)
+_gui_jpeg_to_image
+:opened 'imgSushi/drinkStrawberryIcon.jpg'
+jpeg_image_attr output_height(100) comp(3)
+jpeg_image_attr h(178) w(100)
+a00
+a01
+read jpeg file finish
+gui_WidgetChangeTextPos
+_gui_widget_add_text_simple_pos 180,50
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+	posapp mikaList onListNodeEx loop
+:gui_TriggerExpose
+stdTriggerExpose
+triggerExposeLow UEVENT 3 EVENTFLOW
+activityAddEventRepaint UEVENT 3
+activityAddEventRepaint finish UEVENT 3
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb626e000
+mikaSerialAddEvent 0xb626e000
+mikaSerialAddEvent added 0xb626e000
+triggerExposeLow poll cycle UEVENT 3
+triggerExposeLow poll finish UEVENT 3
+mikaList - onMikaListNode finish
+mikaListData::delegateNode finish
+interfaceSetBackplaneSize (0x0)
+activitySetMovable
+activitySetMovable finish
+:gui_WidgetQueue ptr(0x82473f0)
+:_gui_idgetQueue
+:_gui_WidgetQueue ptr(0x82473f0)
+:_gui_WidgetQueue before loop
+nextGuiEventLow
+nextGuiEventLow run0
+nextGuiEventLow got event 12
+nextGuiEventLow finish
+:_gui_WidgetQueue processed event
+:gui_WidgetPushEvent
+_transform (0/0)
+gui_WidgetPushEvent INTERFACE_EVENT_EXPOSE start UEVENT EVENTFLOW
+:expose on window
+:expose on window
+form_CanvasExpose
+:gui_WidgetExpose count(1) __bounds
+:gui_WidgetExpose viewable
+	widget expose (440x440+0+0) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (200x50) at(10 0) (0x825a710)
+:gui_WidgetExpose count(2) __bounds
+:gui_WidgetExpose viewable
+	widget expose (200x50+10+0) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 200x47+10+1
+gui_DrawImage __bounds (200x47)+10+1 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (80x80) at(340 350) (0x825ac40)
+:gui_WidgetExpose count(3) __bounds
+:gui_WidgetExpose viewable
+	widget expose (80x80+340+350) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button imageedullerEventExpose EVENTFLOW
+lowWindowEvent _trigger_expose START 0
+rootControllerLock id(91) count(2)
+_trigger_expose 01 window(48234497)
+rootControllerLock id(92) count(1) finish
+lowWindowEvent _trigger_expose FINISH
+activityGetForceangle
+activityGetForceangle finish
+rootSectorByPosition
+activitySetAngle
+activitySetAngle finish
+rdDrawObjectSurfaceESYNC end
+rootPointerDraw
+rdDrawObjectsSurfaceSYNC finish
+windowEventExpose rdDraw objects finished
+windowEventExpose rdDraw objects finished 01
+windowEventExpose rdDraw objects finished 02
+windowEventExpose rdDraw objects painted
+windowEventExpose rdDraw before finish
+rootControllerLock id(1) count(2) finish
+windowEventExpose rdDraw scheduller finish(260) dauer(200) EVENTFLOW
+lowWindowEvent finish
+lowWindowEvent window(48234497) count(2)
+windowEventExpose rdDraw scheduller start(260) EVENTFLOW pending(0)
+rootControllerLock id(1) count(3)
+rdDrawObjectsSurfaceSYNC UEVENT
+rootSchedullerExpose serial event
+rootSchedullerExpose 2
+rdDrawObjectsSurfaceSYNC toplevel start
+rdDrawObjectsSurfaceSYNC toplevel finish
+rdDrawObjectsSurfaceSYNC 0x824dc18 n 0 OBJECT
+rdDRawObjectSurfaceESYNC UEVENT
+activitySHMGetAttributes
+activitySHMGetAttributes (480x480) movable(1) visible(1) toplevel(0) finish
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb33be04c) finish
+activityGetForceangle
+activityGetForceangle finish
+rootSectorByPosition
+activitySetAngle
+activitySetAngle finish
+rdDrawObjectSurfaceESYNC end
+rdDrawObjectsSurfaceSYNC 0x824b110 n 1 OBJECT
+rdDRawObjectSurfaceESYNC UEVENT
+activitySHMGetAttributes
+activitySHMGetAttributes (440x440) movable(1) visible(1) toplevel(0) finish
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb33e204c) finish
+rootSchedullerExpose serial event
+rootSchedullerExpose 3
+activityGetForceangle
+activityGetForceangle finish
+rootSectorByPosition
+activitySetAngle
+activitySetAngle finish
+rdDrawObjectSurfaceESYNC end
+rootPointerDraw
+rdDrawObjectsSurfaceSYNC finish
+windowEventExpose rdDraw objects finished
+windowEventExpose rdDraw objects finished 01
+rootSchedullerExpose serial event
+rootSchedullerExpose 4
+rootSchedullerExpose serial event
+rootSchedullerExpose 5
+windowEventExpose rdDraw objects finished 02
+windowEventExpose rdDraw objects painted
+windowEventExpose rdDraw before finish
+rootControllerLock id(1) count(3) finish
+windowEventExpose rdDraw scheduller finish(300) dauer(40) EVENTFLOW
+lowWindowEvent finish
+lowWindowEvent window(48234497) count(3)
+_schedullerThreadLoop scheduller->eventExpose UEVENT
+_schedullerThreadLoop reference(260) current(310) to(310) UEVENT
+rootScheduller _schedullerEventExpose EVENTFLOW
+lowWindowEvent _trigger_expose START 1
+rootControllerLock id(91) count(4)
+_trigger_expose 01 window(48234497)
+rootControllerLock id(92) count(4) finish
+lowWindowEvent _trigger_expose FINISH
+windowEventExpose rdDraw scheduller start(310) EVENTFLOW pending(0)
+rootControllerLock id(1) count(5)
+rdDrawObjectsSurfaceSYNC UEVENT
+rdDrawObjectsSurfaceSYNC toplevel start
+rdDrawObjectsSurfaceSYNC toplevel finish
+rdDrawObjectsSurfaceSYNC 0x824dc18 n 0 OBJECT
+rdDRawObjectSurfaceESYNC UEVENT
+activitySHMGetAttributes
+activitySHMGetAttributes (480x480) movable(1) visible(1) toplevel(0) finish
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb33be04c) finish
+activityGetForceangle
+activityGetForceangle finish
+rootSectorByPosition
+activitySetAngle
+activitySetAngle finish
+rdDrawObjectSurfaceESYNC end
+rdDrawObjectsSurfaceSYNC 0x824b110 n 1 OBJECT
+rdDRawObjectSurfaceESYNC UEVENT
+activitySHMGetAttributes
+activitySHMGetAttributes (440x440) movable(1) visible(1) toplevel(0) finish
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb33e204c) finish
+activityGetForceangle
+activityGetForceangle finish
+rootSectorByPosition
+activitySetAngle
+activitySetAngle finish
+rdDrawObjectSurfaceESYNC end
+rootPointerDraw
+rdDrawObjectsSurfaceSYNC finish
+windowEventExpose rdDraw objects finished
+windowEventExpose rdDraw objects finished 01
+windowEventExpose rdDraw objects finished 02
+windowEventExpose rdDraw objects painted
+windowEventExpose rdDraw before finish
+rootControllerLock id(1) count(5) finish
+win 50x50+355+365
+gui_DrawImage __bounds (50x50)+355+365 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (80x80) at(337 110) (0x825b170)
+:gui_WidgetExpose count(4) __bounds
+:gui_WidgetExpose viewable
+	widget expose (80x80+337+110) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 50x50+352+125
+gui_DrawImage __bounds (50x50)+352+125 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (80x80) at(337 240) (0x825b6a0)
+:gui_WidgetExpose count(5) __bounds
+:gui_WidgetExpose viewable
+	widget expose (80x80+337+240) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 50x50+352+255
+gui_DrawImage __bounds (50x50)+352+255 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (340x380) at(0 50) (0x825c020)
+:gui_WidgetExpose count(6) __bounds
+:gui_WidgetExpose viewable
+	widget expose (340x380+0+50) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 178x100+2+337
+gui_DrawImage __bounds (178x100)+2+337 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 178x100+2+242
+gui_DrawImage __bounds (178x100)+2+242 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 134x100+2+147
+gui_DrawImage __bounds (134x100)+2+147 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 178x100+2+52
+gui_DrawImage __bounds (178x100)+2+52 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+could not load font 'fonts/tahoma.ttf'
+gui_WidgetPushEvent repaint surface UEVENT
+_gui_surface_to_window EVENTFLOW
+__interface platformRefresh UEVENT
+platformRefreshCommitToSHM UEVENT size(440x440)
+platformRefreshCommitToSHM UEVENT
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb597804c) finish
+platformRefreshCommitToSHM finish
+gui_Flush UEVENT EVENTFLOW
+__interface guiFlushLow EVENTFLOW
+__interface UEVENT EVENTFLOW refreshGuiLow
+__interface refreshGuiLow dpy(136608528) screen(0) UEVENT
+__interface refreshGuiLow w(440) h(440) UEVENT
+__interface refreshGuiLow geom(440x440)
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb5a34000
+mikaSerialAddEvent 0xb5a34000
+mikaSerialAddEvent added 0xb5a34000
+gui_WidgetPushEvent INTERFACE_EVENT_EXPOSE finish
+nextGuiEventLow
+nextGuiEventLow XNextEvent platform_low(0x8247598)
+nextGuiEventLow activityEventActive = 1
+activityEventIsEvent
+activityEventGet
+activityEventGet _ACTIVITY_EVENT_REPAINT
+activityEventGet finish
+nextGuiEventLow _ACTIVITY_EVENT_REPAINT
+nextGuiEventLow unknown event type
+nextGuiEventLow got event 12
+nextGuiEventLow finish
+:_gui_WidgetQueue processed event
+:gui_WidgetPushEvent
+_transform (0/0)
+gui_WidgetPushEvent INTERFACE_EVENT_EXPOSE start UEVENT EVENTFLOW
+:expose on window
+:expose on window
+form_CanvasExpose
+:gui_WidgetExpose count(7) __bounds
+:gui_WidgetExpose viewable
+	widget expose (440x440+0+0) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (200x50) at(10 0) (0x825a710)
+:gui_WidgetExpose count(8) __bounds
+:gui_WidgetExpose viewable
+	widget expose (200x50+10+0) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 200x47+10+1
+gui_DrawImage __bounds (200x47)+10+1 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (80x80) at(340 350) (0x825ac40)
+:gui_WidgetExpose count(9) __bounds
+:gui_WidgetExpose viewable
+	widget expose (80x80+340+350) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 50x50+355+365
+gui_DrawImage __bounds (50x50)+355+365 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (80x80) at(337 110) (0x825b170)
+:gui_WidgetExpose count(10) __bounds
+:gui_WidgetExpose viewable
+	widget expose (80x80+337+110) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 50x50+352+125
+gui_DrawImage __bounds (50x50)+352+125 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (80x80) at(337 240) (0x825b6a0)
+:gui_WidgetExpose count(11) __bounds
+:gui_WidgetExpose viewable
+	widget expose (80x80+337+240) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+	:button image expose
+		:button image 50x50+352+255
+gui_DrawImage __bounds (50x50)+352+255 in (440x440)
+gui_DrawImage_end main (440x440)
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+:canvas object expose (340x380) at(0 50) (0x825c020)
+:gui_WidgetExpose count(12) __bounds
+:gui_WidgetExpose viewable
+	widget expose (340x380+0+50) in (440x440+0+0)
+:gui_BoundsSet __bounds (0,0+440+440)
+	widget color expose
+	widget color expose.end
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 178x100+2+337
+gui_DrawImage __bounds (178x100)+2+337 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 178x100+2+242
+gui_DrawImage __bounds (178x100)+2+242 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 134x100+2+147
+gui_DrawImage __bounds (134x100)+2+147 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+GOID_WIDGET found x(0) y(50) vx(0) vy(50)
+:gui_WidgetExposeEx
+	:button image expose
+		:button image 178x100+2+52
+gui_DrawImage __bounds (178x100)+2+52 in (440x440)
+gui_DrawImage_end main (440x440)
+__text GOID_TEXTSIMPOS
+_draw_text
+__text before draw
+:gui_BoundsSet __bounds (0,0+440+440)
+:gui_WidgetExpose end
+gui_WidgetPushEvent repaint surface UEVENT
+_gui_surface_to_window EVENTFLOW
+__interface platformRefresh UEVENT
+platformRefreshCommitToSHM UEVENT size(440x440)
+platformRefreshCommitToSHM UEVENT
+activitySHMGetSurface
+activitySHMGetSurface ptr(0xb597804c) finish
+platformRefreshCommitToSHM finish
+gui_Flush UEVENT EVENTFLOW
+__interface guiFlushLow EVENTFLOW
+__interface UEVENT EVENTFLOW refreshGuiLow
+__interface refreshGuiLow dpy(136608528) screen(0) UEVENT
+__interface refreshGuiLow w(440) h(440) UEVENT
+__interface refreshGuiLow geom(440x440)
+mikaSerialAddEvent type 1
+mikaSerialAddEvent check 0xb5a34000
+mikaSerialAddEvent 0xb5a34000
+mikaSerialAddEvent added 0xb5a34000
+gui_WidgetPushEvent INTERFACE_EVENT_EXPOSE finish
+nextGuiEventLow
+nextGuiEventLow XNextEvent platform_low(0x8247598)
+
+
+	interfaceTerminationHandler
+
+

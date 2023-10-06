@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<book id="index" xmlns:xi="http://www.w3.org/2003/XInclude">
+  <bookinfo>
+    <title>LibGFeed Reference Manual</title>
+    <releaseinfo>for LibGFeed &version;</releaseinfo>
+  </bookinfo>
+
+  <chapter>
+    <title>RSS API reference</title>
+    <xi:include href="xml/rss.xml"/>
+    <xi:include href="xml/rsschannel.xml"/>
+    <xi:include href="xml/rsschannelitem.xml"/>
+    <xi:include href="xml/rssimage.xml"/>
+    <xi:include href="xml/rssguid.xml"/>
+    <xi:include href="xml/rsstextinput.xml"/>
+    <xi:include href="xml/rsscloud.xml"/>
+    <xi:include href="xml/rsscategory.xml"/>
+    <xi:include href="xml/rsssource.xml"/>
+    <xi:include href="xml/rssenclosure.xml"/>
+  </chapter>
+
+  <chapter>
+    <title>ATOM API reference</title>
+    <xi:include href="xml/atom.xml"/>
+    <xi:include href="xml/atomcategory.xml"/>
+    <xi:include href="xml/atomcommon.xml"/>
+    <xi:include href="xml/atomcontent.xml"/>
+    <xi:include href="xml/atomdate.xml"/>
+    <xi:include href="xml/atomentry.xml"/>
+    <xi:include href="xml/atomgenerator.xml"/>
+    <xi:include href="xml/atomid.xml"/>
+    <xi:include href="xml/atomlink.xml"/>
+    <xi:include href="xml/atomperson.xml"/>
+    <xi:include href="xml/atomsource.xml"/>
+    <xi:include href="xml/atomtext.xml"/>
+  </chapter>
+</book>

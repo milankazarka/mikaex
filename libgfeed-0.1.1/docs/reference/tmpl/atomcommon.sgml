@@ -1,0 +1,61 @@
+<!-- ##### SECTION Title ##### -->
+AtomCommon
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomCommon ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomCommon:base ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomCommon:lang ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_common_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_common_set_properties_from_xml ##### -->
+<para>
+
+</para>
+
+@atom_common: 
+@xnode: 
+
+
+<!-- ##### FUNCTION atom_common_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_common: 
+@xnode: 
+
+

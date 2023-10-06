@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomLink</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomID.html" title="AtomID">
+<link rel="next" href="AtomPerson.html" title="AtomPerson">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomID.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomPerson.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2570580" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2609055" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2608935" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2608964" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomLink"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2570580"></a><span class="refentrytitle">AtomLink</span>
+</h2>
+<p>AtomLink &#8212; A reference from an entry or feed to a Web resource.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomLink.html#AtomLink-struct">AtomLink</a>;
+<a href="AtomLink.html" title="AtomLink">AtomLink</a>*   <a href="AtomLink.html#atom-link-new">atom_link_new</a>                   (const gchar *href);
+<a href="AtomLink.html" title="AtomLink">AtomLink</a>*   <a href="AtomLink.html#atom-link-new-from-xml">atom_link_new_from_xml</a>          (xmlNode *xnode);
+void        <a href="AtomLink.html#atom-link-get-xml">atom_link_get_xml</a>               (<a href="AtomLink.html" title="AtomLink">AtomLink</a> *atom_link,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2608935"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomLink
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2608964"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomLink.html#AtomLink--href">href</a>"                 gchararray            : Read / Write
+  "<a href="AtomLink.html#AtomLink--hreflang">hreflang</a>"             gchararray            : Read / Write
+  "<a href="AtomLink.html#AtomLink--length">length</a>"               gchararray            : Read / Write
+  "<a href="AtomLink.html#AtomLink--rel">rel</a>"                  gchararray            : Read / Write
+  "<a href="AtomLink.html#AtomLink--title">title</a>"                gchararray            : Read / Write
+  "<a href="AtomLink.html#AtomLink--type">type</a>"                 gchararray            : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2609055"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2607601"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2607612"></a><h3>
+<a name="AtomLink-struct"></a>AtomLink</h3>
+<a class="indexterm" name="id2607625"></a><pre class="programlisting">typedef struct _AtomLink AtomLink;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607640"></a><h3>
+<a name="atom-link-new"></a>atom_link_new ()</h3>
+<a class="indexterm" name="id2607652"></a><pre class="programlisting"><a href="AtomLink.html" title="AtomLink">AtomLink</a>*   atom_link_new                   (const gchar *href);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>href</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomLink.html" title="AtomLink"><span class="type">AtomLink</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2607719"></a><h3>
+<a name="atom-link-new-from-xml"></a>atom_link_new_from_xml ()</h3>
+<a class="indexterm" name="id2607730"></a><pre class="programlisting"><a href="AtomLink.html" title="AtomLink">AtomLink</a>*   atom_link_new_from_xml          (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomLink.html" title="AtomLink"><span class="type">AtomLink</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2556939"></a><h3>
+<a name="atom-link-get-xml"></a>atom_link_get_xml ()</h3>
+<a class="indexterm" name="id2556952"></a><pre class="programlisting">void        atom_link_get_xml               (<a href="AtomLink.html" title="AtomLink">AtomLink</a> *atom_link,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_link</code></em>&#160;:</span></td>
+<td> an <a href="AtomLink.html" title="AtomLink"><span class="type">AtomLink</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2557037"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2557047"></a><h3>
+<a name="AtomLink--href"></a>The "<code class="literal">href</code>" property</h3>
+<a class="indexterm" name="id2557062"></a><pre class="programlisting">  "href"                 gchararray            : Read / Write</pre>
+<p>Href.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2557087"></a><h3>
+<a name="AtomLink--hreflang"></a>The "<code class="literal">hreflang</code>" property</h3>
+<a class="indexterm" name="id2557102"></a><pre class="programlisting">  "hreflang"             gchararray            : Read / Write</pre>
+<p>Describes the language of the resource pointed to by the href attribute.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2557128"></a><h3>
+<a name="AtomLink--length"></a>The "<code class="literal">length</code>" property</h3>
+<a class="indexterm" name="id2557143"></a><pre class="programlisting">  "length"               gchararray            : Read / Write</pre>
+<p>An advisory length of the linked content in octets; it is a hint about the content length of the representation returned when the IRI in the href attribute is mapped to a URI and dereferenced.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2610705"></a><h3>
+<a name="AtomLink--rel"></a>The "<code class="literal">rel</code>" property</h3>
+<a class="indexterm" name="id2610720"></a><pre class="programlisting">  "rel"                  gchararray            : Read / Write</pre>
+<p>Indicates the link relation type.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2610745"></a><h3>
+<a name="AtomLink--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2610760"></a><pre class="programlisting">  "title"                gchararray            : Read / Write</pre>
+<p>A human-readable information about the link.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2610785"></a><h3>
+<a name="AtomLink--type"></a>The "<code class="literal">type</code>" property</h3>
+<a class="indexterm" name="id2610800"></a><pre class="programlisting">  "type"                 gchararray            : Read / Write</pre>
+<p>An advisory media type: it is a hint about the type of the representation that is expected to be returned when the value of the href attribute is dereferenced.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

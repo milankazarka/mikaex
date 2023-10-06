@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="Atom">
+<refmeta>
+<refentrytitle role="top_of_page">Atom</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>Atom</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="Atom-struct">Atom</link>;
+<link linkend="Atom">Atom</link>*       <link linkend="atom-new">atom_new</link>                        (<link linkend="AtomID">AtomID</link> *id,
+                                             <link linkend="AtomText">AtomText</link> *title,
+                                             <link linkend="AtomDate">AtomDate</link> *updated);
+<link linkend="Atom">Atom</link>*       <link linkend="atom-new-from-file">atom_new_from_file</link>              (const <link linkend="gchar">gchar</link> *filename);
+<link linkend="Atom">Atom</link>*       <link linkend="atom-new-from-buffer">atom_new_from_buffer</link>            (const <link linkend="gchar">gchar</link> *buffer);
+<link linkend="xmlDoc">xmlDoc</link>*     <link linkend="atom-get-xml-doc">atom_get_xml_doc</link>                (<link linkend="Atom">Atom</link> *atom);
+<link linkend="gboolean">gboolean</link>    <link linkend="atom-save-file">atom_save_file</link>                  (<link linkend="Atom">Atom</link> *atom,
+                                             const <link linkend="gchar">gchar</link> *filename);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----Atom
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="Atom--author">author</link>&quot;               <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="Atom--category">category</link>&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="Atom--contributor">contributor</link>&quot;          <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="Atom--entry">entry</link>&quot;                <link linkend="gpointer">gpointer</link>              : Read / Write
+  &quot;<link linkend="Atom--generator">generator</link>&quot;            <link linkend="AtomGenerator">AtomGenerator</link>         : Read / Write
+  &quot;<link linkend="Atom--icon">icon</link>&quot;                 <link linkend="AtomID">AtomID</link>                : Read / Write
+  &quot;<link linkend="Atom--id">id</link>&quot;                   <link linkend="AtomID">AtomID</link>                : Read / Write
+  &quot;<link linkend="Atom--link">link</link>&quot;                 <link linkend="AtomLink">AtomLink</link>              : Read / Write
+  &quot;<link linkend="Atom--logo">logo</link>&quot;                 <link linkend="AtomID">AtomID</link>                : Read / Write
+  &quot;<link linkend="Atom--rights">rights</link>&quot;               <link linkend="AtomText">AtomText</link>              : Read / Write
+  &quot;<link linkend="Atom--subtitle">subtitle</link>&quot;             <link linkend="AtomText">AtomText</link>              : Read / Write
+  &quot;<link linkend="Atom--title">title</link>&quot;                <link linkend="AtomText">AtomText</link>              : Read / Write
+  &quot;<link linkend="Atom--updated">updated</link>&quot;              <link linkend="AtomDate">AtomDate</link>              : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="Atom-struct" role="struct"/>Atom</title>
+<indexterm><primary>Atom</primary></indexterm><programlisting>typedef struct _Atom Atom;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-new" role="function"/>atom_new ()</title>
+<indexterm><primary>atom_new</primary></indexterm><programlisting><link linkend="Atom">Atom</link>*       atom_new                        (<link linkend="AtomID">AtomID</link> *id,
+                                             <link linkend="AtomText">AtomText</link> *title,
+                                             <link linkend="AtomDate">AtomDate</link> *updated);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>id</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="AtomID"><type>AtomID</type></link> object that conveys a permanent, universally unique identifier for an entry or feed.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>title</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="AtomText"><type>AtomText</type></link> object that conveys a human-readable title for an entry or feed.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>updated</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="AtomDate"><type>AtomDate</type></link> object indicating the most recent instant in time when an entry or feed was modified in a way the publisher considers significant.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="Atom"><type>Atom</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-new-from-file" role="function"/>atom_new_from_file ()</title>
+<indexterm><primary>atom_new_from_file</primary></indexterm><programlisting><link linkend="Atom">Atom</link>*       atom_new_from_file              (const <link linkend="gchar">gchar</link> *filename);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>filename</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="Atom"><type>Atom</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-new-from-buffer" role="function"/>atom_new_from_buffer ()</title>
+<indexterm><primary>atom_new_from_buffer</primary></indexterm><programlisting><link linkend="Atom">Atom</link>*       atom_new_from_buffer            (const <link linkend="gchar">gchar</link> *buffer);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>buffer</parameter>&nbsp;:</term>
+<listitem><simpara> a pointer to an array of <link linkend="gchar"><type>gchar</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="Atom"><type>Atom</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-get-xml-doc" role="function"/>atom_get_xml_doc ()</title>
+<indexterm><primary>atom_get_xml_doc</primary></indexterm><programlisting><link linkend="xmlDoc">xmlDoc</link>*     atom_get_xml_doc                (<link linkend="Atom">Atom</link> *atom);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="Atom"><type>Atom</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the <link linkend="xmlDoc"><type>xmlDoc</type></link> correspondent to the entire <link linkend="Atom"><type>Atom</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-save-file" role="function"/>atom_save_file ()</title>
+<indexterm><primary>atom_save_file</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>    atom_save_file                  (<link linkend="Atom">Atom</link> *atom,
+                                             const <link linkend="gchar">gchar</link> *filename);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="Atom"><type>Atom</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>filename</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="Atom--author"/>The &quot;<literal>author</literal>&quot; property</title>
+<indexterm><primary>Atom:author</primary></indexterm><programlisting>  &quot;author&quot;               <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>A #GList of #AtomPerson objects that indicates the author of the entry or feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--category"/>The &quot;<literal>category</literal>&quot; property</title>
+<indexterm><primary>Atom:category</primary></indexterm><programlisting>  &quot;category&quot;             <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>A #GList of #AtomCategory objects convey information about a category associated with an entry or feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--contributor"/>The &quot;<literal>contributor</literal>&quot; property</title>
+<indexterm><primary>Atom:contributor</primary></indexterm><programlisting>  &quot;contributor&quot;          <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>A #GList of #AtomPerson objects that indicate a person or other entity who contributed to the entry or feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--entry"/>The &quot;<literal>entry</literal>&quot; property</title>
+<indexterm><primary>Atom:entry</primary></indexterm><programlisting>  &quot;entry&quot;                <link linkend="gpointer">gpointer</link>              : Read / Write</programlisting>
+<para>A #GList of #AtomEntry.</para></refsect2>
+<refsect2><title><anchor id="Atom--generator"/>The &quot;<literal>generator</literal>&quot; property</title>
+<indexterm><primary>Atom:generator</primary></indexterm><programlisting>  &quot;generator&quot;            <link linkend="AtomGenerator">AtomGenerator</link>         : Read / Write</programlisting>
+<para>An #AtomGenerator object that identifies the agent used to generate a feed, for debugging and other purposes.</para></refsect2>
+<refsect2><title><anchor id="Atom--icon"/>The &quot;<literal>icon</literal>&quot; property</title>
+<indexterm><primary>Atom:icon</primary></indexterm><programlisting>  &quot;icon&quot;                 <link linkend="AtomID">AtomID</link>                : Read / Write</programlisting>
+<para>An #AtomID object that contains an IRI reference [RFC3987] that identifies an image that provides iconic visual identification for a feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--id"/>The &quot;<literal>id</literal>&quot; property</title>
+<indexterm><primary>Atom:id</primary></indexterm><programlisting>  &quot;id&quot;                   <link linkend="AtomID">AtomID</link>                : Read / Write</programlisting>
+<para>An #AtomID object that conveys a permanent, universally unique identifier for an entry or feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--link"/>The &quot;<literal>link</literal>&quot; property</title>
+<indexterm><primary>Atom:link</primary></indexterm><programlisting>  &quot;link&quot;                 <link linkend="AtomLink">AtomLink</link>              : Read / Write</programlisting>
+<para>An #AtomLink object that defines a reference from an entry or feed to a Web resource.</para></refsect2>
+<refsect2><title><anchor id="Atom--logo"/>The &quot;<literal>logo</literal>&quot; property</title>
+<indexterm><primary>Atom:logo</primary></indexterm><programlisting>  &quot;logo&quot;                 <link linkend="AtomID">AtomID</link>                : Read / Write</programlisting>
+<para>An #AtonID object that contains an IRI reference [RFC3987] that identifies an image that provides visual identification for a feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--rights"/>The &quot;<literal>rights</literal>&quot; property</title>
+<indexterm><primary>Atom:rights</primary></indexterm><programlisting>  &quot;rights&quot;               <link linkend="AtomText">AtomText</link>              : Read / Write</programlisting>
+<para>An #AtomText object that conveys information about rights held in and over an entry or feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--subtitle"/>The &quot;<literal>subtitle</literal>&quot; property</title>
+<indexterm><primary>Atom:subtitle</primary></indexterm><programlisting>  &quot;subtitle&quot;             <link linkend="AtomText">AtomText</link>              : Read / Write</programlisting>
+<para>An #AtomText object that conveys a human-readable description or subtitle for a feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--title"/>The &quot;<literal>title</literal>&quot; property</title>
+<indexterm><primary>Atom:title</primary></indexterm><programlisting>  &quot;title&quot;                <link linkend="AtomText">AtomText</link>              : Read / Write</programlisting>
+<para>An #AtomText object that conveys a human-readable title for an entry or feed.</para></refsect2>
+<refsect2><title><anchor id="Atom--updated"/>The &quot;<literal>updated</literal>&quot; property</title>
+<indexterm><primary>Atom:updated</primary></indexterm><programlisting>  &quot;updated&quot;              <link linkend="AtomDate">AtomDate</link>              : Read / Write</programlisting>
+<para>An #AtomDate object indicating the most recent instant in time when an entry or feed was modified in a way the publisher considers significant.</para></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

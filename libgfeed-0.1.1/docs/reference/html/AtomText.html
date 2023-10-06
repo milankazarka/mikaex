@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomText</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomSource.html" title="AtomSource">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomSource.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td>&#160;</td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2561176" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2573187" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2573114" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2573144" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomText"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2561176"></a><span class="refentrytitle">AtomText</span>
+</h2>
+<p>AtomText &#8212; </p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomText.html#AtomText-struct">AtomText</a>;
+enum        <a href="AtomText.html#AtomTextType">AtomTextType</a>;
+<a href="AtomText.html" title="AtomText">AtomText</a>*   <a href="AtomText.html#atom-text-new">atom_text_new</a>                   (<a href="AtomText.html#AtomTextType">AtomTextType</a> type,
+                                             const gchar *text);
+<a href="AtomText.html" title="AtomText">AtomText</a>*   <a href="AtomText.html#atom-text-new-from-xml">atom_text_new_from_xml</a>          (xmlNode *xnode);
+void        <a href="AtomText.html#atom-text-get-xml">atom_text_get_xml</a>               (<a href="AtomText.html" title="AtomText">AtomText</a> *atom_text,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2573114"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomText
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2573144"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomText.html#AtomText--text">text</a>"                 gchararray            : Read / Write / Construct
+  "<a href="AtomText.html#AtomText--type">type</a>"                 guint                 : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2573187"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2573203"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2616105"></a><h3>
+<a name="AtomText-struct"></a>AtomText</h3>
+<a class="indexterm" name="id2616118"></a><pre class="programlisting">typedef struct _AtomText AtomText;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2616133"></a><h3>
+<a name="AtomTextType"></a>enum AtomTextType</h3>
+<a class="indexterm" name="id2616145"></a><pre class="programlisting">typedef enum
+{
+	ATOM_TEXT_TEXT,
+	ATOM_TEXT_HTML,
+	ATOM_TEXT_XHTML
+} AtomTextType;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2616162"></a><h3>
+<a name="atom-text-new"></a>atom_text_new ()</h3>
+<a class="indexterm" name="id2616174"></a><pre class="programlisting"><a href="AtomText.html" title="AtomText">AtomText</a>*   atom_text_new                   (<a href="AtomText.html#AtomTextType">AtomTextType</a> type,
+                                             const gchar *text);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>type</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>text</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomText.html" title="AtomText"><span class="type">AtomText</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2616262"></a><h3>
+<a name="atom-text-new-from-xml"></a>atom_text_new_from_xml ()</h3>
+<a class="indexterm" name="id2616274"></a><pre class="programlisting"><a href="AtomText.html" title="AtomText">AtomText</a>*   atom_text_new_from_xml          (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomText.html" title="AtomText"><span class="type">AtomText</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2616347"></a><h3>
+<a name="atom-text-get-xml"></a>atom_text_get_xml ()</h3>
+<a class="indexterm" name="id2614081"></a><pre class="programlisting">void        atom_text_get_xml               (<a href="AtomText.html" title="AtomText">AtomText</a> *atom_text,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_text</code></em>&#160;:</span></td>
+<td> <a href="AtomText.html" title="AtomText"><span class="type">AtomText</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2614160"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2614171"></a><h3>
+<a name="AtomText--text"></a>The "<code class="literal">text</code>" property</h3>
+<a class="indexterm" name="id2614186"></a><pre class="programlisting">  "text"                 gchararray            : Read / Write / Construct</pre>
+<p>Text.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2614211"></a><h3>
+<a name="AtomText--type"></a>The "<code class="literal">type</code>" property</h3>
+<a class="indexterm" name="id2614226"></a><pre class="programlisting">  "type"                 guint                 : Read / Write / Construct</pre>
+<p>Type.</p>
+<p>Allowed values: &lt;= 2</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+</body>
+</html>

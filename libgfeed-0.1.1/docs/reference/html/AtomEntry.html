@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomEntry</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomDate.html" title="AtomDate">
+<link rel="next" href="AtomGenerator.html" title="AtomGenerator">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomDate.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomGenerator.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2593084" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2610119" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2603880" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2603910" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomEntry"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2593084"></a><span class="refentrytitle">AtomEntry</span>
+</h2>
+<p>AtomEntry &#8212; An individual entry, acting as a container for metadata and data associated with the entry.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomEntry.html#AtomEntry-struct">AtomEntry</a>;
+<a href="AtomEntry.html" title="AtomEntry">AtomEntry</a>*  <a href="AtomEntry.html#atom-entry-new">atom_entry_new</a>                  (<a href="AtomID.html" title="AtomID">AtomID</a> *id,
+                                             <a href="AtomText.html" title="AtomText">AtomText</a> *title,
+                                             <a href="AtomDate.html" title="AtomDate">AtomDate</a> *updated);
+<a href="AtomEntry.html" title="AtomEntry">AtomEntry</a>*  <a href="AtomEntry.html#atom-entry-new-from-xml">atom_entry_new_from_xml</a>         (xmlNode *xnode);
+void        <a href="AtomEntry.html#atom-entry-get-xml">atom_entry_get_xml</a>              (<a href="AtomEntry.html" title="AtomEntry">AtomEntry</a> *atom_entry,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2603880"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>
+         +----AtomEntry
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2603910"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomEntry.html#AtomEntry--author">author</a>"               gpointer              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--category">category</a>"             gpointer              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--content">content</a>"              <a href="AtomContent.html" title="AtomContent">AtomContent</a>           : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--contributor">contributor</a>"          gpointer              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--id">id</a>"                   <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--link">link</a>"                 <a href="AtomLink.html" title="AtomLink">AtomLink</a>              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--published">published</a>"            <a href="AtomDate.html" title="AtomDate">AtomDate</a>              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--rights">rights</a>"               <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--source">source</a>"               <a href="AtomSource.html" title="AtomSource">AtomSource</a>            : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--summary">summary</a>"              <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--title">title</a>"                <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write
+  "<a href="AtomEntry.html#AtomEntry--updated">updated</a>"              <a href="AtomDate.html" title="AtomDate">AtomDate</a>              : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2610119"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2610135"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2610146"></a><h3>
+<a name="AtomEntry-struct"></a>AtomEntry</h3>
+<a class="indexterm" name="id2610159"></a><pre class="programlisting">typedef struct _AtomEntry AtomEntry;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2609339"></a><h3>
+<a name="atom-entry-new"></a>atom_entry_new ()</h3>
+<a class="indexterm" name="id2609351"></a><pre class="programlisting"><a href="AtomEntry.html" title="AtomEntry">AtomEntry</a>*  atom_entry_new                  (<a href="AtomID.html" title="AtomID">AtomID</a> *id,
+                                             <a href="AtomText.html" title="AtomText">AtomText</a> *title,
+                                             <a href="AtomDate.html" title="AtomDate">AtomDate</a> *updated);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>id</code></em>&#160;:</span></td>
+<td> a permanent, universally unique identifier for an entry or feed.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>title</code></em>&#160;:</span></td>
+<td> a human-readable title for an entry or feed.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>updated</code></em>&#160;:</span></td>
+<td> the most recent instant in time when an entry or feed was modified in a way the publisher considers significant.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomEntry.html" title="AtomEntry"><span class="type">AtomEntry</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2609462"></a><h3>
+<a name="atom-entry-new-from-xml"></a>atom_entry_new_from_xml ()</h3>
+<a class="indexterm" name="id2609473"></a><pre class="programlisting"><a href="AtomEntry.html" title="AtomEntry">AtomEntry</a>*  atom_entry_new_from_xml         (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomEntry.html" title="AtomEntry"><span class="type">AtomEntry</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2609546"></a><h3>
+<a name="atom-entry-get-xml"></a>atom_entry_get_xml ()</h3>
+<a class="indexterm" name="id2609559"></a><pre class="programlisting">void        atom_entry_get_xml              (<a href="AtomEntry.html" title="AtomEntry">AtomEntry</a> *atom_entry,
+                                             xmlNode *xnode);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_entry</code></em>&#160;:</span></td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2599238"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2599248"></a><h3>
+<a name="AtomEntry--author"></a>The "<code class="literal">author</code>" property</h3>
+<a class="indexterm" name="id2599264"></a><pre class="programlisting">  "author"               gpointer              : Read / Write</pre>
+<p>An #AtomPerson object that indicates the author of the entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599285"></a><h3>
+<a name="AtomEntry--category"></a>The "<code class="literal">category</code>" property</h3>
+<a class="indexterm" name="id2599300"></a><pre class="programlisting">  "category"             gpointer              : Read / Write</pre>
+<p>Information about a category associated with an entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599322"></a><h3>
+<a name="AtomEntry--content"></a>The "<code class="literal">content</code>" property</h3>
+<a class="indexterm" name="id2599337"></a><pre class="programlisting">  "content"              <a href="AtomContent.html" title="AtomContent">AtomContent</a>           : Read / Write</pre>
+<p>Either contains or links to the content of the entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599359"></a><h3>
+<a name="AtomEntry--contributor"></a>The "<code class="literal">contributor</code>" property</h3>
+<a class="indexterm" name="id2599372"></a><pre class="programlisting">  "contributor"          gpointer              : Read / Write</pre>
+<p>Indicates a person or other entity who contributed to the entry or feed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599394"></a><h3>
+<a name="AtomEntry--id"></a>The "<code class="literal">id</code>" property</h3>
+<a class="indexterm" name="id2599409"></a><pre class="programlisting">  "id"                   <a href="AtomID.html" title="AtomID">AtomID</a>                : Read / Write</pre>
+<p>A permanent, universally unique identifier for an entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599431"></a><h3>
+<a name="AtomEntry--link"></a>The "<code class="literal">link</code>" property</h3>
+<a class="indexterm" name="id2599446"></a><pre class="programlisting">  "link"                 <a href="AtomLink.html" title="AtomLink">AtomLink</a>              : Read / Write</pre>
+<p>An #AtomLink defines a reference from an entry or feed to a Web resource.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599469"></a><h3>
+<a name="AtomEntry--published"></a>The "<code class="literal">published</code>" property</h3>
+<a class="indexterm" name="id2612076"></a><pre class="programlisting">  "published"            <a href="AtomDate.html" title="AtomDate">AtomDate</a>              : Read / Write</pre>
+<p>An #AtomDate object indicating an instant in time associated with an event early in the life cycle of the entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2612098"></a><h3>
+<a name="AtomEntry--rights"></a>The "<code class="literal">rights</code>" property</h3>
+<a class="indexterm" name="id2612110"></a><pre class="programlisting">  "rights"               <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write</pre>
+<p>Conveys information about rights held in and over an entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2612131"></a><h3>
+<a name="AtomEntry--source"></a>The "<code class="literal">source</code>" property</h3>
+<a class="indexterm" name="id2612143"></a><pre class="programlisting">  "source"               <a href="AtomSource.html" title="AtomSource">AtomSource</a>            : Read / Write</pre>
+<p>Source.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2612162"></a><h3>
+<a name="AtomEntry--summary"></a>The "<code class="literal">summary</code>" property</h3>
+<a class="indexterm" name="id2612177"></a><pre class="programlisting">  "summary"              <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write</pre>
+<p>Conveys a short summary, abstract, or excerpt of an entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2612200"></a><h3>
+<a name="AtomEntry--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2612215"></a><pre class="programlisting">  "title"                <a href="AtomText.html" title="AtomText">AtomText</a>              : Read / Write</pre>
+<p>A human-readable title for the entry.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2612237"></a><h3>
+<a name="AtomEntry--updated"></a>The "<code class="literal">updated</code>" property</h3>
+<a class="indexterm" name="id2612252"></a><pre class="programlisting">  "updated"              <a href="AtomDate.html" title="AtomDate">AtomDate</a>              : Read / Write</pre>
+<p>The most recent instant in time when the entry was modified in a way the publisher considers significant.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

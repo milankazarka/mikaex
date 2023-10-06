@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="AtomLink">
+<refmeta>
+<refentrytitle role="top_of_page">AtomLink</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>AtomLink</refname>
+<refpurpose>A reference from an entry or feed to a Web resource.</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="AtomLink-struct">AtomLink</link>;
+<link linkend="AtomLink">AtomLink</link>*   <link linkend="atom-link-new">atom_link_new</link>                   (const <link linkend="gchar">gchar</link> *href);
+<link linkend="AtomLink">AtomLink</link>*   <link linkend="atom-link-new-from-xml">atom_link_new_from_xml</link>          (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="void">void</link>        <link linkend="atom-link-get-xml">atom_link_get_xml</link>               (<link linkend="AtomLink">AtomLink</link> *atom_link,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----AtomLink
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="AtomLink--href">href</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomLink--hreflang">hreflang</link>&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomLink--length">length</link>&quot;               <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomLink--rel">rel</link>&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomLink--title">title</link>&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomLink--type">type</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="AtomLink-struct" role="struct"/>AtomLink</title>
+<indexterm><primary>AtomLink</primary></indexterm><programlisting>typedef struct _AtomLink AtomLink;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-link-new" role="function"/>atom_link_new ()</title>
+<indexterm><primary>atom_link_new</primary></indexterm><programlisting><link linkend="AtomLink">AtomLink</link>*   atom_link_new                   (const <link linkend="gchar">gchar</link> *href);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>href</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomLink"><type>AtomLink</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-link-new-from-xml" role="function"/>atom_link_new_from_xml ()</title>
+<indexterm><primary>atom_link_new_from_xml</primary></indexterm><programlisting><link linkend="AtomLink">AtomLink</link>*   atom_link_new_from_xml          (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomLink"><type>AtomLink</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-link-get-xml" role="function"/>atom_link_get_xml ()</title>
+<indexterm><primary>atom_link_get_xml</primary></indexterm><programlisting><link linkend="void">void</link>        atom_link_get_xml               (<link linkend="AtomLink">AtomLink</link> *atom_link,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom_link</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="AtomLink"><type>AtomLink</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="AtomLink--href"/>The &quot;<literal>href</literal>&quot; property</title>
+<indexterm><primary>AtomLink:href</primary></indexterm><programlisting>  &quot;href&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>Href.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomLink--hreflang"/>The &quot;<literal>hreflang</literal>&quot; property</title>
+<indexterm><primary>AtomLink:hreflang</primary></indexterm><programlisting>  &quot;hreflang&quot;             <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>Describes the language of the resource pointed to by the href attribute.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomLink--length"/>The &quot;<literal>length</literal>&quot; property</title>
+<indexterm><primary>AtomLink:length</primary></indexterm><programlisting>  &quot;length&quot;               <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>An advisory length of the linked content in octets; it is a hint about the content length of the representation returned when the IRI in the href attribute is mapped to a URI and dereferenced.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomLink--rel"/>The &quot;<literal>rel</literal>&quot; property</title>
+<indexterm><primary>AtomLink:rel</primary></indexterm><programlisting>  &quot;rel&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>Indicates the link relation type.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomLink--title"/>The &quot;<literal>title</literal>&quot; property</title>
+<indexterm><primary>AtomLink:title</primary></indexterm><programlisting>  &quot;title&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>A human-readable information about the link.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomLink--type"/>The &quot;<literal>type</literal>&quot; property</title>
+<indexterm><primary>AtomLink:type</primary></indexterm><programlisting>  &quot;type&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>An advisory media type: it is a hint about the type of the representation that is expected to be returned when the value of the href attribute is dereferenced.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

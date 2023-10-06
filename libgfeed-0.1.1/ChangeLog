@@ -1,0 +1,28 @@
+2006-09-05 Andrea Zagli <azagli@inwind.it>
+
+	* rss.c:
+	* rss.h: added rss_new_from_buffer()
+	* test/Makefile.am:
+	* test/test_rss_load_buffer: new test
+
+2006-09-03 Andrea Zagli <azagli@inwind.it>
+
+	* src/Makefile.am: changed $(includedir)
+	* libgfeed.pc.in: changed Cflags
+	* atom.c:
+	* atom.h: added atom_new_from_buffer()
+	* test/Makefile.am:
+	* test/test_atom_load_buffer: new test
+
+2006-08-23 Andrea Zagli <azagli@inwind.it>
+
+	* changed license headers on source code from GPL to LGPL
+	* COPYING now is the LGLP's text
+
+2006-06-10 Andrea Zagli <azagli@inwind.it>
+
+	* added more api documentation
+
+2006-05-18 Andrea Zagli <azagli@inwind.it>
+
+	* added support for Atom file v1.0 based on http://www.ietf.org/rfc/rfc4287.txt

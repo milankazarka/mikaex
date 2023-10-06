@@ -1,0 +1,853 @@
+CC = gcc
+CCO = g++
+
+CFLAGS = -c -DUNIX -DGUI -DUSEX -DJPEG \
+	-O -g -O0 \
+	-DUSESSL -I/ssl/include/openssl -Lssl/lib \
+	-Ifreetype/include \
+	-Ifreetype/ft2_app/graph \
+	-I/usr/local/include
+	
+LDFLAGS = -pthread \
+	-lcairo \
+	-lpthread -lX11 -lXext \
+	-lXrender -DGUI -DUSEX -DUNIX -DJPEG -lXpm \
+	-DUSESSL \
+	-lz -lm -lcrypto -lcurl \
+	-fomit-frame-pointer \
+	-march=native -mtune=native
+        
+OBJECTS = \
+	config.o \
+	api.o \
+	layout.o \
+	app.o \
+	draqieConfig.o \
+	draqieSockets.o \
+	os.o \
+	activity.o \
+	activityObject.o \
+	rootControllerSync.o \
+	global.o \
+	menu.o \
+	draqieRss.o \
+	draqiePosClient.o \
+	interface.o \
+        lowdraw.o \
+        sys.o \
+        system.o \
+	rss.o \
+	agg.o \
+	canvas.o keyboard.o text.o editable.o \
+	xmlsetup.o xml.o guirelay.o guimsg.o window.o wm.o \
+	canvasDataModel.o \
+	panel.o \
+	simple.o \
+	gui.o \
+	frame.o \
+	guiEventLoop.o \
+	guiMain.o \
+	csv.o \
+        guiBounds.o
+
+OBJECTS_COCKTAILS = \
+	config.o \
+	draqieConfig.o \
+	draqieSockets.o \
+	api.o \
+	layout.o \
+	app.o \
+	os.o \
+	activity.o \
+	activityObject.o \
+	rootControllerSync.o \
+	global.o \
+	cocktails.o \
+	draqieRss.o \
+	draqiePosClient.o \
+	interface.o \
+        lowdraw.o \
+        sys.o \
+        system.o \
+	rss.o \
+	agg.o \
+	canvas.o keyboard.o text.o editable.o \
+	xmlsetup.o xml.o guirelay.o guimsg.o window.o wm.o \
+	canvasDataModel.o \
+	panel.o \
+	simple.o \
+	gui.o \
+	frame.o \
+	guiEventLoop.o \
+	guiMain.o \
+	csv.o \
+        guiBounds.o
+
+OBJECTS_CONTROLLER = \
+	config.o \
+	draqieConfig.o \
+	draqieSockets.o \
+	api.o \
+	layout.o \
+	app.o \
+	os.o \
+	activity.o \
+	activityObject.o \
+	rootController.o \
+	rootControllerSync.o \
+	rootSectors.o \
+	rootStress.o \
+	rootEvents.o \
+	rootModules.o \
+	rootScheduller.o \
+	draqieRss.o \
+	draqiePosClient.o \
+	global.o \
+	interface.o \
+        lowdraw.o \
+        sys.o \
+        system.o \
+	rss.o \
+	agg.o \
+	canvas.o keyboard.o text.o editable.o \
+	xmlsetup.o xml.o guirelay.o guimsg.o window.o wm.o \
+	canvasDataModel.o \
+	panel.o \
+	simple.o \
+	gui.o \
+	frame.o \
+	guiEventLoop.o \
+	guiMain.o \
+	csv.o \
+        guiBounds.o
+
+OBJECTS_POSTER = \
+	config.o \
+	draqieConfig.o \
+	draqieSockets.o \
+	api.o \
+	layout.o \
+	app.o \
+	os.o \
+	activity.o \
+	activityObject.o \
+	rootControllerSync.o \
+	global.o \
+	poster.o \
+	draqieRss.o \
+	draqiePosClient.o \
+	interface.o \
+        lowdraw.o \
+        sys.o \
+        system.o \
+	rss.o \
+	agg.o \
+	canvas.o keyboard.o text.o editable.o \
+	xmlsetup.o xml.o guirelay.o guimsg.o window.o wm.o \
+	canvasDataModel.o \
+	panel.o \
+	simple.o \
+	gui.o \
+	frame.o \
+	guiEventLoop.o \
+	guiMain.o \
+	csv.o \
+        guiBounds.o
+
+SOURCES_LIBJPEG = \
+        libJpeg/cdjpeg.c \
+        libJpeg/ckconfig.c \
+        libJpeg/djpeg.c \
+        libJpeg/jaricom.c \
+        libJpeg/jcapimin.c \
+        libJpeg/jcapistd.c \
+        libJpeg/jcarith.c \
+        libJpeg/jccoefct.c \
+        libJpeg/jccolor.c \
+        libJpeg/jcdctmgr.c \
+        libJpeg/jchuff.c \
+        libJpeg/jcinit.c \
+        libJpeg/jcmainct.c \
+        libJpeg/jcmarker.c \
+        libJpeg/jcmaster.c \
+        libJpeg/jcomapi.c \
+        libJpeg/jcparam.c \
+        libJpeg/jcprepct.c \
+        libJpeg/jcsample.c \
+        libJpeg/jctrans.c \
+        libJpeg/jdapimin.c \
+        libJpeg/jdapistd.c \
+        libJpeg/jdarith.c \
+        libJpeg/jdatadst.c \
+        libJpeg/jdatasrc.c \
+        libJpeg/jdcoefct.c \
+        libJpeg/jdcolor.c \
+        libJpeg/jddctmgr.c \
+        libJpeg/jdhuff.c \
+        libJpeg/jdinput.c \
+        libJpeg/jdmainct.c \
+        libJpeg/jdmarker.c \
+        libJpeg/jdmaster.c \
+        libJpeg/jdmerge.c \
+        libJpeg/jdpostct.c \
+        libJpeg/jdsample.c \
+        libJpeg/jdtrans.c \
+        libJpeg/jerror.c \
+        libJpeg/jfdctflt.c \
+        libJpeg/jfdctfst.c \
+        libJpeg/jfdctint.c \
+        libJpeg/jidctflt.c \
+        libJpeg/jidctfst.c \
+        libJpeg/jidctint.c \
+        libJpeg/jmemansi.c \
+        libJpeg/jmemmgr.c \
+        libJpeg/jmemnobs.c \
+        libJpeg/jpegtran.c \
+        libJpeg/jquant1.c \
+        libJpeg/jquant2.c \
+        libJpeg/jutils.c
+
+OBJECTS_LIBJPEG = \
+        jaricom.o \
+        jcapimin.o \
+        jcapistd.o \
+        jcarith.o \
+        jccoefct.o \
+        jccolor.o \
+        jcdctmgr.o \
+        jchuff.o \
+        jcinit.o \
+        jcmainct.o \
+        jcmarker.o \
+        jcmaster.o \
+        jcomapi.o \
+        jcparam.o \
+        jcprepct.o \
+        jcsample.o \
+        jctrans.o \
+        jdapimin.o \
+        jdapistd.o \
+        jdarith.o \
+        jdatadst.o \
+        jdatasrc.o \
+        jdcoefct.o \
+        jdcolor.o \
+        jddctmgr.o \
+        jdhuff.o \
+        jdinput.o \
+        jdmainct.o \
+        jdmarker.o \
+        jdmaster.o \
+        jdmerge.o \
+        jdpostct.o \
+        jdsample.o \
+        jdtrans.o \
+        jerror.o \
+        jfdctflt.o \
+        jfdctfst.o \
+        jfdctint.o \
+        jidctflt.o \
+        jidctfst.o \
+        jidctint.o \
+        jmemansi.o \
+        jmemmgr.o \
+        jquant1.o \
+        jquant2.o \
+        jutils.o
+
+SOURCES_LIBCAIRO = \
+    libCairo/cairo-analysis-surface.c \
+    libCairo/cairo-arc.c \
+    libCairo/cairo-array.c \
+    libCairo/cairo-atomic.c \
+    libCairo/cairo-base85-stream.c \
+    libCairo/cairo-bentley-ottmann.c \
+    libCairo/cairo-cache.c \
+    libCairo/cairo-cff-subset.c \
+    libCairo/cairo-clip.c \
+    libCairo/cairo-color.c \
+    libCairo/cairo-debug.c \
+    libCairo/cairo-deflate-stream.c \
+    libCairo/cairo-directfb-surface.c \
+    libCairo/cairo-fixed.c \
+    libCairo/cairo-freelist.c \
+    libCairo/cairo-glitz-surface.c \
+    libCairo/cairo-gstate.c \
+    libCairo/cairo-hash.c \
+    libCairo/cairo-hull.c \
+    libCairo/cairo-image-surface.c \
+    libCairo/cairo-lzw.c \
+    libCairo/cairo-matrix.c \
+    libCairo/cairo-meta-surface.c \
+    libCairo/cairo-misc.c \
+    libCairo/cairo-mutex.c \
+    libCairo/cairo-output-stream.c \
+    libCairo/cairo-paginated-surface.c \
+    libCairo/cairo-path-bounds.c \
+    libCairo/cairo-path-fill.c \
+    libCairo/cairo-path-fixed.c \
+    libCairo/cairo-path-stroke.c \
+    libCairo/cairo-path.c \
+    libCairo/cairo-pattern.c \
+    libCairo/cairo-pen.c \
+    libCairo/cairo-png.c \
+    libCairo/cairo-polygon.c \
+    libCairo/cairo-rectangle.c \
+    libCairo/cairo-region.c \
+    libCairo/cairo-skiplist.c \
+    libCairo/cairo-slope.c \
+    libCairo/cairo-spline.c \
+    libCairo/cairo-stroke-style.c \
+    libCairo/cairo-surface-fallback.c \
+    libCairo/cairo-surface.c \
+    libCairo/cairo-system.c \
+    libCairo/cairo-traps.c \
+    libCairo/cairo-unicode.c \
+    libCairo/cairo-version.c \
+    libCairo/cairo-wideint.c \
+    libCairo/cairo.c \
+    libCairo/check-has-hidden-symbols.c \
+    libCairo/check-link.c \
+    libCairo/test-fallback-surface.c \
+    libCairo/test-meta-surface.c \
+    libCairo/test-paginated-surface.c
+
+OBJECTS_LIBCAIRO = \
+    cairo-analysis-surface.o \
+    cairo-arc.o \
+    cairo-array.o \
+    cairo-atomic.o \
+    cairo-base85-stream.o \
+    cairo-bentley-ottmann.o \
+    cairo-cache.o \
+    cairo-cff-subset.o \
+    cairo-clip.o \
+    cairo-color.o \
+    cairo-debug.o \
+    cairo-deflate-stream.o \
+    cairo-directfb-surface.o \
+    cairo-fixed.o \
+    cairo-freelist.o \
+    cairo-glitz-surface.o \
+    cairo-gstate.o \
+    cairo-hash.o \
+    cairo-hull.o \
+    cairo-image-surface.o \
+    cairo-lzw.o \
+    cairo-matrix.o \
+    cairo-meta-surface.o \
+    cairo-misc.o \
+    cairo-mutex.o \
+    cairo-output-stream.o \
+    cairo-paginated-surface.o \
+    cairo-path-bounds.o \
+    cairo-path-fill.o \
+    cairo-path-fixed.o \
+    cairo-path-stroke.o \
+    cairo-path.o \
+    cairo-pattern.o \
+    cairo-pen.o \
+    cairo-png.o \
+    cairo-polygon.o \
+    cairo-rectangle.o \
+    cairo-region.o \
+    cairo-skiplist.o \
+    cairo-slope.o \
+    cairo-spline.o \
+    cairo-stroke-style.o \
+    cairo-surface-fallback.o \
+    cairo-surface.o \
+    cairo-system.o \
+    cairo-traps.o \
+    cairo-unicode.o \
+    cairo-version.o \
+    cairo-wideint.o \
+    cairo.o \
+    check-has-hidden-symbols.o \
+    check-link.o \
+    test-fallback-surface.o \
+    test-meta-surface.o \
+    test-paginated-surface.o
+
+SOURCES_LIBAGG = \
+	libAgg/agg_arc.cpp \
+	libAgg/agg_arrowhead.cpp \
+	libAgg/agg_bezier_arc.cpp \
+	libAgg/agg_bspline.cpp \
+	libAgg/agg_curves.cpp \
+	libAgg/agg_embedded_raster_fonts.cpp \
+	libAgg/agg_gsv_text.cpp \
+	libAgg/agg_image_filters.cpp \
+	libAgg/agg_line_aa_basics.cpp \
+	libAgg/agg_line_profile_aa.cpp \
+	libAgg/agg_rounded_rect.cpp \
+	libAgg/agg_sqrt_tables.cpp \
+	libAgg/agg_trans_affine.cpp \
+	libAgg/agg_trans_double_path.cpp \
+	libAgg/agg_trans_single_path.cpp \
+	libAgg/agg_trans_warp_magnifier.cpp \
+	libAgg/agg_vcgen_bspline.cpp \
+	libAgg/agg_vcgen_contour.cpp \
+	libAgg/agg_vcgen_dash.cpp \
+	libAgg/agg_vcgen_markers_term.cpp \
+	libAgg/agg_vcgen_smooth_poly1.cpp \
+	libAgg/agg_vcgen_stroke.cpp \
+	libAgg/agg_vpgen_clip_polygon.cpp \
+	libAgg/agg_vpgen_clip_polyline.cpp \
+	libAgg/agg_vpgen_segmentator.cpp
+
+SOURCES_LIBAGGFREETYPE = \
+	libAggFreetype/agg_font_freetype.cpp \
+	libAggFreetype/agg_font_freetype.h
+
+OBJECTS_LIBAGGFREETYPE = \
+	agg_font_freetype.o
+
+SOURCES_LIBFREETYPE = \
+	libFreetype/base/basepic.c \
+	libFreetype/base/ftadvanc.c \
+	libFreetype/base/ftapi.c \
+	libFreetype/base/ftbase.c \
+	libFreetype/base/ftbbox.c \
+	libFreetype/base/ftbdf.c \
+	libFreetype/base/ftbitmap.c \
+	libFreetype/base/ftcalc.c \
+	libFreetype/base/ftcid.c \
+	libFreetype/base/ftdbgmem.c \
+	libFreetype/base/ftdebug.c \
+	libFreetype/base/ftfstype.c \
+	libFreetype/base/ftgasp.c \
+	libFreetype/base/ftgloadr.c \
+	libFreetype/base/ftglyph.c \
+	libFreetype/base/ftgxval.c \
+	libFreetype/base/ftinit.c \
+	libFreetype/base/ftlcdfil.c \
+	libFreetype/base/ftmm.c \
+	libFreetype/base/ftobjs.c \
+	libFreetype/base/ftotval.c \
+	libFreetype/base/ftoutln.c \
+	libFreetype/base/ftpatent.c \
+	libFreetype/base/ftpfr.c \
+	libFreetype/base/ftpic.c \
+	libFreetype/base/ftrfork.c \
+	libFreetype/base/ftsnames.c \
+	libFreetype/base/ftstream.c \
+	libFreetype/base/ftstroke.c \
+	libFreetype/base/ftsynth.c \
+	libFreetype/base/ftsystem.c \
+	libFreetype/base/fttrigon.c \
+	libFreetype/base/fttype1.c \
+	libFreetype/base/ftutil.c \
+	libFreetype/base/ftwinfnt.c \
+	libFreetype/truetype/truetype.c \
+	libFreetype/truetype/ttdriver.c \
+	libFreetype/truetype/ttgload.c \
+	libFreetype/truetype/ttgxvar.c \
+	libFreetype/truetype/ttinterp.c \
+	libFreetype/truetype/ttobjs.c \
+	libFreetype/truetype/ttpic.c \
+	libFreetype/truetype/ttpload.c \
+	libFreetype/raster/ftraster.c \
+	libFreetype/raster/ftrend1.c \
+	libFreetype/raster/raster.c \
+	libFreetype/raster/rastpic.c \
+
+OBJECTS_LIBFREETYPE = \
+	basepic.o \
+	ftadvanc.o \
+	#ftbase.o \
+	ftapi.o \
+	ftbbox.o \
+	ftbdf.o \
+	ftbitmap.o \
+	ftcalc.o \
+	ftcid.o \
+	ftdbgmem.o \
+	ftdebug.o \
+	ftfstype.o \
+	ftgasp.o \
+	ftgloadr.o \
+	ftglyph.o \
+	ftgxval.o \
+	ftinit.o \
+	ftlcdfil.o \
+	ftmm.o \
+	ftobjs.o \
+	ftotval.o \
+	ftoutln.o \
+	ftpatent.o \
+	ftpfr.o \
+	ftpic.o \
+	ftrfork.o \
+	ftsnames.o \
+	ftstream.o \
+	ftstroke.o \
+	ftsynth.o \
+	ftsystem.o \
+	fttrigon.o \
+	fttype1.o \
+	ftutil.o \
+	ftwinfnt.o \
+	truetype.o \
+	ttdriver.o \
+	ttgload.o \
+	ttgxvar.o \
+	ttinterp.o \
+	ttobjs.o \
+	ttpic.o \
+	ttpload.o \
+	ftraster.o \
+	ftrend1.o \
+	raster.o \
+	rastpic.o
+
+OBJECTS_LIBFREETYPE2 = \
+	ftapi.o \
+	ftbase.o \
+	ftbbox.o \
+	ftbdf.o \
+	ftbitmap.o \
+	ftcalc.o \
+	ftcid.o \
+	ftdbgmem.o \
+	ftdebug.o \
+	ftfstype.o \
+	ftgasp.o \
+	ftgloadr.o \
+	ftglyph.o \
+	ftgxval.o \
+	ftinit.o \
+	ftlcdfil.o \
+	ftmm.o \
+	ftotval.o \
+	ftoutln.o \
+	ftpatent.o \
+	ftpfr.o \
+	ftpic.o \
+	ftrfork.o \
+	ftsnames.o \
+	ftstream.o \
+	ftstroke.o \
+	ftsynth.o \
+	ftsystem.o \
+	fttrigon.o \
+	fttype1.o \
+	ftutil.o \
+	ftwinfnt.o \
+	truetype.o \
+	ttdriver.o \
+	ttgload.o \
+	ttgxvar.o \
+	ttinterp.o \
+	ttobjs.o \
+	ttpic.o \
+	ttpload.o \
+	ftraster.o \
+	ftrend1.o \
+	raster.o \
+	rastpic.o
+
+OBJECTS_LIBAGG = \
+	agg_arc.o \
+	agg_arrowhead.o \
+	agg_bezier_arc.o \
+	agg_bspline.o \
+	agg_curves.o \
+	agg_embedded_raster_fonts.o \
+	agg_gsv_text.o \
+	agg_image_filters.o \
+	agg_line_aa_basics.o \
+	agg_line_profile_aa.o \
+	agg_rounded_rect.o \
+	agg_sqrt_tables.o \
+	agg_trans_affine.o \
+	agg_trans_double_path.o \
+	agg_trans_single_path.o \
+	agg_trans_warp_magnifier.o \
+	agg_vcgen_bspline.o \
+	agg_vcgen_contour.o \
+	agg_vcgen_dash.o \
+	agg_vcgen_markers_term.o \
+	agg_vcgen_smooth_poly1.o \
+	agg_vcgen_stroke.o \
+	agg_vpgen_clip_polygon.o \
+	agg_vpgen_clip_polyline.o \
+	agg_vpgen_segmentator.o
+
+SOURCES_LIBTINYXML = \
+        libTinyXml/tinystr.cpp \
+        libTinyXml/tinyxml.cpp \
+        libTinyXml/tinyxmlerror.cpp \
+        libTinyXml/tinyxmlparser.cpp
+
+OBJECTS_LIBTINYXML = \
+        tinystr.o \
+        tinyxml.o \
+        tinyxmlerror.o \
+        tinyxmlparser.o
+
+SOURCES_LIBMRSS = \
+        libMrss/mrss_download.c \
+        libMrss/mrss_edit.c \
+        libMrss/mrss_free.c \
+        libMrss/mrss_generic.c \
+        libMrss/mrss_options.c \
+        libMrss/mrss_parser.c \
+        libMrss/mrss_search.c \
+        libMrss/mrss_write.c
+
+OBJECTS_LIBMRSS = \
+        mrss_download.o \
+        mrss_edit.o \
+        mrss_free.o \
+        mrss_generic.o \
+        mrss_options.o \
+        mrss_parser.o \
+        mrss_search.o \
+        mrss_write.o
+
+OBJECTS_WMANAGER = wmanager.o
+
+menu : $(OBJECTS)
+	$(CCO) $(LDFLAGS) $(OBJECTS) $(OBJECTS_LIBAGG) \
+	$(OBJECTS_LIBFREETYPE) $(OBJECTS_LIBAGGFREETYPE) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o menu
+
+fullscreen : $(OBJECTS_FULLSCREEN)
+	$(CCO) $(LDFLAGS) $(OBJECTS_FULLSCREEN) $(OBJECTS_LIBAGG) \
+	$(OBJECTS_LIBFREETYPE) $(OBJECTS_LIBAGGFREETYPE) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o fullscreen
+
+poster : $(OBJECTS_POSTER)
+	$(CCO) $(LDFLAGS) $(OBJECTS_POSTER) $(OBJECTS_LIBAGG) \
+	$(OBJECTS_LIBFREETYPE) $(OBJECTS_LIBAGGFREETYPE) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o poster
+
+rootController : $(OBJECTS_CONTROLLER)
+	$(CCO) $(LDFLAGS) $(OBJECTS_CONTROLLER) $(OBJECTS_LIBAGG) \
+	$(OBJECTS_LIBFREETYPE) $(OBJECTS_LIBAGGFREETYPE) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o rootController
+
+widgetapi : $(OBJECTS_WIDGETAPI)
+	$(CCO) $(LDFLAGS) $(OBJECTS_WIDGETAPI) $(OBJECTS_LIBAGG) \
+	$(OBJECTS_LIBFREETYPE) $(OBJECTS_LIBAGGFREETYPE) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o widgetapi
+
+wm2a : $(OBJECTS_WM2A)
+	$(CCO) $(LDFLAGS) $(OBJECTS_WM2A) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o wm2a
+
+wmanager : $(OBJECTS_WMANAGER)
+	$(CCO) $(LDFLAGS) $(OBJECTS_WMANAGER) $(OBJECTS_LIBTINYXML) \
+        $(OBJECTS_LIBJPEG) -o wmanager
+
+libjpeg :
+	$(CCO) -c $(SOURCES_LIBJPEG) -IlibJpeg
+
+libcairo:
+	$(CC) -c $(SOURCES_LIBCAIRO) -IlibCairo -DCAIRO_NO_MUTEX=1
+
+libagg :
+	$(CCO) -c $(SOURCES_LIBAGG) -IlibAgg/include
+
+libfreetype :
+	$(CC) -c $(SOURCES_LIBFREETYPE) \
+	-IlibFreetype/base \
+	-IlibFreetype/truetype \
+	-IlibFreetype/raster \
+	-IlibFreetype/autofit \
+	-IlibFreetype/include -IlibFreetype \
+	-DFT_CONFIG_CONFIG_H="<ftconfig.h>" -DFT2_BUILD_LIBRARY \
+	-DFT_CONFIG_MODULES_H="<ftmodule.h>" \
+	-DFT_OPTION_AUTOFIT2 \
+	-IlibFreetype/include/freetype/config
+
+libaggfreetype :
+	$(CCO) -c $(SOURCES_LIBAGGFREETYPE) -IlibAgg/include -IlibAggFreetype \
+	-Ifreetype/include
+
+libtinyxml :
+	$(CCO) -c $(SOURCES_LIBTINYXML) -IlibTinyXml
+
+libmrss :
+	$(CC) -c $(SOURCES_LIBMRSS) -IlibMrss -DHAVE_CONFIG_H
+
+draqieRss.o :
+	$(CCO) $(CFLAGS) -c draqieRss.c
+
+draqiePosClient.o :
+	$(CCO) $(CFLAGS) -c draqiePosClient.c
+
+os.o : os.c
+	$(CC) $(CFLAGS) -c os.c
+
+activity.o : activity.c
+	$(CC) $(CFLAGS) -c activity.c	
+
+activityObject.o : activityObject.c
+	$(CC) $(CFLAGS) -c activityObject.c
+	
+wmanager.o : wmanager.cpp
+	$(CC) $(CFLAGS) -c wmanager.cpp
+
+menu.o : menu.c
+	$(CCO) $(CFLAGS) -c menu.c
+
+news.o : news.c
+	$(CCO) $(CFLAGS) -c news.c
+
+sushi.o : sushi.c
+	$(CCO) $(CFLAGS) -c sushi.c
+
+olympic.o : olympic.c
+	$(CCO) $(CFLAGS) -c olympic.c
+
+fullscreen.o : fullscreen.c
+	$(CCO) $(CFLAGS) -c fullscreen.c
+
+browser.o : browser.c
+	$(CCO) $(CFLAGS) -c browser.c
+
+robotic.o : robotic.c
+	$(CCO) $(CFLAGS) -c robotic.c
+
+cnApp.o : cnApp.c
+	$(CCO) $(CFLAGS) -c cnApp.c
+
+draqieApp.o : draqieApp.c
+	$(CCO) $(CFLAGS) -c draqieApp.c
+
+cocktails.o : cocktails.c
+	$(CCO) $(CFLAGS) -c cocktails.c
+
+poster.o : poster.c
+	$(CCO) $(CFLAGS) -c poster.c
+
+poster2.o : poster2.c
+	$(CCO) $(CFLAGS) -c poster2.c
+
+rootController.o : rootController.c
+	$(CC) $(CFLAGS) -c rootController.c
+
+rootControllerSync.o : rootControllerSync.c
+	$(CC) $(CFLAGS) -c rootControllerSync.c
+
+rootSectors.o : rootSectors.c
+	$(CC) $(CFLAGS) -c rootSectors.c
+
+rootEvents.o : rootEvents.c
+	$(CC) $(CFLAGS) -c rootEvents.c
+
+rootModules.o : rootModules.c
+	$(CC) $(CFLAGS) -c rootModules.c
+
+rootStress.o : rootStress.c
+	$(CC) $(CFLAGS) -c rootStress.c
+
+rootScheduller.o : rootScheduller.c
+	$(CC) $(CFLAGS) -c rootScheduller.c
+
+wm2a.o : wm2a.c
+	$(CC) $(CFLAGS) -c wm2a.c
+
+lowdraw.o : lowdraw.c
+	$(CC) $(CFLAGS) -c lowdraw.c
+
+sys.o : sys.c
+	$(CC) $(CFLAGS) -c sys.c
+
+system.o : system.c
+	$(CC) $(CFLAGS) -c system.c
+
+config.o : config.c
+	$(CCO) $(CFLAGS) -c config.c
+
+rss.o : rss.c
+	$(CC) $(CFLAGS) -c rss.c
+
+agg.o : agg.c
+	$(CCO) $(CFLAGS) -c agg.c
+
+api.o : api.cpp
+	$(CCO) $(CFLAGS) -c api.cpp
+
+canvas.o : canvas.c
+	$(CC) $(CFLAGS) -c canvas.c
+
+keyboard.o : keyboard.c
+	$(CC) $(CFLAGS) -c keyboard.c
+
+text.o : text.c
+	$(CC) $(CFLAGS) -c text.c
+
+editable.o : editable.c
+	$(CC) $(CFLAGS) -c editable.c
+
+xmlsetup.o : xmlsetup.c
+	$(CC) $(CFLAGS) -c xmlsetup.c
+
+xml.o : xml.c
+	$(CC) $(CFLAGS) -c xml.c
+
+guirelay.o : guirelay.c
+	$(CC) $(CFLAGS) -c guirelay.c
+
+guimsg.o : guimsg.c
+	$(CC) $(CFLAGS) -c guimsg.c
+
+window.o : window.c
+	$(CC) $(CFLAGS) -c window.c
+
+wm.o : wm.c
+	$(CC) $(CFLAGS) -c wm.c
+
+wm.h.gch : wm.h
+	$(CCO) -c wm.h
+	
+interface.o : interface.c
+	$(CC) $(CFLAGS) -c interface.c	
+
+panel.o : panel.c
+	$(CC) $(CFLAGS) -c panel.c
+
+simple.o : simple.c
+	$(CC) $(CFLAGS) -c simple.c
+
+global.o : global.c
+	$(CC) $(CFLAGS) -c global.c
+
+gui.o : gui.c
+	$(CC) $(CFLAGS) -c gui.c
+
+app.o : app.c
+	$(CC) $(CFLAGS) -c app.c
+
+layout.o : layout.c
+	$(CCO) $(CFLAGS) -c layout.c
+
+frame.o : frame.c
+	$(CC) $(CFLAGS) -c frame.c
+	
+guiEventLoop.o : guiEventLoop.c
+	$(CC) $(CFLAGS) -c guiEventLoop.c
+
+guiMain.o : guiMain.c
+	$(CC) $(CFLAGS) -c guiMain.c
+
+csv.o : csv.c
+	$(CC) $(CFLAGS) -c csv.c
+
+guiBounds.o : guiBounds.c
+	$(CC) $(CFLAGS) -c guiBounds.c
+
+draqieHttp.o : draqieHttp.c
+	$(CC) $(CFLAGS) -c draqieHttp.c
+
+draqieRoboticClient.o : draqieRoboticClient.c
+	$(CCO) $(CFLAGS) -c draqieRoboticClient.c
+
+draqieConfig.o : draqieConfig.c
+	$(CCO) $(CFLAGS) -c draqieConfig.c
+
+draqieSockets.o : draqieSockets.c
+	$(CCO) $(CFLAGS) -c draqieSockets.c

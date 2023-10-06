@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+RssCategory
+
+<!-- ##### SECTION Short_Description ##### -->
+Specify one or more categories that the channel belongs to.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssCategory ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssCategory:domain ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssCategory:location ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_category_new ##### -->
+<para>
+
+</para>
+
+@location: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_category_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_category_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_category: 
+@Returns: 
+
+

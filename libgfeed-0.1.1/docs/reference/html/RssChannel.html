@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssChannel</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="Rss.html" title="Rss">
+<link rel="next" href="RssChannelItem.html" title="RssChannelItem">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="Rss.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssChannelItem.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2585922" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2510410" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2588958" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2588982" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssChannel"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2585922"></a><span class="refentrytitle">RssChannel</span>
+</h2>
+<p>RssChannel &#8212; </p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-MONDAY:CAPS">RSSCHANNEL_DAY_MONDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-TUESDAY:CAPS">RSSCHANNEL_DAY_TUESDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-WEDNESDAY:CAPS">RSSCHANNEL_DAY_WEDNESDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-THURSDAY:CAPS">RSSCHANNEL_DAY_THURSDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-FRIDAY:CAPS">RSSCHANNEL_DAY_FRIDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-SATURDAY:CAPS">RSSCHANNEL_DAY_SATURDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-DAY-SUNDAY:CAPS">RSSCHANNEL_DAY_SUNDAY</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-0:CAPS">RSSCHANNEL_HOUR_0</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-1:CAPS">RSSCHANNEL_HOUR_1</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-2:CAPS">RSSCHANNEL_HOUR_2</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-3:CAPS">RSSCHANNEL_HOUR_3</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-4:CAPS">RSSCHANNEL_HOUR_4</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-5:CAPS">RSSCHANNEL_HOUR_5</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-6:CAPS">RSSCHANNEL_HOUR_6</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-7:CAPS">RSSCHANNEL_HOUR_7</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-8:CAPS">RSSCHANNEL_HOUR_8</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-9:CAPS">RSSCHANNEL_HOUR_9</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-10:CAPS">RSSCHANNEL_HOUR_10</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-11:CAPS">RSSCHANNEL_HOUR_11</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-12:CAPS">RSSCHANNEL_HOUR_12</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-13:CAPS">RSSCHANNEL_HOUR_13</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-14:CAPS">RSSCHANNEL_HOUR_14</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-15:CAPS">RSSCHANNEL_HOUR_15</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-16:CAPS">RSSCHANNEL_HOUR_16</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-17:CAPS">RSSCHANNEL_HOUR_17</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-18:CAPS">RSSCHANNEL_HOUR_18</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-19:CAPS">RSSCHANNEL_HOUR_19</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-20:CAPS">RSSCHANNEL_HOUR_20</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-21:CAPS">RSSCHANNEL_HOUR_21</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-22:CAPS">RSSCHANNEL_HOUR_22</a>
+#define     <a href="RssChannel.html#RSSCHANNEL-HOUR-23:CAPS">RSSCHANNEL_HOUR_23</a>
+            <a href="RssChannel.html#RssChannel-struct">RssChannel</a>;
+<a href="RssChannel.html" title="RssChannel">RssChannel</a>* <a href="RssChannel.html#rss-channel-new">rss_channel_new</a>                 (const gchar *title,
+                                             const gchar *link,
+                                             const gchar *description);
+<a href="RssChannel.html" title="RssChannel">RssChannel</a>* <a href="RssChannel.html#rss-channel-new-from-xml">rss_channel_new_from_xml</a>        (xmlNode *xnode);
+gboolean    <a href="RssChannel.html#rss-channel-add-category">rss_channel_add_category</a>        (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel,
+                                             <a href="RssCategory.html" title="RssCategory">RssCategory</a> *rss_category);
+GList*      <a href="RssChannel.html#rss-channel-get-categories">rss_channel_get_categories</a>      (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel);
+gboolean    <a href="RssChannel.html#rss-channel-add-item">rss_channel_add_item</a>            (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel,
+                                             <a href="RssChannelItem.html" title="RssChannelItem">RssChannelItem</a> *rss_channel_item);
+gboolean    <a href="RssChannel.html#rss-channel-remove-item">rss_channel_remove_item</a>         (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel,
+                                             <a href="RssChannelItem.html" title="RssChannelItem">RssChannelItem</a> *rss_channel_item);
+xmlNode*    <a href="RssChannel.html#rss-channel-get-xml">rss_channel_get_xml</a>             (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2588958"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssChannel
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2588982"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssChannel.html#RssChannel--cloud">cloud</a>"                <a href="RssCloud.html" title="RssCloud">RssCloud</a>              : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--copyright">copyright</a>"            gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--description">description</a>"          gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--docs">docs</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--generator">generator</a>"            gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--image">image</a>"                <a href="RssImage.html" title="RssImage">RssImage</a>              : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--language">language</a>"             gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--last-build-date">last-build-date</a>"      gpointer              : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--link">link</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--managing-editor">managing-editor</a>"      gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--pub-date">pub-date</a>"             gpointer              : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--skip-days">skip-days</a>"            guint                 : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--skip-hours">skip-hours</a>"           guint                 : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--text-input">text-input</a>"           <a href="RssTextInput.html" title="RssTextInput">RssTextInput</a>          : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--title">title</a>"                gchararray            : Read / Write / Construct
+  "<a href="RssChannel.html#RssChannel--ttl">ttl</a>"                  guint                 : Read / Write
+  "<a href="RssChannel.html#RssChannel--webmaster">webmaster</a>"            gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2510410"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2510426"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2510437"></a><h3>
+<a name="RSSCHANNEL-DAY-MONDAY:CAPS"></a>RSSCHANNEL_DAY_MONDAY</h3>
+<a class="indexterm" name="id2510448"></a><pre class="programlisting">#define RSSCHANNEL_DAY_MONDAY     1 &lt;&lt; 0
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510464"></a><h3>
+<a name="RSSCHANNEL-DAY-TUESDAY:CAPS"></a>RSSCHANNEL_DAY_TUESDAY</h3>
+<a class="indexterm" name="id2510475"></a><pre class="programlisting">#define RSSCHANNEL_DAY_TUESDAY    1 &lt;&lt; 1
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510491"></a><h3>
+<a name="RSSCHANNEL-DAY-WEDNESDAY:CAPS"></a>RSSCHANNEL_DAY_WEDNESDAY</h3>
+<a class="indexterm" name="id2510502"></a><pre class="programlisting">#define RSSCHANNEL_DAY_WEDNESDAY  1 &lt;&lt; 2
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510518"></a><h3>
+<a name="RSSCHANNEL-DAY-THURSDAY:CAPS"></a>RSSCHANNEL_DAY_THURSDAY</h3>
+<a class="indexterm" name="id2510529"></a><pre class="programlisting">#define RSSCHANNEL_DAY_THURSDAY   1 &lt;&lt; 3
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510545"></a><h3>
+<a name="RSSCHANNEL-DAY-FRIDAY:CAPS"></a>RSSCHANNEL_DAY_FRIDAY</h3>
+<a class="indexterm" name="id2510556"></a><pre class="programlisting">#define RSSCHANNEL_DAY_FRIDAY     1 &lt;&lt; 4
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510572"></a><h3>
+<a name="RSSCHANNEL-DAY-SATURDAY:CAPS"></a>RSSCHANNEL_DAY_SATURDAY</h3>
+<a class="indexterm" name="id2510583"></a><pre class="programlisting">#define RSSCHANNEL_DAY_SATURDAY   1 &lt;&lt; 5
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510599"></a><h3>
+<a name="RSSCHANNEL-DAY-SUNDAY:CAPS"></a>RSSCHANNEL_DAY_SUNDAY</h3>
+<a class="indexterm" name="id2510610"></a><pre class="programlisting">#define RSSCHANNEL_DAY_SUNDAY     1 &lt;&lt; 6
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510626"></a><h3>
+<a name="RSSCHANNEL-HOUR-0:CAPS"></a>RSSCHANNEL_HOUR_0</h3>
+<a class="indexterm" name="id2510638"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_0   1 &lt;&lt; 0
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2510653"></a><h3>
+<a name="RSSCHANNEL-HOUR-1:CAPS"></a>RSSCHANNEL_HOUR_1</h3>
+<a class="indexterm" name="id2510665"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_1   1 &lt;&lt; 1
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600411"></a><h3>
+<a name="RSSCHANNEL-HOUR-2:CAPS"></a>RSSCHANNEL_HOUR_2</h3>
+<a class="indexterm" name="id2600422"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_2   1 &lt;&lt; 2
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600436"></a><h3>
+<a name="RSSCHANNEL-HOUR-3:CAPS"></a>RSSCHANNEL_HOUR_3</h3>
+<a class="indexterm" name="id2600446"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_3   1 &lt;&lt; 3
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600460"></a><h3>
+<a name="RSSCHANNEL-HOUR-4:CAPS"></a>RSSCHANNEL_HOUR_4</h3>
+<a class="indexterm" name="id2600471"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_4   1 &lt;&lt; 4
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600485"></a><h3>
+<a name="RSSCHANNEL-HOUR-5:CAPS"></a>RSSCHANNEL_HOUR_5</h3>
+<a class="indexterm" name="id2600496"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_5   1 &lt;&lt; 5
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600510"></a><h3>
+<a name="RSSCHANNEL-HOUR-6:CAPS"></a>RSSCHANNEL_HOUR_6</h3>
+<a class="indexterm" name="id2600522"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_6   1 &lt;&lt; 6
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600538"></a><h3>
+<a name="RSSCHANNEL-HOUR-7:CAPS"></a>RSSCHANNEL_HOUR_7</h3>
+<a class="indexterm" name="id2600549"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_7   1 &lt;&lt; 7
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600566"></a><h3>
+<a name="RSSCHANNEL-HOUR-8:CAPS"></a>RSSCHANNEL_HOUR_8</h3>
+<a class="indexterm" name="id2600577"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_8   1 &lt;&lt; 8
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600593"></a><h3>
+<a name="RSSCHANNEL-HOUR-9:CAPS"></a>RSSCHANNEL_HOUR_9</h3>
+<a class="indexterm" name="id2600605"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_9   1 &lt;&lt; 9
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600621"></a><h3>
+<a name="RSSCHANNEL-HOUR-10:CAPS"></a>RSSCHANNEL_HOUR_10</h3>
+<a class="indexterm" name="id2600633"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_10  1 &lt;&lt; 10
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600649"></a><h3>
+<a name="RSSCHANNEL-HOUR-11:CAPS"></a>RSSCHANNEL_HOUR_11</h3>
+<a class="indexterm" name="id2600660"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_11  1 &lt;&lt; 11
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600677"></a><h3>
+<a name="RSSCHANNEL-HOUR-12:CAPS"></a>RSSCHANNEL_HOUR_12</h3>
+<a class="indexterm" name="id2600688"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_12  1 &lt;&lt; 12
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600705"></a><h3>
+<a name="RSSCHANNEL-HOUR-13:CAPS"></a>RSSCHANNEL_HOUR_13</h3>
+<a class="indexterm" name="id2600716"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_13  1 &lt;&lt; 13
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600732"></a><h3>
+<a name="RSSCHANNEL-HOUR-14:CAPS"></a>RSSCHANNEL_HOUR_14</h3>
+<a class="indexterm" name="id2600744"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_14  1 &lt;&lt; 14
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600760"></a><h3>
+<a name="RSSCHANNEL-HOUR-15:CAPS"></a>RSSCHANNEL_HOUR_15</h3>
+<a class="indexterm" name="id2600772"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_15  1 &lt;&lt; 15
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600788"></a><h3>
+<a name="RSSCHANNEL-HOUR-16:CAPS"></a>RSSCHANNEL_HOUR_16</h3>
+<a class="indexterm" name="id2600800"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_16  1 &lt;&lt; 16
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600816"></a><h3>
+<a name="RSSCHANNEL-HOUR-17:CAPS"></a>RSSCHANNEL_HOUR_17</h3>
+<a class="indexterm" name="id2600828"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_17  1 &lt;&lt; 17
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600844"></a><h3>
+<a name="RSSCHANNEL-HOUR-18:CAPS"></a>RSSCHANNEL_HOUR_18</h3>
+<a class="indexterm" name="id2600856"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_18  1 &lt;&lt; 18
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600872"></a><h3>
+<a name="RSSCHANNEL-HOUR-19:CAPS"></a>RSSCHANNEL_HOUR_19</h3>
+<a class="indexterm" name="id2600883"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_19  1 &lt;&lt; 19
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600900"></a><h3>
+<a name="RSSCHANNEL-HOUR-20:CAPS"></a>RSSCHANNEL_HOUR_20</h3>
+<a class="indexterm" name="id2600911"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_20  1 &lt;&lt; 20
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600928"></a><h3>
+<a name="RSSCHANNEL-HOUR-21:CAPS"></a>RSSCHANNEL_HOUR_21</h3>
+<a class="indexterm" name="id2600939"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_21  1 &lt;&lt; 21
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600955"></a><h3>
+<a name="RSSCHANNEL-HOUR-22:CAPS"></a>RSSCHANNEL_HOUR_22</h3>
+<a class="indexterm" name="id2600967"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_22  1 &lt;&lt; 22
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2600983"></a><h3>
+<a name="RSSCHANNEL-HOUR-23:CAPS"></a>RSSCHANNEL_HOUR_23</h3>
+<a class="indexterm" name="id2600995"></a><pre class="programlisting">#define RSSCHANNEL_HOUR_23  1 &lt;&lt; 23
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601011"></a><h3>
+<a name="RssChannel-struct"></a>RssChannel</h3>
+<a class="indexterm" name="id2601024"></a><pre class="programlisting">typedef struct _RssChannel RssChannel;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601040"></a><h3>
+<a name="rss-channel-new"></a>rss_channel_new ()</h3>
+<a class="indexterm" name="id2601052"></a><pre class="programlisting"><a href="RssChannel.html" title="RssChannel">RssChannel</a>* rss_channel_new                 (const gchar *title,
+                                             const gchar *link,
+                                             const gchar *description);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>title</code></em>&#160;:</span></td>
+<td> The name of the channel. It's how people refer to your service.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>link</code></em>&#160;:</span></td>
+<td> The URL to the HTML website corresponding to the channel.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>description</code></em>&#160;:</span></td>
+<td> Phrase or sentence describing the channel.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601164"></a><h3>
+<a name="rss-channel-new-from-xml"></a>rss_channel_new_from_xml ()</h3>
+<a class="indexterm" name="id2601175"></a><pre class="programlisting"><a href="RssChannel.html" title="RssChannel">RssChannel</a>* rss_channel_new_from_xml        (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> a <span class="type">xmlNode</span> to parse.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601249"></a><h3>
+<a name="rss-channel-add-category"></a>rss_channel_add_category ()</h3>
+<a class="indexterm" name="id2601261"></a><pre class="programlisting">gboolean    rss_channel_add_category        (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel,
+                                             <a href="RssCategory.html" title="RssCategory">RssCategory</a> *rss_category);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel</code></em>&#160;:</span></td>
+<td> a <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_category</code></em>&#160;:</span></td>
+<td> a <a href="RssCategory.html" title="RssCategory"><span class="type">RssCategory</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601356"></a><h3>
+<a name="rss-channel-get-categories"></a>rss_channel_get_categories ()</h3>
+<a class="indexterm" name="id2601368"></a><pre class="programlisting">GList*      rss_channel_get_categories      (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel</code></em>&#160;:</span></td>
+<td> a <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601435"></a><h3>
+<a name="rss-channel-add-item"></a>rss_channel_add_item ()</h3>
+<a class="indexterm" name="id2601446"></a><pre class="programlisting">gboolean    rss_channel_add_item            (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel,
+                                             <a href="RssChannelItem.html" title="RssChannelItem">RssChannelItem</a> *rss_channel_item);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel</code></em>&#160;:</span></td>
+<td> a <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel_item</code></em>&#160;:</span></td>
+<td> a <a href="RssChannelItem.html" title="RssChannelItem"><span class="type">RssChannelItem</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601542"></a><h3>
+<a name="rss-channel-remove-item"></a>rss_channel_remove_item ()</h3>
+<a class="indexterm" name="id2601553"></a><pre class="programlisting">gboolean    rss_channel_remove_item         (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel,
+                                             <a href="RssChannelItem.html" title="RssChannelItem">RssChannelItem</a> *rss_channel_item);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel</code></em>&#160;:</span></td>
+<td> a <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel_item</code></em>&#160;:</span></td>
+<td> a <a href="RssChannelItem.html" title="RssChannelItem"><span class="type">RssChannelItem</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601649"></a><h3>
+<a name="rss-channel-get-xml"></a>rss_channel_get_xml ()</h3>
+<a class="indexterm" name="id2601661"></a><pre class="programlisting">xmlNode*    rss_channel_get_xml             (<a href="RssChannel.html" title="RssChannel">RssChannel</a> *rss_channel);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_channel</code></em>&#160;:</span></td>
+<td> a <a href="RssChannel.html" title="RssChannel"><span class="type">RssChannel</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the channel and its items.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2601737"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2601748"></a><h3>
+<a name="RssChannel--cloud"></a>The "<code class="literal">cloud</code>" property</h3>
+<a class="indexterm" name="id2601763"></a><pre class="programlisting">  "cloud"                <a href="RssCloud.html" title="RssCloud">RssCloud</a>              : Read / Write / Construct</pre>
+<p>Allows processes to register with a cloud to be notified of updates to the channel, implementing a lightweight publish-subscribe protocol for RSS feeds.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601787"></a><h3>
+<a name="RssChannel--copyright"></a>The "<code class="literal">copyright</code>" property</h3>
+<a class="indexterm" name="id2601801"></a><pre class="programlisting">  "copyright"            gchararray            : Read / Write / Construct</pre>
+<p>Copyright notice for content in the channel.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601827"></a><h3>
+<a name="RssChannel--description"></a>The "<code class="literal">description</code>" property</h3>
+<a class="indexterm" name="id2601841"></a><pre class="programlisting">  "description"          gchararray            : Read / Write / Construct</pre>
+<p>Phrase or sentence describing the channel.</p>
+<p>Default value: "default"</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601866"></a><h3>
+<a name="RssChannel--docs"></a>The "<code class="literal">docs</code>" property</h3>
+<a class="indexterm" name="id2601881"></a><pre class="programlisting">  "docs"                 gchararray            : Read / Write / Construct</pre>
+<p>A URL that points to the documentation for the format used in the RSS file.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601908"></a><h3>
+<a name="RssChannel--generator"></a>The "<code class="literal">generator</code>" property</h3>
+<a class="indexterm" name="id2601922"></a><pre class="programlisting">  "generator"            gchararray            : Read / Write / Construct</pre>
+<p>A string indicating the program used to generate the channel.</p>
+<p>Default value: "&lt;a href=\"http://libgfeed.sourceforge.net\"&gt;libgfeed v0.0.1&lt;/a&gt;"</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601949"></a><h3>
+<a name="RssChannel--image"></a>The "<code class="literal">image</code>" property</h3>
+<a class="indexterm" name="id2601964"></a><pre class="programlisting">  "image"                <a href="RssImage.html" title="RssImage">RssImage</a>              : Read / Write / Construct</pre>
+<p>Specifies a GIF, JPEG or PNG image that can be displayed with the channel.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2601987"></a><h3>
+<a name="RssChannel--language"></a>The "<code class="literal">language</code>" property</h3>
+<a class="indexterm" name="id2602001"></a><pre class="programlisting">  "language"             gchararray            : Read / Write / Construct</pre>
+<p>The language the channel is written in.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602027"></a><h3>
+<a name="RssChannel--last-build-date"></a>The "<code class="literal">last-build-date</code>" property</h3>
+<a class="indexterm" name="id2602041"></a><pre class="programlisting">  "last-build-date"      gpointer              : Read / Write / Construct</pre>
+<p>The last time the content of the channel changed.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602064"></a><h3>
+<a name="RssChannel--link"></a>The "<code class="literal">link</code>" property</h3>
+<a class="indexterm" name="id2602079"></a><pre class="programlisting">  "link"                 gchararray            : Read / Write / Construct</pre>
+<p>The URL to the HTML website corresponding to the channel.</p>
+<p>Default value: "default"</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602104"></a><h3>
+<a name="RssChannel--managing-editor"></a>The "<code class="literal">managing-editor</code>" property</h3>
+<a class="indexterm" name="id2602118"></a><pre class="programlisting">  "managing-editor"      gchararray            : Read / Write / Construct</pre>
+<p>Email address for person responsible for editorial content.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602145"></a><h3>
+<a name="RssChannel--pub-date"></a>The "<code class="literal">pub-date</code>" property</h3>
+<a class="indexterm" name="id2602159"></a><pre class="programlisting">  "pub-date"             gpointer              : Read / Write / Construct</pre>
+<p>The publication date for the content in the channel.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602181"></a><h3>
+<a name="RssChannel--skip-days"></a>The "<code class="literal">skip-days</code>" property</h3>
+<a class="indexterm" name="id2602195"></a><pre class="programlisting">  "skip-days"            guint                 : Read / Write / Construct</pre>
+<p>A hint for aggregators telling them which days they can skip.</p>
+<p>Allowed values: &lt;= 127</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602225"></a><h3>
+<a name="RssChannel--skip-hours"></a>The "<code class="literal">skip-hours</code>" property</h3>
+<a class="indexterm" name="id2602239"></a><pre class="programlisting">  "skip-hours"           guint                 : Read / Write / Construct</pre>
+<p>A hint for aggregators telling them which hours they can skip.</p>
+<p>Allowed values: &lt;= 16777215</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602269"></a><h3>
+<a name="RssChannel--text-input"></a>The "<code class="literal">text-input</code>" property</h3>
+<a class="indexterm" name="id2602283"></a><pre class="programlisting">  "text-input"           <a href="RssTextInput.html" title="RssTextInput">RssTextInput</a>          : Read / Write / Construct</pre>
+<p>Specifies a text input box that can be displayed with the channel.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602306"></a><h3>
+<a name="RssChannel--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2602321"></a><pre class="programlisting">  "title"                gchararray            : Read / Write / Construct</pre>
+<p>The name of the channel.</p>
+<p>Default value: "default"</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602345"></a><h3>
+<a name="RssChannel--ttl"></a>The "<code class="literal">ttl</code>" property</h3>
+<a class="indexterm" name="id2602360"></a><pre class="programlisting">  "ttl"                  guint                 : Read / Write</pre>
+<p>Time To Live.</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2602386"></a><h3>
+<a name="RssChannel--webmaster"></a>The "<code class="literal">webmaster</code>" property</h3>
+<a class="indexterm" name="id2602400"></a><pre class="programlisting">  "webmaster"            gchararray            : Read / Write / Construct</pre>
+<p>Email address for person responsible for technical issues relating to channel.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

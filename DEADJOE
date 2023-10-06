@@ -1,0 +1,354 @@
+
+*** These modified files were found in JOE when it aborted on Sat Nov 12 16:53:41 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+mikaMpDesktop.c
+mikaMpDesktop.c
+mikaMpDesktop.c
+mikaMpDesktop.h
+mikaMpDesktop.h
+mikaMpDesktop.h
+mikaMpDesktop.h
+mikaMpDesktop.h
+mikaMpDesktop.c
+player.c
+background.c
+
+*** These modified files were found in JOE when it aborted on Sun Nov 13 02:51:04 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+mikaRssClass.h
+rss.c
+Makefile
+Makefile
+mikaRssClient.c
+clock.h
+sushi.c
+background.c
+rss.c
+background.c
+posapp.c
+
+*** These modified files were found in JOE when it aborted on Sun Nov 13 22:24:36 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+mikaListbox.h
+mikaListbox.c
+mikaRssClient.c
+mikaRssClient.c
+mikaRssClient.c
+mikaRssClient.c
+mikaTextfield.c
+mikaTextfield.c
+mikaTextfield.c
+mikaTextfield.c
+background.c
+
+*** These modified files were found in JOE when it aborted on Wed Nov 23 03:54:17 2011
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/root/xorg.conf.new
+log
+/root/.xinitrc
+xinput_calibrator.cc
+/root/xorg.conf.new
+xinput_calibrator.cc
+/etc/ld.so.conf
+xinput_calibrator.cc
+Makefile
+Makefile
+Makefile
+
+*** These modified files were found in JOE when it aborted on Sat Dec 10 04:43:30 2011
+*** JOE was aborted by UNIX signal 15
+
+*** File '(Unnamed)'
+mikaPanel.h
+shop.c
+shop.c
+shop.c
+shop.c
+shop.c
+shop.c
+shop.c
+shop.c
+mikaListbox.c
+mikaListbox.c
+
+*** These modified files were found in JOE when it aborted on Sat Dec 10 04:43:42 2011
+*** JOE was aborted by UNIX signal 15
+
+*** File 'mikaPanel.c'
+#include "mikaPanel.h"
+#include "mikaSkin.h"
+#include "config.h"
+
+void *mikaPanelItemOnButton( void *data )
+{
+  return NULL;
+}
+
+mikaPanelItem::mikaPanelItem( struct tr_Object *canvas, struct tr_Attr *attr )
+{
+  next 		= NULL;
+  widget	= tr_ButtonInitEx2(NULL,attr,canvas);
+  tr_SetColor(widget,(char*)"#202020");
+  tr_SetRound(widget,2);
+}
+
+mikaPanelItem::~mikaPanelItem( )
+{
+}
+
+void *mikaPanelOnButton( void *data )
+{
+  return NULL;
+}
+
+mikaPanel::mikaPanel( struct tr_Object *canvas, struct tr_Attr *attr )
+{
+  items 	= NULL;
+  widget	= tr_ButtonInitEx2(NULL,attr,canvas);
+  tr_SetColor(widget,(char*)"#303030");
+  tr_SetRound(widget,2);
+  tr_SetAction(widget,mikaPanelOnButton,TR_ACTION_BUTTON);
+  tr_CanvasAddObjStatic(canvas,widget);
+}
+
+mikaPanel::~mikaPanel( )
+{
+}
+
+int mikaPanel::addItem( mikaPanelItem *item )
+{
+  item->next = items;
+  items = item;
+  tr_PutObject(widget,item->widget);
+}
+
+*** File '(Unnamed)'
+shop.c
+shop.c
+shop.c
+shop.c
+shop.c
+shop.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+mikaPanel.c
+
+*** These modified files were found in JOE when it aborted on Tue Jan 10 14:17:01 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+featuringEx.html
+featuringEx.html
+featuringEx.html
+featuringEx.html
+featuring.html
+featuringEx.html
+featuringEx.html
+hotel.c
+hotel.h
+hotel.h
+shop.c
+
+*** These modified files were found in JOE when it aborted on Wed Jan 18 01:34:03 2012
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+posterEx.html
+posterEx.html
+index.php
+poster.html
+poster.html
+poster.html
+poster.html
+sushimenu.c
+mikaSetup.c
+mikaSkin.c
+mikaSkinEx.c
+
+*** These modified files were found in JOE when it aborted on Sat Feb  4 23:02:05 2012
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Sun Feb  5 09:36:05 2012
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+kernel.c
+kernelRunner.c
+kernelRunner.c
+kernelIpc.h
+kernel.h
+kernel.c
+build.sh
+kernelSocket.c
+kernelSocket.c
+sys.c
+sys.c
+
+*** These modified files were found in JOE when it aborted on Wed Feb  8 08:45:37 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaEventReceiver.h
+mikaEventReceiver.c
+
+*** These modified files were found in JOE when it aborted on Sat Feb 11 05:47:11 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.c
+mikaWidget.h
+mikaWindow.h
+phone.c
+mikaWidget.c
+
+*** These modified files were found in JOE when it aborted on Sat Feb 11 05:47:12 2012
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+buddy.c
+buddy.c
+phone.c
+buddy.c
+buddy.c
+buddy.c
+buddy.c
+buddy.c
+buddy.c
+buddy.c
+phone.c
+
+*** These modified files were found in JOE when it aborted on Sat Feb 11 11:02:31 2012
+*** JOE was aborted because the terminal closed
+
+*** These modified files were found in JOE when it aborted on Sun Feb 12 11:56:09 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+mikaGalleryWidget.c
+mikaGalleryWidget.c
+mikaGalleryWidget.c
+mikaGalleryWidget.c
+sushimenu.c
+mikaGalleryWidget.c
+mikaGalleryWidget.h
+mikaWidget.h
+mikaGalleryWidget.h
+mikaSignageWidget.c
+mikaWindow.c
+
+*** These modified files were found in JOE when it aborted on Tue Feb 14 15:06:47 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+buddy.c
+mikaClockWidget.c
+mikaClockWidget.h
+mikaClockWidget.c
+mikaClockWidget.c
+mikaClockWidget.c
+mikaClockWidget.h
+buddy.c
+buddy.c
+mikaClockWidget.h
+mikaGalleryWidget.c
+
+*** These modified files were found in JOE when it aborted on Thu Feb 16 08:03:18 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+mikaWindow.c
+mikaWindow.c
+mikaWindow.c
+mikaWindow.c
+mikaWindow.h
+mikaWindow.h
+mikaWindow.c
+mikaWindow.c
+mikaEventReceiver.c
+mikaWindow.h
+mikaWidget.h
+
+*** These modified files were found in JOE when it aborted on Sat Feb 18 12:20:57 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+buddy.h
+mikaWindow.c
+mikaWindow.h
+mikaWindow.c
+mikaWindow.c
+mikaWindow.c
+mikaWindow.c
+mikaWindow.h
+mikaWwidget.h
+mikaWidget.h
+mikaWindow.h
+
+*** These modified files were found in JOE when it aborted on Wed Sep 19 14:56:16 2012
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+main.c
+listener.h
+listener.h
+listener.h
+build.sh
+main.c
+build.sh
+listener.h
+listener.h
+mikaServer.h
+mikaServer.c
+
+*** These modified files were found in JOE when it aborted on Thu Sep 20 06:03:48 2012
+*** JOE was aborted by UNIX signal 15
+
+*** File 'root.xml'
+<rootSetup>
+	<attributes>
+		<attribute name="resolution" value="980x700"/>
+		<attribute name="background" value="img/logo-savecha-pozadie.png">
+	</attributes>
+</rootSetup>
+
+*** File '(Unnamed)'
+main.c
+Makefile
+gallery.h
+gallery.c
+root.xml
+root.xml
+root.xml
+root.xml
+root.xml
+root.xml
+root.xml

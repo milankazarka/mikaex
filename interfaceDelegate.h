@@ -1,0 +1,3 @@
+#ifndef _INTERFACE_DELEGATE_H_
+#define _INTERFACE_DELEGATE_H_
+#endif

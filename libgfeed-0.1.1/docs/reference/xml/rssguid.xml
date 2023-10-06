@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="RssGuid">
+<refmeta>
+<refentrytitle role="top_of_page">RssGuid</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>RssGuid</refname>
+<refpurpose>A string that uniquely identifies the item (Globally Unique Identifier).</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="RssGuid-struct">RssGuid</link>;
+<link linkend="RssGuid">RssGuid</link>*    <link linkend="rss-guid-new">rss_guid_new</link>                    (const <link linkend="gchar">gchar</link> *guid);
+<link linkend="RssGuid">RssGuid</link>*    <link linkend="rss-guid-new-from-xml">rss_guid_new_from_xml</link>           (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="xmlNode">xmlNode</link>*    <link linkend="rss-guid-get-xml">rss_guid_get_xml</link>                (<link linkend="RssGuid">RssGuid</link> *rss_guid);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----RssGuid
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="RssGuid--guid">guid</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="RssGuid--is-permalink">is-permalink</link>&quot;         <link linkend="gboolean">gboolean</link>              : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="RssGuid-struct" role="struct"/>RssGuid</title>
+<indexterm><primary>RssGuid</primary></indexterm><programlisting>typedef struct _RssGuid RssGuid;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="rss-guid-new" role="function"/>rss_guid_new ()</title>
+<indexterm><primary>rss_guid_new</primary></indexterm><programlisting><link linkend="RssGuid">RssGuid</link>*    rss_guid_new                    (const <link linkend="gchar">gchar</link> *guid);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>guid</parameter>&nbsp;:</term>
+<listitem><simpara> A string that uniquely identifies the item (Global Unique Identifier).
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="RssGuid"><type>RssGuid</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-guid-new-from-xml" role="function"/>rss_guid_new_from_xml ()</title>
+<indexterm><primary>rss_guid_new_from_xml</primary></indexterm><programlisting><link linkend="RssGuid">RssGuid</link>*    rss_guid_new_from_xml           (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="RssGuid"><type>RssGuid</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="rss-guid-get-xml" role="function"/>rss_guid_get_xml ()</title>
+<indexterm><primary>rss_guid_get_xml</primary></indexterm><programlisting><link linkend="xmlNode">xmlNode</link>*    rss_guid_get_xml                (<link linkend="RssGuid">RssGuid</link> *rss_guid);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>rss_guid</parameter>&nbsp;:</term>
+<listitem><simpara> a <link linkend="RssGuid"><type>RssGuid</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the <link linkend="xmlNode"><type>xmlNode</type></link> correspondent to the item.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="RssGuid--guid"/>The &quot;<literal>guid</literal>&quot; property</title>
+<indexterm><primary>RssGuid:guid</primary></indexterm><programlisting>  &quot;guid&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>A string that uniquely identifies the item (Global Unique Identifier).</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="RssGuid--is-permalink"/>The &quot;<literal>is-permalink</literal>&quot; property</title>
+<indexterm><primary>RssGuid:is-permalink</primary></indexterm><programlisting>  &quot;is-permalink&quot;         <link linkend="gboolean">gboolean</link>              : Read / Write / Construct</programlisting>
+<para>True if GUID is a url that can be opened in a Web browser.</para><para>Default value: TRUE</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

@@ -1,0 +1,6438 @@
+gcc -c -DUNIX -DGUI -DUSEX -DJPEG -L/usr/X11R6/lib -L/usr/pkg/lib -L/usr/lib -I/usr/X11R7/include -DUSESSL -Issl/include/openssl -Lssl/lib -Ifreetype/include -Ifreetype/ft2_app/graph -O -g -O0 -c rootSectors.c
+gcc -c -DUNIX -DGUI -DUSEX -DJPEG -L/usr/X11R6/lib -L/usr/pkg/lib -L/usr/lib -I/usr/X11R7/include -DUSESSL -Issl/include/openssl -Lssl/lib -Ifreetype/include -Ifreetype/ft2_app/graph -O -g -O0 -c rootController.c
+g++ -lpthread -lX11 -lXext -L/usr/X11R6/lib -L/usr/lib -lXrender -DGUI -DUSEX -DUNIX -DJPEG -lXpm -lm -lcairo -DUSESSL -lssl -Issl/include/openssl -Lssl/lib -O3 -ltcl8.5 -ltk8.5 -lz -lm -lcrypto -fomit-frame-pointer -march=native -mtune=native   api.o os.o activity.o rootController.o rootSectors.o global.o interface.o low.o lowdraw.o sys.o dom.o system.o rss.o agg.o modules.o canvas.o keyboard.o text.o editable.o xmlsetup.o xml.o ipcx.o db.o guirelay.o guimsg.o window.o wm.o canvasDataModel.o xlib.o panel.o simple.o gui.o frame.o rotation.o guiEventLoop.o guiMain.o csv.o xmlEx.o guiBounds.o agg_arc.o agg_arrowhead.o agg_bezier_arc.o agg_bspline.o agg_curves.o agg_embedded_raster_fonts.o agg_gsv_text.o agg_image_filters.o agg_line_aa_basics.o agg_line_profile_aa.o agg_rounded_rect.o agg_sqrt_tables.o agg_trans_affine.o agg_trans_double_path.o agg_trans_single_path.o agg_trans_warp_magnifier.o agg_vcgen_bspline.o agg_vcgen_contour.o agg_vcgen_dash.o agg_vcgen_markers_term.o agg_vcgen_smooth_poly1.o agg_vcgen_stroke.o agg_vpgen_clip_polygon.o agg_vpgen_clip_polyline.o agg_vpgen_segmentator.o \
+	basepic.o ftadvanc.o  agg_font_freetype.o tinystr.o tinyxml.o tinyxmlerror.o tinyxmlparser.o \
+        jaricom.o jcapimin.o jcapistd.o jcarith.o jccoefct.o jccolor.o jcdctmgr.o jchuff.o jcinit.o jcmainct.o jcmarker.o jcmaster.o jcomapi.o jcparam.o jcprepct.o jcsample.o jctrans.o jdapimin.o jdapistd.o jdarith.o jdatadst.o jdatasrc.o jdcoefct.o jdcolor.o jddctmgr.o jdhuff.o jdinput.o jdmainct.o jdmarker.o jdmaster.o jdmerge.o jdpostct.o jdsample.o jdtrans.o jerror.o jfdctflt.o jfdctfst.o jfdctint.o jidctflt.o jidctfst.o jidctint.o jmemansi.o jmemmgr.o jquant1.o jquant2.o jutils.o -o rootController
+os_rshmAlloc activityName(ROOT)
+rdInit shmSurface id(9961730)
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+activityInitData data(NEWACT
+ANAME MENU
+SHMID 9994499
+SEMID 12583296
+SHMSZ 774436
+)
+activityInitData line(NEWACT)
+activityInitData NEWACT
+activityInitData line(ANAME MENU)
+activityInitData line(SHMID 9994499)
+activityInitData line(SEMID 12583296)
+activityInitData line(SHMSZ 774436)
+_socket_handler _ACTIVITY_TYPE_EVENT
+_socket_handler register activity
+_socket_handler rdAddObject 0x8257570
+:size '6'
+:size '10'
+:size '13'
+:size '14'
+:size '12'
+:reconstruct
+activityInitData data(EVEXP
+)
+activityInitData line(EVEXP)
+activityInitData EVEXP
+_socket_handler _ACTIVITY_TYPE_EVENT
+:size '5'
+:reconstruct
+pollExposures
+pollExposures poll
+activityEventGet _ACTIVITY_EVENT_EXPOSE
+pollExposures expose
+pollExposures end
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+activityInitData data(EVEXP
+)
+activityInitData line(EVEXP)
+activityInitData EVEXP
+_socket_handler _ACTIVITY_TYPE_EVENT
+:size '5'
+:reconstruct
+pollExposures
+pollExposures poll
+activityEventGet _ACTIVITY_EVENT_EXPOSE
+pollExposures expose
+pollExposures end
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+activityInitData data(NEWACT
+ANAME MENU
+SHMID 10027268
+SEMID 12648834
+SHMSZ 774436
+)
+activityInitData line(NEWACT)
+activityInitData NEWACT
+activityInitData line(ANAME MENU)
+activityInitData line(SHMID 10027268)
+activityInitData line(SEMID 12648834)
+activityInitData line(SHMSZ 774436)
+_socket_handler _ACTIVITY_TYPE_EVENT
+_socket_handler register activity
+_socket_handler rdAddObject 0x8257668
+:size '6'
+:size '10'
+:size '14'
+:size '14'
+:size '12'
+:reconstruct
+activityInitData data(EVEXP
+)
+activityInitData line(EVEXP)
+activityInitData EVEXP
+_socket_handler _ACTIVITY_TYPE_EVENT
+:size '5'
+:reconstruct
+pollExposures
+pollExposures poll
+activityEventGet _ACTIVITY_EVENT_EXPOSE
+pollExposures expose
+pollExposures end
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+activityInitData data(EVEXP
+)
+activityInitData line(EVEXP)
+activityInitData EVEXP
+_socket_handler _ACTIVITY_TYPE_EVENT
+:size '5'
+:reconstruct
+pollExposures
+pollExposures poll
+activityEventGet _ACTIVITY_EVENT_EXPOSE
+pollExposures expose
+pollExposures end
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (659,260)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (597,277)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (526,292)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (489,298)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (458,307)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (444,310)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (433,315)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (671,264)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (784,203)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (821,175)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (831,174)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (832,173)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (861,165)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (884,158)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (922,140)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (960,128)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1003,123)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1003,122)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (917,81)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (789,61)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (759,57)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (735,55)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (720,55)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (667,68)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (596,93)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (536,120)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (516,134)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (506,140)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (471,155)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (449,164)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (429,174)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (410,183)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (394,198)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (389,203)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (379,209)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (376,212)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (370,220)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (367,238)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (365,289)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (365,309)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (366,325)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (375,351)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (380,367)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (392,385)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (429,401)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (459,407)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (476,410)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (483,411)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (498,413)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (513,417)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (519,419)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (524,422)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (528,423)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (529,425)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (531,426)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (532,430)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (535,434)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (536,435)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (539,435)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (570,421)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (615,405)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (678,382)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (728,368)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (763,360)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (799,351)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (847,339)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (869,336)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (889,335)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (921,333)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (933,332)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (934,332)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (959,402)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (959,410)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (963,422)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (974,445)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (976,447)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (976,448)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (976,447)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (959,428)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (945,416)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (938,409)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (932,403)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (927,398)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (926,397)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (925,393)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (936,326)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (950,293)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (952,263)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (945,206)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (935,137)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (935,48)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (935,8)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (934,7)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,21)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (735,41)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (611,45)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (540,45)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (462,44)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (426,38)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (403,38)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (372,38)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (367,38)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (330,554)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (358,581)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (419,628)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (457,648)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (479,662)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (483,663)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (486,663)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (538,652)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (587,636)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (607,626)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (633,614)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (648,607)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (702,596)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (769,587)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (789,582)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (811,578)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (816,576)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (817,575)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (818,525)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (800,469)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (760,470)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (709,523)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (642,559)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (602,573)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (587,582)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (581,587)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (577,594)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (573,605)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (572,611)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (569,621)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (568,625)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (567,627)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (566,632)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (565,636)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (566,637)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (571,642)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (570,645)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (570,647)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (569,648)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (569,651)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (568,655)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (566,659)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (566,660)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (566,658)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (559,641)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (550,633)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (509,620)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (472,615)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (428,608)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (410,607)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (385,607)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (372,607)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (355,607)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (345,609)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (330,619)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (320,628)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (320,627)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (324,593)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (332,527)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (334,455)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (334,389)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (330,350)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (319,313)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (306,296)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (297,288)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (296,287)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (294,285)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (434,365)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (565,384)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (667,389)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (752,403)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (808,407)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (873,398)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (913,382)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (914,380)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (912,383)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (898,470)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (898,560)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (898,645)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (897,696)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (896,696)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (861,695)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (725,695)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (620,689)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (539,674)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (533,673)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (530,670)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (518,624)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (516,616)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (516,607)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (516,606)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (518,606)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (523,609)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (526,611)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (578,441)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (580,461)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (582,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (585,483)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (589,494)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (598,507)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (600,511)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (600,512)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (601,515)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (598,516)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (607,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (623,457)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (625,440)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (620,420)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (586,341)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (488,240)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (399,167)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (302,64)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (265,21)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (262,19)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (264,22)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (314,155)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (342,312)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (347,436)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (344,555)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (333,574)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (333,575)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (336,576)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (494,546)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (534,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (580,437)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (584,408)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (591,400)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (592,400)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (648,418)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (682,431)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (695,434)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+activityInitData data(EVEXP
+)
+activityInitData line(EVEXP)
+activityInitData EVEXP
+_socket_handler _ACTIVITY_TYPE_EVENT
+:size '5'
+:reconstruct
+pollExposures
+pollExposures poll
+pollExposures expose
+pollExposures end
+lowWindowEvent Motion (144,294)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+activityInitData data(EVEXP
+)
+activityInitData line(EVEXP)
+activityInitData EVEXP
+_socket_handler _ACTIVITY_TYPE_EVENT
+:size '5'
+:reconstruct
+pollExposures
+pollExposures poll
+activityEventGet _ACTIVITY_EVENT_EXPOSE
+pollExposures expose
+pollExposures end
+lowWindowEvent Motion (250,423)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (354,515)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (400,569)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (414,591)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Expose
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (415,592)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (411,592)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (350,560)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (341,557)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (325,555)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (316,555)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (303,586)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (258,739)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (255,750)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (254,750)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (252,750)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (252,749)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (255,678)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (250,620)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (243,588)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (243,585)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (243,584)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (218,547)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (148,472)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (145,465)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (148,465)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (207,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (258,499)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (309,530)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (402,537)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (541,513)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (701,485)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (781,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (796,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (800,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (803,485)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (810,688)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (810,716)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindoEvent ButtonRelease
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (706,322)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (584,320)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (545,320)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (527,320)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (521,320)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (520,320)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (478,308)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (469,306)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (466,303)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (449,268)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (445,250)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (442,232)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (435,199)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (433,187)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (428,155)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (418,95)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (417,91)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (415,89)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (415,88)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (414,90)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (345,158)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (310,171)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (302,174)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (305,174)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (334,156)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (347,123)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (328,94)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (320,69)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (316,50)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (313,44)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (313,42)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (311,37)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (315,44)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (334,78)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (363,125)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (368,132)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (368,133)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (390,197)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (384,273)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (373,309)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (373,310)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (373,325)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (374,328)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (374,331)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (369,386)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (360,434)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (360,432)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (369,393)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (380,396)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (398,506)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (434,548)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (436,550)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (439,553)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (440,554)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (441,553)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (411,450)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (399,407)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (398,378)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (393,348)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (387,310)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (384,295)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (413,333)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (472,513)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (486,558)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (487,563)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (487,562)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (486,456)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (484,383)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (473,321)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (466,258)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (460,222)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (457,212)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (451,203)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (451,202)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (451,195)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (450,187)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (448,183)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (1003,647)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (979,606)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (950,540)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (931,501)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (906,445)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (892,422)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (884,408)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (883,409)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (908,505)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (950,618)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (995,743)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1007,750)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1008,750)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1008,748)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (996,710)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (976,658)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (969,648)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (965,644)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (958,631)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (949,617)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (943,609)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (494,234)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (481,206)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (479,204)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,195)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (474,196)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (484,225)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (489,231)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (493,237)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (495,240)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (495,242)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (489,252)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (464,275)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (407,297)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (371,325)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (361,355)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (351,421)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (348,458)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (344,473)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (341,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (342,476)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (361,454)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (367,450)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (404,493)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (486,606)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (507,625)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (524,635)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (527,637)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (527,635)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (531,526)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (512,405)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (508,345)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (506,321)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (500,306)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (500,302)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (498,301)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (480,300)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (457,294)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (401,249)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (377,171)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (347,61)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (321,18)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (316,13)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (315,17)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (361,90)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (378,116)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (457,201)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (545,311)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (579,425)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (585,484)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (584,521)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (584,529)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (584,525)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (596,488)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (668,405)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (784,331)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (919,279)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1023,248)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1023,232)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1023,228)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1006,221)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,130)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (699,61)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (532,5)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (523,-3)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (511,-1)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (334,170)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (281,241)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (280,242)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (394,413)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (441,497)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (441,498)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (510,551)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (535,566)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (552,578)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (553,579)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (558,539)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (553,443)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (550,424)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (548,413)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (544,389)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (544,388)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (544,385)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,312)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (434,293)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (408,285)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (407,284)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (471,260)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (563,206)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (590,160)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (600,119)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (603,85)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (603,82)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (603,84)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (608,133)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (612,255)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (622,368)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (624,450)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (625,472)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (625,484)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (625,483)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (567,406)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (511,371)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (472,352)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (411,315)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (383,295)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (376,289)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (379,288)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (488,222)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (545,137)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (563,83)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (563,71)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (563,69)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (563,120)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (561,300)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (561,416)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (561,495)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (561,519)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (561,517)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (666,407)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (761,359)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (874,328)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (966,310)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1023,293)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1023,293)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (1021,293)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (857,293)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (665,283)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (493,283)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (411,283)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (367,283)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (360,281)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (356,280)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (357,280)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (422,197)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (501,87)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (517,59)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (521,47)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (521,49)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (492,206)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (478,326)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,452)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,528)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,531)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,529)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (486,519)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (541,539)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (564,550)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (574,553)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (579,553)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (580,549)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (567,455)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (543,389)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (540,376)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (540,365)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (540,363)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (537,353)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (526,326)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (523,315)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (522,295)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (518,285)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (512,279)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (505,276)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (904,614)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (882,558)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (876,534)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (870,515)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (867,505)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (855,476)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (846,463)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (829,454)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (797,449)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (781,449)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (756,443)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (729,442)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (727,443)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (752,568)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (762,631)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (761,650)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (758,659)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (754,668)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (753,671)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (752,669)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (752,597)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (752,528)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (747,477)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (766,433)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (778,418)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (786,415)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (801,413)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (872,418)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (882,421)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (894,427)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (896,429)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (893,427)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (771,351)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (712,315)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (678,290)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (640,263)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (621,240)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (618,237)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (617,238)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (630,370)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (640,469)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (645,577)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (647,671)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (647,708)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (646,736)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (646,737)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (647,732)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (669,680)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (705,613)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (746,572)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (797,550)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (834,542)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (898,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (900,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (898,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (797,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (734,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (709,538)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (677,583)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (649,647)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (644,669)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (643,670)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (642,669)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (642,600)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (647,563)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (664,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (682,513)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (688,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (689,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (698,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (706,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (741,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (766,509)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (779,512)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (781,513)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (782,514)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (788,514)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (827,523)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (847,528)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (848,529)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,539)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,608)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,665)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,671)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (841,668)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (856,596)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (862,567)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (865,552)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (867,546)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (868,545)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (870,551)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (908,645)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (927,699)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (928,703)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (929,706)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (927,703)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (882,621)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (868,587)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (865,574)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (864,562)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (864,559)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (868,563)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (959,641)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (994,612)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (999,582)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (999,575)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (939,555)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (881,544)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (869,541)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (856,536)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (851,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (850,533)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (846,532)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (840,541)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (808,654)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (794,709)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (788,721)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (787,723)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (787,718)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (792,664)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (795,640)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (800,627)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (803,617)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (806,603)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (810,582)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (811,576)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (808,575)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (758,638)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (720,675)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (686,693)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (636,700)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (561,713)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (531,720)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (530,719)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (571,659)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (602,606)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (617,570)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (631,544)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (647,513)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (654,499)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (657,489)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (657,479)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (659,460)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (660,443)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (662,431)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (663,425)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (665,420)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (668,414)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (671,404)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (681,391)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (692,374)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (695,367)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (700,362)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (711,356)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (715,352)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (719,351)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (726,348)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (729,348)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (732,348)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (734,348)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (736,349)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (584,382)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (644,424)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (678,458)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (712,493)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (731,519)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (768,565)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (795,600)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (804,634)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (809,653)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (813,667)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (813,666)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (804,634)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (804,636)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (814,689)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (816,703)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (815,701)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (807,687)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (806,686)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (803,681)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (800,676)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (797,671)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (791,663)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (783,653)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (770,640)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (766,637)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (767,638)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (775,662)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (775,668)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (774,670)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (773,670)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (495,292)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (475,313)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (464,318)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (435,324)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (429,326)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (428,327)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (458,357)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (466,426)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (453,506)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (439,563)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (437,576)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (436,577)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (446,572)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (481,489)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (493,483)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (538,524)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (611,637)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (622,647)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (623,650)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (624,648)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (602,563)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (567,467)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (553,422)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (545,407)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (539,401)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (530,393)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (521,383)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (518,375)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (517,363)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (515,355)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (514,348)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (514,342)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (514,339)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (521,311)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (525,297)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (526,296)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindoEvent ButtonRelease
+lowWindowEvent ButtonPress
+windowEventButtonDown
+lowWindowEvent Motion (502,256)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (386,75)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (377,67)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (376,69)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (431,160)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (447,205)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (449,245)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (439,291)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (431,305)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (331,370)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (267,440)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (249,456)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (250,455)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (322,370)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (382,320)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (421,282)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (425,282)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (466,301)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (498,363)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (498,457)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (499,464)
+lowWindowEvent motion on active
+windowEventExpose
+rdDrawObjectsSurfaceSYNC
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+rdDRawObjectSurfaceESYNC
+rdDRawObjectSurfaceESYNC end
+lowWindowEvent Motion (500,463)
+lowWindo

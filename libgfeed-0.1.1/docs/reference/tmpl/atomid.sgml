@@ -1,0 +1,57 @@
+<!-- ##### SECTION Title ##### -->
+AtomID
+
+<!-- ##### SECTION Short_Description ##### -->
+A permanent, universally unique identifier for an entry or feed.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomID ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomID:uri ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_id_new ##### -->
+<para>
+
+</para>
+
+@uri: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_id_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_id_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_id: 
+@xnode: 
+
+

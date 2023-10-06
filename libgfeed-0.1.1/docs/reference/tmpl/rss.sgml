@@ -1,0 +1,75 @@
+<!-- ##### SECTION Title ##### -->
+Rss
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT Rss ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG Rss:channel ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_new_from_file ##### -->
+<para>
+
+</para>
+
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_new_from_buffer ##### -->
+<para>
+
+</para>
+
+@buffer: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_get_xml_doc ##### -->
+<para>
+
+</para>
+
+@rss: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_save_file ##### -->
+<para>
+
+</para>
+
+@rss: 
+@filename: 
+@Returns: 
+
+

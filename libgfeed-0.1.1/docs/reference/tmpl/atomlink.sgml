@@ -1,0 +1,82 @@
+<!-- ##### SECTION Title ##### -->
+AtomLink
+
+<!-- ##### SECTION Short_Description ##### -->
+A reference from an entry or feed to a Web resource.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomLink ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomLink:href ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomLink:hreflang ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomLink:length ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomLink:rel ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomLink:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomLink:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_link_new ##### -->
+<para>
+
+</para>
+
+@href: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_link_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_link_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_link: 
+@xnode: 
+
+

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="AtomID">
+<refmeta>
+<refentrytitle role="top_of_page">AtomID</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>AtomID</refname>
+<refpurpose>A permanent, universally unique identifier for an entry or feed.</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="AtomID-struct">AtomID</link>;
+<link linkend="AtomID">AtomID</link>*     <link linkend="atom-id-new">atom_id_new</link>                     (const <link linkend="gchar">gchar</link> *uri);
+<link linkend="AtomID">AtomID</link>*     <link linkend="atom-id-new-from-xml">atom_id_new_from_xml</link>            (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="void">void</link>        <link linkend="atom-id-get-xml">atom_id_get_xml</link>                 (<link linkend="AtomID">AtomID</link> *atom_id,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----AtomID
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="AtomID--uri">uri</link>&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="AtomID-struct" role="struct"/>AtomID</title>
+<indexterm><primary>AtomID</primary></indexterm><programlisting>typedef struct _AtomID AtomID;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-id-new" role="function"/>atom_id_new ()</title>
+<indexterm><primary>atom_id_new</primary></indexterm><programlisting><link linkend="AtomID">AtomID</link>*     atom_id_new                     (const <link linkend="gchar">gchar</link> *uri);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>uri</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomID"><type>AtomID</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-id-new-from-xml" role="function"/>atom_id_new_from_xml ()</title>
+<indexterm><primary>atom_id_new_from_xml</primary></indexterm><programlisting><link linkend="AtomID">AtomID</link>*     atom_id_new_from_xml            (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomID"><type>AtomID</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-id-get-xml" role="function"/>atom_id_get_xml ()</title>
+<indexterm><primary>atom_id_get_xml</primary></indexterm><programlisting><link linkend="void">void</link>        atom_id_get_xml                 (<link linkend="AtomID">AtomID</link> *atom_id,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom_id</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="AtomID"><type>AtomID</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="AtomID--uri"/>The &quot;<literal>uri</literal>&quot; property</title>
+<indexterm><primary>AtomID:uri</primary></indexterm><programlisting>  &quot;uri&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>URI.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

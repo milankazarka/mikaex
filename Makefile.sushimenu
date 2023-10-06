@@ -1,0 +1,38 @@
+# make -f Makefile.sushimenu sushimenu
+CC = gcc
+CCO = g++
+
+CFLAGS = -c -DUNIX -DGUI -DUSEX -DJPEG \
+	-g -O2 \
+	-DUSESSL -I/ssl/include/openssl -Lssl/lib \
+	-Ifreetype/include \
+	-I/usr/include \
+	-Ifreetype/ft2_app/graph \
+	-I/usr/local/lib/gtk-2.0/include -I/usr/local/include/atk-1.0 \
+	-I/usr/local/include/cairo \
+	-I/usr/local/include/pango-1.0 \
+	-I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include \
+	-I/usr/local/include/pixman-1 -I/usr/local/include/freetype2 \
+	-I/usr/local/include -I/usr/local/include/webkit-1.0 \
+	-I/usr/include/libpng12 \
+	-I/opt/mika/include -L/opt/mika/lib \
+	-I/opt/mika/gtk-2.0
+	
+LDFLAGS = -pthread \
+	-lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 \
+	-lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lpango-1.0 \
+	-lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0 \
+	-lpthread -lX11 -lXext \
+	-lXrender -DGUI -DUSEX -DUNIX -DJPEG -lXpm \
+	-DUSESSL -ltcl8.5 -ltk8.5 \
+	-lz -lm -lcrypto -lcurl -lnxml
+
+OBJECTS_SUSHIMENU = \
+	sushimenu.o
+
+sushimenu : $(OBJECTS_SUSHIMENU)
+	$(CCO) $(LDFLAGS) sushimenu.o libMika.a -o sushimenu
+    
+sushimenu.o : sushimenu.c
+	$(CCO) $(CFLAGS) -c sushimenu.c
+	

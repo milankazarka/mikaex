@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY version SYSTEM "version.xml">
+]>
+<refentry id="AtomPerson">
+<refmeta>
+<refentrytitle role="top_of_page">AtomPerson</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGFEED Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>AtomPerson</refname>
+<refpurpose>Describes a person, corporation, or similar entity (hereafter, 'person').</refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+
+
+
+            <link linkend="AtomPerson-struct">AtomPerson</link>;
+<link linkend="AtomPerson">AtomPerson</link>* <link linkend="atom-person-new">atom_person_new</link>                 (const <link linkend="gchar">gchar</link> *name);
+<link linkend="AtomPerson">AtomPerson</link>* <link linkend="atom-person-new-from-xml">atom_person_new_from_xml</link>        (<link linkend="xmlNode">xmlNode</link> *xnode);
+<link linkend="void">void</link>        <link linkend="atom-person-get-xml">atom_person_get_xml</link>             (<link linkend="AtomPerson">AtomPerson</link> *atom_person,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="AtomCommon">AtomCommon</link>
+         +----AtomPerson
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+
+  &quot;<link linkend="AtomPerson--email">email</link>&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+  &quot;<link linkend="AtomPerson--name">name</link>&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write
+  &quot;<link linkend="AtomPerson--uri">uri</link>&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write / Construct
+</synopsis>
+</refsect1>
+
+
+
+<refsect1 role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 role="details">
+<title role="details.title">Details</title>
+<refsect2>
+<title><anchor id="AtomPerson-struct" role="struct"/>AtomPerson</title>
+<indexterm><primary>AtomPerson</primary></indexterm><programlisting>typedef struct _AtomPerson AtomPerson;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2>
+<title><anchor id="atom-person-new" role="function"/>atom_person_new ()</title>
+<indexterm><primary>atom_person_new</primary></indexterm><programlisting><link linkend="AtomPerson">AtomPerson</link>* atom_person_new                 (const <link linkend="gchar">gchar</link> *name);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>name</parameter>&nbsp;:</term>
+<listitem><simpara> a string with a human-readable name for the person.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomPerson"><type>AtomPerson</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-person-new-from-xml" role="function"/>atom_person_new_from_xml ()</title>
+<indexterm><primary>atom_person_new_from_xml</primary></indexterm><programlisting><link linkend="AtomPerson">AtomPerson</link>* atom_person_new_from_xml        (<link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> the newly created <link linkend="AtomPerson"><type>AtomPerson</type></link> object.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2>
+<title><anchor id="atom-person-get-xml" role="function"/>atom_person_get_xml ()</title>
+<indexterm><primary>atom_person_get_xml</primary></indexterm><programlisting><link linkend="void">void</link>        atom_person_get_xml             (<link linkend="AtomPerson">AtomPerson</link> *atom_person,
+                                             <link linkend="xmlNode">xmlNode</link> *xnode);</programlisting>
+<para>
+</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>atom_person</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="AtomPerson"><type>AtomPerson</type></link> object.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>xnode</parameter>&nbsp;:</term>
+<listitem><simpara> an <link linkend="xmlNode"><type>xmlNode</type></link>.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2><title><anchor id="AtomPerson--email"/>The &quot;<literal>email</literal>&quot; property</title>
+<indexterm><primary>AtomPerson:email</primary></indexterm><programlisting>  &quot;email&quot;                <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Conveys an e-mail address associated with the person.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomPerson--name"/>The &quot;<literal>name</literal>&quot; property</title>
+<indexterm><primary>AtomPerson:name</primary></indexterm><programlisting>  &quot;name&quot;                 <link linkend="gchararray">gchararray</link>            : Read / Write</programlisting>
+<para>Conveys a human-readable name for the person.</para><para>Default value: ""</para>
+</refsect2>
+<refsect2><title><anchor id="AtomPerson--uri"/>The &quot;<literal>uri</literal>&quot; property</title>
+<indexterm><primary>AtomPerson:uri</primary></indexterm><programlisting>  &quot;uri&quot;                  <link linkend="gchararray">gchararray</link>            : Read / Write / Construct</programlisting>
+<para>Conveys an IRI associated with the person.</para><para>Default value: ""</para>
+</refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

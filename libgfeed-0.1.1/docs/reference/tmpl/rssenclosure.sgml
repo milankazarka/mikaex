@@ -1,0 +1,69 @@
+<!-- ##### SECTION Title ##### -->
+RssEnclosure
+
+<!-- ##### SECTION Short_Description ##### -->
+Describes a media object that is attached to the item.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssEnclosure ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssEnclosure:length ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssEnclosure:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssEnclosure:url ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_enclosure_new ##### -->
+<para>
+
+</para>
+
+@url: 
+@length: 
+@type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_enclosure_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_enclosure_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_enclosure: 
+@Returns: 
+
+

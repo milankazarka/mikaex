@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssEnclosure</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="RssSource.html" title="RssSource">
+<link rel="next" href="ch02.html" title="ATOM API reference">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="RssSource.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="ch02.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2581148" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2569213" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2569134" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2569158" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssEnclosure"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2581148"></a><span class="refentrytitle">RssEnclosure</span>
+</h2>
+<p>RssEnclosure &#8212; Describes a media object that is attached to the item.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="RssEnclosure.html#RssEnclosure-struct">RssEnclosure</a>;
+<a href="RssEnclosure.html" title="RssEnclosure">RssEnclosure</a>* <a href="RssEnclosure.html#rss-enclosure-new">rss_enclosure_new</a>             (const gchar *url,
+                                             gulong length,
+                                             const gchar *type);
+<a href="RssEnclosure.html" title="RssEnclosure">RssEnclosure</a>* <a href="RssEnclosure.html#rss-enclosure-new-from-xml">rss_enclosure_new_from_xml</a>    (xmlNode *xnode);
+xmlNode*    <a href="RssEnclosure.html#rss-enclosure-get-xml">rss_enclosure_get_xml</a>           (<a href="RssEnclosure.html" title="RssEnclosure">RssEnclosure</a> *rss_enclosure);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569134"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssEnclosure
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569158"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssEnclosure.html#RssEnclosure--length">length</a>"               gulong                : Read / Write / Construct
+  "<a href="RssEnclosure.html#RssEnclosure--type">type</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssEnclosure.html#RssEnclosure--url">url</a>"                  gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569213"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2569228"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2588758"></a><h3>
+<a name="RssEnclosure-struct"></a>RssEnclosure</h3>
+<a class="indexterm" name="id2588770"></a><pre class="programlisting">typedef struct _RssEnclosure RssEnclosure;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2588786"></a><h3>
+<a name="rss-enclosure-new"></a>rss_enclosure_new ()</h3>
+<a class="indexterm" name="id2588798"></a><pre class="programlisting"><a href="RssEnclosure.html" title="RssEnclosure">RssEnclosure</a>* rss_enclosure_new             (const gchar *url,
+                                             gulong length,
+                                             const gchar *type);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>url</code></em>&#160;:</span></td>
+<td> Where the enclosure is located.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>length</code></em>&#160;:</span></td>
+<td> How big it is in bytes.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>type</code></em>&#160;:</span></td>
+<td> What its type is, a standard MIME type.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssEnclosure.html" title="RssEnclosure"><span class="type">RssEnclosure</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2583138"></a><h3>
+<a name="rss-enclosure-new-from-xml"></a>rss_enclosure_new_from_xml ()</h3>
+<a class="indexterm" name="id2583149"></a><pre class="programlisting"><a href="RssEnclosure.html" title="RssEnclosure">RssEnclosure</a>* rss_enclosure_new_from_xml    (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2583215"></a><h3>
+<a name="rss-enclosure-get-xml"></a>rss_enclosure_get_xml ()</h3>
+<a class="indexterm" name="id2583226"></a><pre class="programlisting">xmlNode*    rss_enclosure_get_xml           (<a href="RssEnclosure.html" title="RssEnclosure">RssEnclosure</a> *rss_enclosure);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_enclosure</code></em>&#160;:</span></td>
+<td> a <a href="RssEnclosure.html" title="RssEnclosure"><span class="type">RssEnclosure</span></a> object
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the item.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2583302"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2583313"></a><h3>
+<a name="RssEnclosure--length"></a>The "<code class="literal">length</code>" property</h3>
+<a class="indexterm" name="id2599098"></a><pre class="programlisting">  "length"               gulong                : Read / Write / Construct</pre>
+<p>How big it is in bytes.</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599120"></a><h3>
+<a name="RssEnclosure--type"></a>The "<code class="literal">type</code>" property</h3>
+<a class="indexterm" name="id2599135"></a><pre class="programlisting">  "type"                 gchararray            : Read / Write / Construct</pre>
+<p>What its type is, a standard MIME type.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2599161"></a><h3>
+<a name="RssEnclosure--url"></a>The "<code class="literal">url</code>" property</h3>
+<a class="indexterm" name="id2599176"></a><pre class="programlisting">  "url"                  gchararray            : Read / Write / Construct</pre>
+<p>Where the enclosure is located.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<some id="2" dep="down">
+	<child>
+	<child2>
+</some>
+<some2>
+	<childx1 config="x00" config2="x11">
+	<childx2>
+</some2>

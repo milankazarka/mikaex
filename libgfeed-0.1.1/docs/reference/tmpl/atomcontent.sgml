@@ -1,0 +1,82 @@
+<!-- ##### SECTION Title ##### -->
+AtomContent
+
+<!-- ##### SECTION Short_Description ##### -->
+Contains or links to the content of the entry.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomContent ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomContent:media-type ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomContent:src ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomContent:text ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomContent:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### ENUM AtomContentType ##### -->
+<para>
+
+</para>
+
+@ATOM_CONTENT_TEXT: 
+@ATOM_CONTENT_HTML: 
+@ATOM_CONTENT_XHTML: 
+@ATOM_CONTENT_MEDIA: 
+
+<!-- ##### FUNCTION atom_content_new ##### -->
+<para>
+
+</para>
+
+@type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_content_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_content_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_content: 
+@xnode: 
+
+

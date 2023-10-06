@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>RssImage</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch01.html" title="RSS API reference">
+<link rel="prev" href="RssChannelItem.html" title="RssChannelItem">
+<link rel="next" href="RssGuid.html" title="RssGuid">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="RssChannelItem.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="RssGuid.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2567019" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2563926" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2598988" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2599012" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="RssImage"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2567019"></a><span class="refentrytitle">RssImage</span>
+</h2>
+<p>RssImage &#8212; Specifies a GIF, JPEG or PNG image that can be displayed with the channel.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="RssImage.html#RssImage-struct">RssImage</a>;
+<a href="RssImage.html" title="RssImage">RssImage</a>*   <a href="RssImage.html#rss-image-new">rss_image_new</a>                   (const gchar *url,
+                                             const gchar *title,
+                                             const gchar *link);
+<a href="RssImage.html" title="RssImage">RssImage</a>*   <a href="RssImage.html#rss-image-new-from-xml">rss_image_new_from_xml</a>          (xmlNode *xnode);
+xmlNode*    <a href="RssImage.html#rss-image-get-xml">rss_image_get_xml</a>               (<a href="RssImage.html" title="RssImage">RssImage</a> *rss_image);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2598988"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----RssImage
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2599012"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="RssImage.html#RssImage--description">description</a>"          gchararray            : Read / Write / Construct
+  "<a href="RssImage.html#RssImage--height">height</a>"               guint                 : Read / Write / Construct
+  "<a href="RssImage.html#RssImage--link">link</a>"                 gchararray            : Read / Write / Construct
+  "<a href="RssImage.html#RssImage--title">title</a>"                gchararray            : Read / Write / Construct
+  "<a href="RssImage.html#RssImage--url">url</a>"                  gchararray            : Read / Write / Construct
+  "<a href="RssImage.html#RssImage--width">width</a>"                guint                 : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2563926"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2563942"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2563953"></a><h3>
+<a name="RssImage-struct"></a>RssImage</h3>
+<a class="indexterm" name="id2563966"></a><pre class="programlisting">typedef struct _RssImage RssImage;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2563980"></a><h3>
+<a name="rss-image-new"></a>rss_image_new ()</h3>
+<a class="indexterm" name="id2563993"></a><pre class="programlisting"><a href="RssImage.html" title="RssImage">RssImage</a>*   rss_image_new                   (const gchar *url,
+                                             const gchar *title,
+                                             const gchar *link);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>url</code></em>&#160;:</span></td>
+<td> the URL of a GIF, JPEG or PNG image.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>title</code></em>&#160;:</span></td>
+<td> describes the image, it is used in the ALT attribute of the HTML img tag when the channel is rendered in HTML.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>link</code></em>&#160;:</span></td>
+<td> iIs the URL of the site, when the channel is rendered, the image is a link to the site.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="RssImage.html" title="RssImage"><span class="type">RssImage</span></a> object.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2580863"></a><h3>
+<a name="rss-image-new-from-xml"></a>rss_image_new_from_xml ()</h3>
+<a class="indexterm" name="id2580875"></a><pre class="programlisting"><a href="RssImage.html" title="RssImage">RssImage</a>*   rss_image_new_from_xml          (xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> an <span class="type">xmlNode</span>.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2580942"></a><h3>
+<a name="rss-image-get-xml"></a>rss_image_get_xml ()</h3>
+<a class="indexterm" name="id2580954"></a><pre class="programlisting">xmlNode*    rss_image_get_xml               (<a href="RssImage.html" title="RssImage">RssImage</a> *rss_image);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>rss_image</code></em>&#160;:</span></td>
+<td> a <a href="RssImage.html" title="RssImage"><span class="type">RssImage</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> correspondent to the item.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2581029"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2581040"></a><h3>
+<a name="RssImage--description"></a>The "<code class="literal">description</code>" property</h3>
+<a class="indexterm" name="id2581054"></a><pre class="programlisting">  "description"          gchararray            : Read / Write / Construct</pre>
+<p>Contains text that is included in the TITLE attribute of the link formed around the image in the HTML rendering.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2581081"></a><h3>
+<a name="RssImage--height"></a>The "<code class="literal">height</code>" property</h3>
+<a class="indexterm" name="id2586829"></a><pre class="programlisting">  "height"               guint                 : Read / Write / Construct</pre>
+<p>The height of the image in pixels.</p>
+<p>Allowed values: &lt;= 400</p>
+<p>Default value: 31</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2586857"></a><h3>
+<a name="RssImage--link"></a>The "<code class="literal">link</code>" property</h3>
+<a class="indexterm" name="id2586872"></a><pre class="programlisting">  "link"                 gchararray            : Read / Write / Construct</pre>
+<p>Is the URL of the site, when the channel is rendered, the image is a link to the site.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2586898"></a><h3>
+<a name="RssImage--title"></a>The "<code class="literal">title</code>" property</h3>
+<a class="indexterm" name="id2586914"></a><pre class="programlisting">  "title"                gchararray            : Read / Write / Construct</pre>
+<p>Describes the image, it is used in the ALT attribute of the HTML img tag when the channel is rendered in HTML.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2586941"></a><h3>
+<a name="RssImage--url"></a>The "<code class="literal">url</code>" property</h3>
+<a class="indexterm" name="id2586956"></a><pre class="programlisting">  "url"                  gchararray            : Read / Write / Construct</pre>
+<p>The URL of a GIF, JPEG or PNG image.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2586982"></a><h3>
+<a name="RssImage--width"></a>The "<code class="literal">width</code>" property</h3>
+<a class="indexterm" name="id2586997"></a><pre class="programlisting">  "width"                guint                 : Read / Write / Construct</pre>
+<p>The width of the image in pixels.</p>
+<p>Allowed values: &lt;= 144</p>
+<p>Default value: 88</p>
+</div>
+</div>
+</div>
+</body>
+</html>

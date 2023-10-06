@@ -1,0 +1,117 @@
+<!-- ##### SECTION Title ##### -->
+RssChannelItem
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT RssChannelItem ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG RssChannelItem:author ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:comments ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:description ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:enclosure ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:guid ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:link ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:pub-date ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:source ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG RssChannelItem:title ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION rss_channel_item_new ##### -->
+<para>
+
+</para>
+
+@title: 
+@description: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_item_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_item_add_category ##### -->
+<para>
+
+</para>
+
+@rss_channel_item: 
+@rss_category: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_item_get_categories ##### -->
+<para>
+
+</para>
+
+@rss_channel_item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION rss_channel_item_get_xml ##### -->
+<para>
+
+</para>
+
+@rss_channel_item: 
+@Returns: 
+
+

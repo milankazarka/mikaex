@@ -1,0 +1,22 @@
+<rec bits="21">
+<0 type="rect" x="0" y="0" w="640" h="480" pixel="13750737">
+<1 type="rect" x="590" y="160" w="40" h="60" pixel="7807815">
+<2 type="rect" x="590" y="250" w="40" h="60" pixel="9241933">
+<3 type="text" x="21" y="75" w="67" h="20" text="button16">
+<4 type="text" x="121" y="75" w="67" h="20" text="button17">
+<5 type="text" x="222" y="75" w="66" h="20" text="button18">
+<6 type="rect" x="310" y="5" w="90" h="90" pixel="5648982">
+<7 type="text" x="321" y="75" w="67" h="20" text="button19">
+<8 type="text" x="21" y="185" w="68" h="20" text="button20">
+<9 type="text" x="121" y="185" w="67" h="20" text="button21">
+<10 type="text" x="221" y="185" w="67" h="20" text="button22">
+<11 type="rect" x="310" y="115" w="90" h="90" pixel="7481160">
+<12 type="text" x="321" y="185" w="67" h="20" text="button23">
+<13 type="text" x="21" y="295" w="68" h="20" text="button24">
+<14 type="text" x="121" y="295" w="68" h="20" text="button25">
+<15 type="text" x="221" y="295" w="68" h="20" text="button26">
+<16 type="rect" x="310" y="225" w="90" h="90" pixel="7537469">
+<17 type="text" x="321" y="295" w="68" h="20" text="button27">
+<18 type="text" x="21" y="405" w="67" h="20" text="button28">
+<19 type="text" x="121" y="405" w="68" h="20" text="button29">
+<20 type="rect" x="634" y="201" w="5" h="222" pixel="16777215">

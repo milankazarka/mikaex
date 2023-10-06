@@ -1,0 +1,16 @@
+
+*** These modified files were found in JOE when it aborted on Fri Dec 30 01:11:29 2011
+*** JOE was aborted because the terminal closed
+
+*** File '(Unnamed)'
+canvas.c
+canvas.h
+canvas.h
+object.h
+object.c
+config.h
+mikaGl/mikaGlWindow.h
+mikaGl/mikaGlTest.c
+mikaGl/mikaGlWindow.h
+mikaGl/mikaGlTest.c
+mikaGl/mikaGlWindow.h

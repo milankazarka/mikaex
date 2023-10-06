@@ -1,0 +1,72 @@
+<!-- ##### SECTION Title ##### -->
+AtomText
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomText ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomText:text ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AtomText:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### ENUM AtomTextType ##### -->
+<para>
+
+</para>
+
+@ATOM_TEXT_TEXT: 
+@ATOM_TEXT_HTML: 
+@ATOM_TEXT_XHTML: 
+
+<!-- ##### FUNCTION atom_text_new ##### -->
+<para>
+
+</para>
+
+@type: 
+@text: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_text_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_text_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_text: 
+@xnode: 
+
+

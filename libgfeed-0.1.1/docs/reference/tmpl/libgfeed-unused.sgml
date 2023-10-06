@@ -1,0 +1,1080 @@
+<!-- ##### SECTION ./tmpl/gfeed.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gfeed.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gfeed.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gfeed.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gfeed.sgml:Title ##### -->
+gfeed
+
+
+<!-- ##### MACRO ATOM ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_CATEGORY ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_CATEGORY_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_CATEGORY_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_COMMON ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_COMMON_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_COMMON_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_CONTENT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_CONTENT_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_CONTENT_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_DATE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_DATE_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_DATE_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_ENTRY ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_ENTRY_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_ENTRY_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_GENERATOR ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_GENERATOR_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_GENERATOR_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_ID ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_ID_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_ID_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_LINK ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_LINK_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_LINK_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_PERSON ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_PERSON_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_PERSON_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_SOURCE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_SOURCE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_SOURCE_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_TEXT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO ATOM_TEXT_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO ATOM_TEXT_COMMON_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_CATEGORY ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_CATEGORY_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_COMMON ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_COMMON_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_CONTENT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_CONTENT_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_DATE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_DATE_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_ENTRY ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_ENTRY_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_GENERATOR ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_GENERATOR_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_ID ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_ID_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_LINK ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_LINK_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_PERSON ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_PERSON_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_SOURCE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_SOURCE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_ATOM_TEXT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_ATOM_TEXT_COMMON_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSCATEGORY ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSCATEGORY_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSCHANNEL ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSCHANNELITEM ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSCHANNELITEM_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSCHANNEL_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSCLOUD ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSCLOUD_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSENCLOSURE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSENCLOSURE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSGUID ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSGUID_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSIMAGE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSIMAGE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSSOURCE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSSOURCE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSSTEXTINPUT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO IS_RSSTEXTINPUT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO IS_RSS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCATEGORY ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCATEGORY_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSCATEGORY_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCHANNEL ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCHANNELITEM ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCHANNELITEM_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSCHANNELITEM_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCHANNEL_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSCHANNEL_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCLOUD ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSCLOUD_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSCLOUD_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSENCLOSURE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSENCLOSURE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSENCLOSURE_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSGUID ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSGUID_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSGUID_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSIMAGE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSIMAGE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSIMAGE_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSSOURCE ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSSOURCE_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSSOURCE_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSTEXTINPUT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSSTEXTINPUT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSSTEXTINPUT_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO RSS_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO RSS_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO TYPE_ATOM ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_CATEGORY ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_COMMON ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_CONTENT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_DATE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_ENTRY ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_GENERATOR ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_ID ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_LINK ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_PERSON ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_SOURCE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_ATOM_TEXT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSS ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSCATEGORY ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSCHANNEL ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSCHANNELITEM ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSCLOUD ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSENCLOSURE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSGUID ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSIMAGE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSSOURCE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO TYPE_RSSTEXTINPUT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION atom_category_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_common_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_content_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_date_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_entry_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_generator_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_id_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_link_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_person_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_source_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION atom_text_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_category_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_channel_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_channel_item_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_cloud_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_enclosure_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_guid_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_image_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_source_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION rss_text_input_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+

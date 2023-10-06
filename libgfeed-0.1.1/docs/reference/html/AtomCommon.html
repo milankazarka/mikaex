@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>AtomCommon</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.70.1">
+<link rel="start" href="index.html" title="LibGFeed Reference Manual">
+<link rel="up" href="ch02.html" title="ATOM API reference">
+<link rel="prev" href="AtomCategory.html" title="AtomCategory">
+<link rel="next" href="AtomContent.html" title="AtomContent">
+<meta name="generator" content="GTK-Doc V1.7 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="RSS API reference">
+<link rel="chapter" href="ch02.html" title="ATOM API reference">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="AtomCategory.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">LibGFeed Reference Manual</th>
+<td><a accesskey="n" href="AtomContent.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#id2582468" class="shortcut">Top</a>
+                  &#160;|&#160;
+                  <a href="#id2608724" class="shortcut">Description</a>
+                  &#160;|&#160;
+                  <a href="#id2605606" class="shortcut">Object Hierarchy</a>
+                  &#160;|&#160;
+                  <a href="#id2605698" class="shortcut">Properties</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="AtomCommon"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2>
+<a name="id2582468"></a><span class="refentrytitle">AtomCommon</span>
+</h2>
+<p>AtomCommon &#8212; </p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<pre class="synopsis">
+
+
+
+            <a href="AtomCommon.html#AtomCommon-struct">AtomCommon</a>;
+<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>* <a href="AtomCommon.html#atom-common-new">atom_common_new</a>                 (void);
+void        <a href="AtomCommon.html#atom-common-set-properties-from-xml">atom_common_set_properties_from_xml</a>
+                                            (<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a> *atom_common,
+                                             xmlNode *xnode);
+void        <a href="AtomCommon.html#atom-common-get-xml">atom_common_get_xml</a>             (<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a> *atom_common,
+                                             xmlNode *xnode);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2605606"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+
+  GObject
+   +----AtomCommon
+         +----<a href="Atom.html" title="Atom">Atom</a>
+         +----<a href="AtomCategory.html" title="AtomCategory">AtomCategory</a>
+         +----<a href="AtomContent.html" title="AtomContent">AtomContent</a>
+         +----<a href="AtomDate.html" title="AtomDate">AtomDate</a>
+         +----<a href="AtomEntry.html" title="AtomEntry">AtomEntry</a>
+         +----<a href="AtomGenerator.html" title="AtomGenerator">AtomGenerator</a>
+         +----<a href="AtomID.html" title="AtomID">AtomID</a>
+         +----<a href="AtomLink.html" title="AtomLink">AtomLink</a>
+         +----<a href="AtomPerson.html" title="AtomPerson">AtomPerson</a>
+         +----<a href="AtomSource.html" title="AtomSource">AtomSource</a>
+         +----<a href="AtomText.html" title="AtomText">AtomText</a>
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2605698"></a><h2>Properties</h2>
+<pre class="synopsis">
+
+  "<a href="AtomCommon.html#AtomCommon--base">base</a>"                 gchararray            : Read / Write / Construct
+  "<a href="AtomCommon.html#AtomCommon--lang">lang</a>"                 gchararray            : Read / Write / Construct
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2608724"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2608740"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2608751"></a><h3>
+<a name="AtomCommon-struct"></a>AtomCommon</h3>
+<a class="indexterm" name="id2608764"></a><pre class="programlisting">typedef struct _AtomCommon AtomCommon;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2608778"></a><h3>
+<a name="atom-common-new"></a>atom_common_new ()</h3>
+<a class="indexterm" name="id2608791"></a><pre class="programlisting"><a href="AtomCommon.html" title="AtomCommon">AtomCommon</a>* atom_common_new                 (void);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td>
+<span class="term"><span class="emphasis"><em>Returns</em></span>&#160;:</span></td>
+<td> the newly created <a href="AtomCommon.html" title="AtomCommon"><span class="type">AtomCommon</span></a> object.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2608837"></a><h3>
+<a name="atom-common-set-properties-from-xml"></a>atom_common_set_properties_from_xml ()</h3>
+<a class="indexterm" name="id2608848"></a><pre class="programlisting">void        atom_common_set_properties_from_xml
+                                            (<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a> *atom_common,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_common</code></em>&#160;:</span></td>
+<td> an <a href="AtomCommon.html" title="AtomCommon"><span class="type">AtomCommon</span></a> object.
+<span class="type">xnode:</span> the <span class="type">xmlNode</span> from which to get properties.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2606189"></a><h3>
+<a name="atom-common-get-xml"></a>atom_common_get_xml ()</h3>
+<a class="indexterm" name="id2606201"></a><pre class="programlisting">void        atom_common_get_xml             (<a href="AtomCommon.html" title="AtomCommon">AtomCommon</a> *atom_common,
+                                             xmlNode *xnode);</pre>
+<p>
+</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>atom_common</code></em>&#160;:</span></td>
+<td> an <a href="AtomCommon.html" title="AtomCommon"><span class="type">AtomCommon</span></a> object.
+</td>
+</tr>
+<tr>
+<td>
+<span class="term"><em class="parameter"><code>xnode</code></em>&#160;:</span></td>
+<td> the <span class="type">xmlNode</span> to fill.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="id2606287"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="id2605763"></a><h3>
+<a name="AtomCommon--base"></a>The "<code class="literal">base</code>" property</h3>
+<a class="indexterm" name="id2605778"></a><pre class="programlisting">  "base"                 gchararray            : Read / Write / Construct</pre>
+<p>Base.</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="id2605803"></a><h3>
+<a name="AtomCommon--lang"></a>The "<code class="literal">lang</code>" property</h3>
+<a class="indexterm" name="id2605818"></a><pre class="programlisting">  "lang"                 gchararray            : Read / Write / Construct</pre>
+<p>Lang.</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+</body>
+</html>

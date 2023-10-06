@@ -1,0 +1,57 @@
+<!-- ##### SECTION Title ##### -->
+AtomDate
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT AtomDate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AtomDate:date ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION atom_date_new ##### -->
+<para>
+
+</para>
+
+@dateTime: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_date_new_from_xml ##### -->
+<para>
+
+</para>
+
+@xnode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION atom_date_get_xml ##### -->
+<para>
+
+</para>
+
+@atom_date: 
+@xnode: 
+
+
